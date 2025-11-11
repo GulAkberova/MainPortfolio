@@ -1,0 +1,344 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "education": "Education",
+    "certificates": "Certificates",
+    "skills": "Skills",
+    "works": "Work Experience",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+
+  "home": {
+    "greeting": "Hi, I am {{name}} 👋",
+    "role": "Project Manager & Business Analyst",
+    "description": "I started as a Frontend Developer in the tech field, but now I am gaining experience in project management and business analysis. Looking for new opportunities and projects.",
+    "btn": "View My Experience"
+  },
+
+  "about": {
+    "title": "About Me",
+    "description1": "I am {{name}} — I started as a Frontend Developer in the tech field, but now I work in project management and business analysis. I combine strategy and technology to ensure high-quality and efficient project execution.",
+    "description2": "Technical skills: React, TypeScript, SCSS, and Firebase. Continuous learning and contributing to successful project delivery are my top priorities.",
+    "info": [
+      { "label": "Age", "value": "24" },
+      { "label": "City", "value": "Baku, Azerbaijan" },
+      { "label": "Profession", "value": "Project Manager & Business Analyst" },
+      { "label": "Email", "value": "gulakberova@example.com" }
+    ]
+  },
+
+  "education": {
+    "title": "Education",
+    "items": [
+      {
+        "school": "Azerbaijan Technical University",
+        "degree": "Business Analyst",
+        "year": "2025 - 2027",
+        "description": "I will develop professional knowledge in business analytics.",
+        "longDescription": "I will focus on business process modeling, data analysis, and visualization. By the end of the program, I will gain skills in SQL, Excel, and business intelligence tools.",
+        "icon": "/icons/education/aztu.jpg",
+        "topics": ["Business Process Modeling", "Data Analysis", "SQL", "Excel", "BI Tools"]
+      },
+      {
+        "school": "Code Academy - Technest",
+        "degree": "Advance Frontend Development",
+        "year": "2022 - 2023",
+        "description": "I gained experience in modern web technologies, component-based approach, and interface design.",
+        "icon": "/icons/education/code.jpg"
+      },
+      {
+        "school": "Baku State University",
+        "degree": "Mathematics",
+        "year": "2016 - 2020",
+        "description": "I developed fundamental mathematical knowledge during this period.",
+        "icon": "/icons/education/bdu.jpg"
+      }
+    ]
+  },
+
+  "skills": {
+    "title": "My Skills",
+    "categories": [
+      {
+        "name": "Frontend Technologies",
+        "items": [
+          { "name": "HTML5", "icon": "/icons/skills/html5.svg" },
+          { "name": "CSS3", "icon": "/icons/skills/css3.svg" },
+          { "name": "SCSS", "icon": "/icons/skills/sass.svg" },
+          { "name": "JavaScript", "icon": "/icons/skills/js.svg" },
+          { "name": "TypeScript", "icon": "/icons/skills/ts.svg" },
+          { "name": "React JS", "icon": "/icons/skills/react.svg" },
+          { "name": "Next JS", "icon": "/icons/skills/nextjs.svg" },
+          { "name": "Material UI", "icon": "/icons/skills/materialui.svg" }
+        ]
+      },
+      {
+        "name": "Business Analytics & Product Management",
+        "items": [
+          { "name": "Jira", "icon": "/icons/skills/jira.svg" },
+          { "name": "Confluence", "icon": "/icons/skills/confluence.svg" },
+          { "name": "Power BI", "icon": "/icons/skills/powerbi.svg" },
+          { "name": "Python", "icon": "/icons/skills/python.svg" },
+          { "name": "Pandas", "icon": "/icons/skills/pandas.svg" },
+          { "name": "Numpy", "icon": "/icons/skills/numpy.svg" },
+          { "name": "Oracle SQL", "icon": "/icons/skills/oracle.svg" },
+          { "name": "Salesforce CRM", "icon": "/icons/skills/salesforce.svg" }
+        ]
+      },
+      {
+        "name": "Tools & Other Skills",
+        "items": [
+          { "name": "Git", "icon": "/icons/skills/git.svg" },
+          { "name": "GitHub", "icon": "/icons/skills/github.svg" },
+          { "name": "Firebase", "icon": "/icons/skills/firebase.svg" },
+          { "name": "Word", "icon": "/icons/skills/word.svg" },
+          { "name": "Excel", "icon": "/icons/skills/excel.svg" },
+          { "name": "PowerPoint", "icon": "/icons/skills/powerpoint.svg" }
+        ]
+      }
+    ]
+  },
+
+  "works": {
+    "title": "My Work Experience",
+    "projects": [
+      {
+        "title": "Ministry of Health Digital Health Center",
+        "position": "IT Project Manager",
+        "description": "Managing projects, coordinating with contractors and government agencies, preparing technical documentation and monthly reports.",
+        "tech": ["Jira", "Confluence", "Project Management"],
+        "link": "#",
+        "image": "/icons/works/rsm.jpg",
+        "year": "06.2025 - Present"
+      },
+      {
+        "title": "Datricon Technologies",
+        "position": "Salesforce Developer & Consultant",
+        "description": "Implementing and automating CRM systems, optimizing business processes, analyzing data with SQL and Power BI.",
+        "tech": ["Salesforce CRM", "SQL", "Power BI"],
+        "link": "#",
+        "image": "/icons/works/datricon.jpg",
+        "year": "02.2025 - 05.2025"
+      },
+      {
+        "title": "Alas Academy - Digital Horizons Scholarship Program",
+        "position": "Python Fundamentals Instructor",
+        "description": "Teaching Python basics, supporting students with practical tasks, and conducting interactive lessons.",
+        "tech": ["Python", "Pandas", "Matplotlib"],
+        "link": "#",
+        "image": "/icons/works/alas.jpg",
+        "year": "11.2024 - 01.2025"
+      },
+      {
+        "title": "Polygraf.ai (Freelance)",
+        "position": "Frontend Developer",
+        "description": "Developing web applications with React and Next.js, optimizing UI/UX interfaces, integrating APIs.",
+        "tech": ["React", "Next.js", "Firebase"],
+        "link": "#",
+        "image": "/icons/works/polygraf.jpg",
+        "year": "04.2024 - 10.2024"
+      },
+      {
+        "title": "Yelload Advertising Agency",
+        "position": "Frontend Developer",
+        "description": "Developing web solutions according to client requirements, creating admin panels and dashboards, optimizing interfaces and performing tests.",
+        "tech": ["React", "Next.js", "UI/UX"],
+        "link": "#",
+        "image": "/icons/works/yello.jpg",
+        "year": "05.2023 - 07.2024"
+      },
+      {
+        "title": "4you - Online Psychology Service",
+        "position": "CTO / Co-Founder, Frontend Developer",
+        "description": "Developing product strategy, coordinating with technical team, releasing new features, analyzing user feedback.",
+        "tech": ["React", "Next.js", "Project Management"],
+        "link": "#",
+        "image": "/icons/works/4you.jpg",
+        "year": "11.2022 - 08.2024"
+      }
+    ]
+  },
+
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Fill out the form below to get in touch with me.",
+    "alert": "Your message has been sent!",
+    "form": {
+      "submitButton": {
+        "text": "Send"
+      },
+      "fields": [
+        {
+          "name": "name",
+          "type": "text",
+          "placeholder": "Your Name",
+          "required": true
+        },
+        {
+          "name": "email",
+          "type": "email",
+          "placeholder": "Email",
+          "required": true
+        },
+        {
+          "name": "message",
+          "type": "textarea",
+          "placeholder": "Your Message",
+          "rows": 5,
+          "required": true
+        }
+      ]
+    }
+  },
+
+  "certificates": {
+    "title": "My Certificates",
+    "list": [
+      {
+        "title": "Frontend Development Bootcamp",
+        "platform": "Udemy",
+        "year": "2023",
+        "image": "/certificates/frontend-bootcamp.jpg"
+      },
+      {
+        "title": "React & TypeScript Mastery",
+        "platform": "Coursera",
+        "year": "2023",
+        "image": "/certificates/react-ts.jpg"
+      },
+      {
+        "title": "Firebase Fundamentals",
+        "platform": "Udemy",
+        "year": "2022",
+        "image": "/certificates/firebase.jpg"
+      },
+      {
+        "title": "Code Academy Advance Frontend Development",
+        "platform": "Code Academy / Coders Azerbaijan",
+        "year": "2022",
+        "image": "/certificates/code-academy-frontend.jpg"
+      }
+    ]
+  },
+
+  "welcome": "Welcome to our survey panel!",
+  "change_language": "Change Language",
+
+  "home1": "Home",
+  "questionform": "Question Form",
+  "answer": "Query Results",
+  "superdashboard": "Superadmin",
+
+  "addToAllQuestions": "Add to All Questions",
+  "areYouSureAllQuestionsFilled": "Are you sure that you have answered all the questions in all sections?",
+
+  "questionsAdded": "Questions added successfully!",
+  "questionsAddError": "An error occurred while adding questions.",
+  "close": "Close",
+
+  "sections": {
+    "company": "About the Company",
+    "website": "Website and Online Platforms",
+    "email": "Email and Electronic Communication",
+    "social_media": "Social Media and Digital Channels",
+    "sales": "Sales",
+    "customer_service": "Customer Service",
+    "reporting": "Reporting and Analytics",
+    "automation": "Automation and Notifications",
+    "security": "Security and Privacy",
+    "budget": "Budget and Project Scope",
+    "training": "Training and User Adoption"
+  },
+  "questions": {
+    "company": {
+      "q1": "What is the legal name of the company?",
+      "q2": "What are the company's main products and services?",
+      "q3": "In which markets does the company operate? (local, international, regional, etc.)",
+      "q4": "How many employees are there, and how many are involved in sales?",
+      "q5": "Who are the company's main competitors?",
+      "q6": "Who are the company's key strategic partners?",
+      "q7": "What are your main customer segments?"
+    },
+    "website": {
+      "q1": "Does the company have a website?",
+      "q2": "What technology is the website built on?",
+      "q3": "What is the primary purpose of the website? (information, sales, customer support, etc.)",
+      "q4": "Does the website integrate with CRM and other systems?",
+      "q5": "What tools are used for SEO and analytics?"
+    },
+    "email": {
+      "q1": "Which email systems does the company use?",
+      "q2": "Do you run email marketing campaigns?",
+      "q3": "Do you have automated email notifications?",
+      "q4": "How do you manage customer support emails?"
+    },
+    "social_media": {
+      "q1": "Which social media platforms does the company use?",
+      "q2": "Do you conduct sales or customer service via social media?",
+      "q3": "How do you track social media inquiries?",
+      "q4": "Do you need social media accounts to be integrated with CRM systems?"
+    },
+    "sales": {
+      "q1": "Do you have an existing customer database?",
+      "q2": "How many people are in the sales team?",
+      "q3": "What does your current sales process look like?",
+      "q4": "How many stages are in your sales cycle?",
+      "q5": "What are your key KPIs?"
+    },
+    "customer_service": {
+      "q1": "How do you manage customer inquiries and complaints?",
+      "q2": "Through which channels is customer support provided?",
+      "q3": "How do you measure customer service performance?",
+      "q4": "Do you need automated complaint resolution?"
+    },
+    "reporting": {
+      "q1": "How do you analyze sales and customer data?",
+      "q2": "What are your key KPIs?",
+      "q3": "How do you currently access reports?",
+      "q4": "Is real-time data analysis important for you?"
+    },
+    "automation": {
+      "q1": "Do you need automation for customer inquiries?",
+      "q2": "Would you like to send automated notifications (email, SMS, etc.)?",
+      "q3": "Do you require automated workflows in sales processes?"
+    },
+    "security": {
+      "q1": "Do you have specific requirements for data security and privacy?",
+      "q2": "Who should have access to data and at what level?",
+      "q3": "How should data backup and recovery policies be managed?"
+    },
+    "budget": {
+      "q1": "What budget have you allocated for Salesforce implementation?",
+      "q2": "Which features are essential for you, and which can be added later?",
+      "q3": "What is your timeline for completing the project?",
+      "q4": "Do you have internal resources for project implementation, or will you rely entirely on external support?"
+    },
+    "training": {
+      "q1": "What level of training do Salesforce users need?",
+      "q2": "How open are team members to transitioning to a new system?",
+      "q3": "Is interface simplicity and ease of use important for users?"
+    }
+  },
+  "login": {
+    "title": "Login",
+    "email": "Email",
+    "password": "Password",
+    "loading": "Logging in...",
+    "submit": "Login",
+    "or": "Or",
+    "noAccount": "Don't have an account?",
+    "register": "Register"
+  },
+  "register": {
+    "title": "Register",
+    "email": "Email",
+    "password": "Password",
+    "loading": "Registering...",
+    "submit": "Register",
+    "or": "Or",
+    "hasAccount": "Already have an account?",
+    "login": "Login"
+  }
+}

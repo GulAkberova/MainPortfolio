@@ -1,0 +1,189 @@
+.layout {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  font-family: "Inter", sans-serif;
+  overflow: hidden;
+  position: relative;
+  background: #f9f9f9; /* Ağ əsas fon */
+}
+
+/* 🔹 Sidebar */
+.sidebar {
+  width: 260px;
+  background: #fff; /* Açıq fon */
+  color: #1e1e1e; /* Yazılar qara */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  border-right: 1px solid rgba(109, 40, 217, 0.2);
+  transition: transform 0.3s ease;
+  z-index: 100;
+  box-shadow: 2px 0 8px rgba(0,0,0,0.05);
+}
+
+.sidebar.open {
+  transform: translateX(0);
+}
+
+/* 🔹 Burger */
+.burger {
+  display: none;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+  z-index: 150;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #1e1e1e; /* Qara bar */
+  margin: 5px 0;
+  transition: 0.4s;
+}
+
+.bar1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.bar2 {
+  opacity: 0;
+}
+
+.bar3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Profile */
+.profile img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 2px solid #6d28d9;
+  box-shadow: 0 0 20px rgba(109, 40, 217, 0.3);
+}
+
+.profile h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px;
+  background: linear-gradient(90deg, #6d28d9, #3b82f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Sidebar links */
+.nav ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+.nav ul li {
+  padding: 12px 18px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.3s ease;
+  color: #1e1e1e;
+}
+
+.nav ul li:hover,
+.nav ul li.active {
+  background: linear-gradient(90deg, #6d28d9, #3b82f6);
+  color: #fff;
+  box-shadow: 0 0 15px rgba(109, 40, 217, 0.4);
+}
+
+/* Main content */
+.mainContent {
+  flex: 1;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  height: 100vh;
+  width: 100%;
+  background: #f9f9f9; /* Açıq fon */
+  padding: 0;
+}
+
+/* Lang selector */
+.langSelectorBox {
+  margin-bottom: 30px;
+  width: 100%;
+  text-align: center;
+}
+
+.langSelector {
+  background: rgba(0,0,0,0.05);
+  color: #1e1e1e;
+  border: 1px solid rgba(109, 40, 217, 0.2);
+  border-radius: 10px;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.langSelector:hover {
+  border-color: rgba(109, 40, 217, 0.5);
+  box-shadow: 0 0 10px rgba(109, 40, 217, 0.2);
+}
+
+/* 🔹 Responsiv */
+@media (max-width: 768px) {
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    transform: translateX(-100%);
+    box-shadow: 2px 0 15px rgba(0, 0, 0, 0.05);
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .mainContent {
+    padding-left: 0;
+  }
+}
+
+
+
+.langSelectorBox {
+  display: flex;
+  justify-content: center; /* mərkəzləşdir */
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.langButton {
+  cursor: pointer;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-weight: 500;
+  color: #e2e8f0;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(109, 40, 217, 0.2);
+  transition: all 0.3s ease;
+}
+
+.langButton:hover {
+  border-color: rgba(109, 40, 217, 0.5);
+  box-shadow: 0 0 10px rgba(109, 40, 217, 0.2);
+}
+
+.activeLang {
+  background: linear-gradient(90deg, #6d28d9, #3b82f6);
+  color: #fff;
+  border: none;
+  box-shadow: 0 0 15px rgba(109, 40, 217, 0.4);
+}

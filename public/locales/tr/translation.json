@@ -1,0 +1,373 @@
+{
+  "nav": {
+    "home": "Ana Sayfa",
+    "about": "Hakkımda",
+    "education": "Eğitim",
+    "certificates": "Sertifikalar",
+    "skills": "Beceriler",
+    "works": "İş Deneyimi",
+    "projects": "Yapılan Projeler",
+    "contact": "İletişim"
+  },
+
+  "home": {
+    "greeting": "Merhaba, ben {{name}} 👋",
+    "role": "Proje Yöneticisi ve İş Analisti",
+    "description": "Teknoloji alanında Frontend Developer olarak başladım, ancak şimdi proje yönetimi ve iş analizi konusunda deneyim kazanıyorum. Yeni fırsatlar ve projeler arıyorum.",
+    "btn": "Deneyimime göz at"
+  },
+
+  "about": {
+    "title": "Hakkımda",
+    "description1": "Ben {{name}} — Teknoloji alanında Frontend Developer olarak başladım, ancak şu anda proje yönetimi ve iş analizi alanında çalışıyorum. Strateji ve teknolojiyi birleştirerek projelerin yüksek kalite ve verimlilikle yürütülmesini sağlıyorum.",
+    "description2": "Teknik beceriler: React, TypeScript, SCSS ve Firebase. Sürekli öğrenme ve projelerin başarılı bir şekilde tamamlanmasına katkıda bulunmak benim önceliğimdir.",
+    "info": [
+      { "label": "Yaş", "value": "24" },
+      { "label": "Şehir", "value": "Bakü, Azerbaycan" },
+      { "label": "Meslek", "value": "Proje Yöneticisi & İş Analisti" },
+      { "label": "Email", "value": "gulakberova@example.com" }
+    ]
+  },
+
+  "education": {
+    "title": "Eğitim",
+    "items": [
+      {
+        "school": "Azerbaycan Teknik Üniversitesi",
+        "degree": "İş Analisti",
+        "year": "2025 - 2027",
+        "description": "Bu dönemde iş analitiği alanında profesyonel bilgiler edineceğim.",
+        "icon": "/icons/education/aztu.jpg"
+      },
+      {
+        "school": "Code Academy - Technest",
+        "degree": "Advance Frontend Development",
+        "year": "2022 - 2023",
+        "description": "Modern web teknolojileri, bileşen tabanlı yaklaşım ve arayüz tasarımı konusunda deneyim kazandım.",
+        "icon": "/icons/education/code.jpg"
+      },
+      {
+        "school": "Bakü Devlet Üniversitesi",
+        "degree": "Matematik",
+        "year": "2016 - 2020",
+        "description": "Bu dönemde temel matematik bilgilerini edindim.",
+        "icon": "/icons/education/bdu.jpg"
+      }
+    ]
+  },
+
+  "skills": {
+    "title": "Becerilerim",
+    "categories": [
+      {
+        "name": "Frontend Teknolojileri",
+        "items": [
+          { "name": "HTML5", "icon": "/icons/skills/html5.svg" },
+          { "name": "CSS3", "icon": "/icons/skills/css3.svg" },
+          { "name": "SCSS", "icon": "/icons/skills/sass.svg" },
+          { "name": "JavaScript", "icon": "/icons/skills/js.svg" },
+          { "name": "TypeScript", "icon": "/icons/skills/ts.svg" },
+          { "name": "React JS", "icon": "/icons/skills/react.svg" },
+          { "name": "Next JS", "icon": "/icons/skills/nextjs.svg" },
+          { "name": "Material UI", "icon": "/icons/skills/materialui.svg" }
+        ]
+      },
+      {
+        "name": "İş Analitiği & Ürün Yönetimi",
+        "items": [
+          { "name": "Jira", "icon": "/icons/skills/jira.svg" },
+          { "name": "Confluence", "icon": "/icons/skills/confluence.svg" },
+          { "name": "Power BI", "icon": "/icons/skills/powerbi.svg" },
+          { "name": "Python", "icon": "/icons/skills/python.svg" },
+          { "name": "Pandas", "icon": "/icons/skills/pandas.svg" },
+          { "name": "Numpy", "icon": "/icons/skills/numpy.svg" },
+          { "name": "Oracle SQL", "icon": "/icons/skills/oracle.svg" },
+          { "name": "Salesforce CRM", "icon": "/icons/skills/salesforce.svg" }
+        ]
+      },
+      {
+        "name": "Araçlar & Diğer Beceriler",
+        "items": [
+          { "name": "Git", "icon": "/icons/skills/git.svg" },
+          { "name": "GitHub", "icon": "/icons/skills/github.svg" },
+          { "name": "Firebase", "icon": "/icons/skills/firebase.svg" },
+          { "name": "Word", "icon": "/icons/skills/word.svg" },
+          { "name": "Excel", "icon": "/icons/skills/excel.svg" },
+          { "name": "PowerPoint", "icon": "/icons/skills/powerpoint.svg" }
+        ]
+      }
+    ]
+  },
+
+  "works": {
+    "title": "İş Tecrübelerim",
+    "projects": [
+      {
+        "title": "Sağlık Bakanlığı Dijital Sağlık Merkezi",
+        "position": "IT Proje Yöneticisi",
+        "description": "Projelerin yönetimi, taşeronlar ve devlet kurumlarıyla koordinasyon, teknik dokümantasyon hazırlanması ve aylık raporların hazırlanması.",
+        "tech": ["Jira", "Confluence", "Project Management"],
+        "link": "#",
+        "image": "/icons/works/rsm.jpg",
+        "year": "06.2025 - Devam ediyor"
+      },
+      {
+        "title": "Datricon Technologies",
+        "position": "Salesforce Developer & Consultant",
+        "description": "CRM sistemlerinin kurulumu ve otomasyonu, iş süreçlerinin optimize edilmesi, SQL ve Power BI ile veri analizi.",
+        "tech": ["Salesforce CRM", "SQL", "Power BI"],
+        "link": "#",
+        "image": "/icons/works/datricon.jpg",
+        "year": "02.2025 - 05.2025"
+      },
+      {
+        "title": "Alas Academy - Dijital Ufuklar Burs Programı",
+        "position": "Python Temel Eğitmeni",
+        "description": "Python temel eğitimi, öğrencilerin pratik görevlerde desteklenmesi ve interaktif derslerin verilmesi.",
+        "tech": ["Python", "Pandas", "Matplotlib"],
+        "link": "#",
+        "image": "/icons/works/alas.jpg",
+        "year": "11.2024 - 01.2025"
+      },
+      {
+        "title": "Polygraf.ai (Freelance)",
+        "position": "Frontend Developer",
+        "description": "React ve Next.js ile web uygulamaları geliştirme, UI/UX tasarımına uygun arayüz optimizasyonu ve API entegrasyonu.",
+        "tech": ["React", "Next.js", "Firebase"],
+        "link": "#",
+        "image": "/icons/works/polygraf.jpg",
+        "year": "04.2024 - 10.2024"
+      },
+      {
+        "title": "Yelload Reklam Ajansı",
+        "position": "Frontend Developer",
+        "description": "Müşteri taleplerine uygun web çözümleri geliştirme, admin paneller ve dashboard oluşturma, arayüz optimizasyonu ve testler.",
+        "tech": ["React", "Next.js", "UI/UX"],
+        "link": "#",
+        "image": "/icons/works/yello.jpg",
+        "year": "05.2023 - 07.2024"
+      },
+      {
+        "title": "4you - Online Psikoloji Servisi",
+        "position": "CTO / Kurucu Ortak, Frontend Developer",
+        "description": "Ürün geliştirme stratejisi, teknik ekip ile koordinasyon, yeni özelliklerin yayına alınması, kullanıcı geri bildirimlerinin analizi.",
+        "tech": ["React", "Next.js", "Project Management"],
+        "link": "#",
+        "image": "/icons/works/4you.jpg",
+        "year": "11.2022 - 08.2024"
+      }
+    ]
+  },
+
+  "contact": {
+    "title": "İletişim",
+    "subtitle": "Benimle iletişime geçmek için aşağıdaki formu doldurun ve gönderin.",
+    "alert": "Mesajınız gönderildi!",
+    "form": {
+      "submitButton": {
+        "text": "Gönder"
+      },
+      "fields": [
+        {
+          "name": "name",
+          "type": "text",
+          "placeholder": "Adınız",
+          "required": true
+        },
+        {
+          "name": "email",
+          "type": "email",
+          "placeholder": "Email",
+          "required": true
+        },
+        {
+          "name": "message",
+          "type": "textarea",
+          "placeholder": "Mesajınız",
+          "rows": 5,
+          "required": true
+        }
+      ]
+    }
+  },
+
+  "certificates": {
+    "title": "Sertifikalarım",
+    "list": [
+      {
+        "title": "Frontend Development Bootcamp",
+        "platform": "Udemy",
+        "year": "2023",
+        "image": "/certificates/frontend-bootcamp.jpg"
+      },
+      {
+        "title": "React & TypeScript Mastery",
+        "platform": "Coursera",
+        "year": "2023",
+        "image": "/certificates/react-ts.jpg"
+      },
+      {
+        "title": "Firebase Fundamentals",
+        "platform": "Udemy",
+        "year": "2022",
+        "image": "/certificates/firebase.jpg"
+      },
+      {
+        "title": "Code Academy Advance Frontend Development",
+        "platform": "Code Academy / Coders Azerbaijan",
+        "year": "2022",
+        "image": "/certificates/code-academy-frontend.jpg"
+      }
+    ]
+  },
+
+  "works": {
+    "title": "Görülən İşlər",
+    "viewProject": "Layihəyə bax",
+    "list": [
+      {
+        "title": "NTİS Layihə Dashboard",
+        "company": "TƏBİB / Digital Health Center",
+        "description": "Sağlamlıq müəssisələrinin layihə statuslarını, mərhələlərini və performans göstəricilərini real vaxtda izləmək üçün idarəetmə paneli.",
+        "technologies": ["React", "Material UI", "Axios", "Recharts"],
+        "image": "/images/works/ntis-dashboard.png",
+        "link": "https://ntis-dashboard.az"
+      },
+      {
+        "title": "İnsan Orqan Donorluğu Məlumat Bazası",
+        "company": "TƏBİB / Digital Bridge",
+        "description": "Donor və transplantasiya məlumatlarının vahid dövlət bazasında toplanması və idarə edilməsi üçün sistem.",
+        "technologies": ["React", "Node.js", "MongoDB", "Express"],
+        "image": "/images/works/donor-system.png",
+        "link": "https://donor.gov.az"
+      },
+      {
+        "title": "Digital Solutions Portal",
+        "company": "Digital Health Center",
+        "description": "Tibb müəssisələri üçün rəqəmsal həllərin siyahısını və istifadə vəziyyətini göstərən portal.",
+        "technologies": ["Next.js", "Sanity CMS", "TailwindCSS"],
+        "image": "/images/works/digital-solutions.png",
+        "link": "https://solutions.dhc.az"
+      }
+    ]
+  },
+
+  "welcome": "Sorğu panelİmİze hoş geldİnİz!",
+  "change_language": "Dili değiştir",
+
+  "home1": "Ana sayfa",
+  "questionform": "Sorğu",
+  "answer": "Sorğu Sonuçları",
+  "superdashboard": "Süperadmin",
+
+  "addToAllQuestions": "Tüm Soruları Ekle",
+  "areYouSureAllQuestionsFilled": "Tüm bölümlerdeki tüm soruları doldurduğunuzdan emin misiniz?",
+
+  "questionsAdded": "Sorular başarıyla eklendi!",
+  "questionsAddError": "Sorular eklenirken bir hata oluştu.",
+  "close": "Kapat",
+
+  "sections": {
+    "company": "Şirket Hakkında",
+    "website": "Web Sitesi ve Online Platformlar",
+    "email": "E-posta ve Elektronik İletişim",
+    "social_media": "Sosyal Medya ve Dijital Kanallar",
+    "sales": "Satış",
+    "customer_service": "Müşteri Hizmetleri",
+    "reporting": "Raporlama ve Analitik",
+    "automation": "Otomasyon ve Bildirimler",
+    "security": "Güvenlik ve Gizlilik",
+    "budget": "Bütçe ve Proje Çerçevesi",
+    "training": "Eğitim ve Kullanıcı Kabulü"
+  },
+  "questions": {
+    "company": {
+      "q1": "Şirketin yasal adı nedir?",
+      "q2": "Çalışan sayısı kaç kişidir ve kaç kişi satışla ilgileniyor?",
+      "q3": "Şirketin ana ürün ve hizmetleri nelerdir?",
+      "q4": "Şirket hangi pazarlarda faaliyet göstermektedir? (yerel, uluslararası, bölgesel vb.)",
+      "q5": "Şirketin ana rakipleri kimlerdir?",
+      "q6": "Şirketin ana stratejik ortakları kimlerdir?",
+      "q7": "Ana müşteri segmentleriniz nelerdir?"
+    },
+    "website": {
+      "q1": "Şirketin web sitesi var mı?",
+      "q2": "Web sitesi hangi teknolojiyle yapılmıştır?",
+      "q3": "Siteyin ana amacı nedir? (bilgilendirme, satış, müşteri desteği vb.)",
+      "q4": "Sitede CRM ve diğer sistemlerle entegrasyon var mı?",
+      "q5": "SEO ve analiz için hangi araçları kullanıyorsunuz?"
+    },
+    "email": {
+      "q1": "Şirket hangi e-posta sistemlerini kullanıyor?",
+      "q2": "E-posta pazarlama kampanyaları yürütüyor musunuz?",
+      "q3": "Otomatik e-posta bildirimleriniz var mı?",
+      "q4": "Müşteri desteği için e-posta sorgularını nasıl yönetiyorsunuz?"
+    },
+    "social_media": {
+      "q1": "Şirket hangi sosyal medya platformlarını kullanıyor?",
+      "q2": "Sosyal medya üzerinden satış veya müşteri hizmeti yürütüyor musunuz?",
+      "q3": "Sosyal medya sorgularını nasıl takip ediyorsunuz?",
+      "q4": "Sosyal medya hesaplarınızın CRM sistemleriyle entegrasyonuna ihtiyacınız var mı?"
+    },
+    "sales": {
+      "q1": "Müşteri tabanınız var mı?",
+      "q2": "Satış ekibi kaç kişiden oluşuyor?",
+      "q3": "Şu anda satış süreci nasıl işliyor?",
+      "q4": "Satış döngüsü kaç aşamadan oluşuyor?",
+      "q5": "Ana KPI'larınız nelerdir?"
+    },
+    "customer_service": {
+      "q1": "Müşteri sorgularını ve şikayetlerini nasıl yönetiyorsunuz?",
+      "q2": "Müşteri desteği hangi kanallar üzerinden yapılmaktadır?",
+      "q3": "Müşteri hizmetleri performansını nasıl ölçüyorsunuz?",
+      "q4": "Şikayetlerin otomatik çözümü gerekli midir?"
+    },
+    "reporting": {
+      "q1": "Satış ve müşteri verilerini nasıl analiz ediyorsunuz?",
+      "q2": "Ana KPI'larınız nelerdir?",
+      "q3": "Mevcut raporlarınızı nasıl elde ediyorsunuz?",
+      "q4": "Gerçek zamanlı veri analizi sizin için önemli midir?"
+    },
+    "automation": {
+      "q1": "Müşteri başvurularının otomatikleştirilmesine ihtiyacınız var mı?",
+      "q2": "Otomatik bildirimler (e-posta, SMS vb.) göndermek ister misiniz?",
+      "q3": "Satış süreçlerinde otomatik iş akışlarına ihtiyacınız var mı?"
+    },
+    "security": {
+      "q1": "Veri güvenliği ve gizliliği ile ilgili özel gereksinimleriniz var mı?",
+      "q2": "Verilere kimler ve hangi seviyede erişim izni almalıdır?",
+      "q3": "Verilerin yedeklenmesi ve geri yüklenmesi politikası nasıl düzenlenmelidir?"
+    },
+    "budget": {
+      "q1": "Salesforce uygulaması için ne kadar bütçe ayırdınız?",
+      "q2": "Hangi özellikler sizin için zorunludur ve hangileri sonradan eklenebilir?",
+      "q3": "Projeyi ne kadar sürede tamamlamayı planlıyorsunuz?",
+      "q4": "Projeyi gerçekleştirmek için iç kaynaklarınız var mı, yoksa tamamen dış destek gerekecek mi?"
+    },
+    "training": {
+      "q1": "Salesforce kullanıcıları için hangi düzeyde eğitimlere ihtiyaç var?",
+      "q2": "Ekip üyeleri yeni sisteme geçişe ne kadar açıktır?",
+      "q3": "Kullanıcılar için arayüzün basitliği ve kolaylığı önemli midir?"
+    }
+  },
+  "login": {
+    "title": "Giriş",
+    "email": "Email",
+    "password": "Şifre",
+    "loading": "Giriş yapılıyor...",
+    "submit": "Giriş Yap",
+    "or": "Veya",
+    "noAccount": "Hesabınız yok mu?",
+    "register": "Kayıt Ol"
+  },
+  "register": {
+    "title": "Kayıt Ol",
+    "email": "Email",
+    "password": "Şifre",
+    "loading": "Kayıt yapılıyor...",
+    "submit": "Kayıt Ol",
+    "or": "Veya",
+    "hasAccount": "Zaten hesabınız var mı?",
+    "login": "Giriş Yap"
+  }
+}

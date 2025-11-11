@@ -1,0 +1,125 @@
+.certificates {
+  background: #f9f9f9; /* Ağ fon */
+  color: #1e1e1e; /* Tünd mətn */
+  padding: 100px 20px;
+  display: flex;
+  justify-content: center;
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  max-width: 1100px;
+  width: 100%;
+}
+
+.title {
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 60px;
+  background: linear-gradient(90deg, #6d28d9, #3b82f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+.title::after {
+  content: "";
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #6d28d9, #3b82f6);
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 5px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+}
+
+.card {
+  background: #fff; /* Açıq kart fonu */
+  color: #111; /* Tünd yazılar */
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(109, 40, 217, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 30px rgba(109, 40, 217, 0.25);
+}
+
+.imageBox {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+
+.imageBox::before {
+  content: "";
+  position: absolute;
+  width: 150%;
+  height: 150%;
+  top: -25%;
+  left: -25%;
+  background: linear-gradient(45deg, #6d28d9, #3b82f6);
+  filter: blur(80px);
+  z-index: 0;
+}
+
+.imageBox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  position: relative;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  border-radius: 12px;
+}
+
+.card:hover .imageBox img {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(109, 40, 217, 0.5);
+}
+
+.content {
+  padding: 20px 25px;
+  text-align: center;
+}
+
+.content h3 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.content p {
+  color: #555; /* Tünd mətn üçün */
+  font-size: 0.95rem;
+  margin-bottom: 5px;
+}
+
+.content .year {
+  color: #6d28d9;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+/* 📱 Responsiv */
+@media (max-width: 768px) {
+  .grid {
+    gap: 25px;
+  }
+
+  .imageBox {
+    height: 180px;
+  }
+
+  .content h3 {
+    font-size: 1.1rem;
+  }
+}

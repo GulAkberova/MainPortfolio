@@ -1,0 +1,72 @@
+.superuser-dashboard {
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    /* background-color: #f4f6f9; */
+  }
+  
+ 
+  .superuser-dashboard__title {
+    text-align: center;
+    color: var(--text-color);
+    margin-bottom: 20px;
+    font-size: 28px;
+  }
+  
+ 
+  .superuser-dashboard__table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Cədvəl başlıqları */
+  .superuser-dashboard__table th {
+    padding: 12px;
+    background-color: #1e2e69;
+    color: white;
+    text-align: left;
+    font-weight: 600;
+    /* border-top-left-radius: 10px;
+    border-top-right-radius: 10px; */
+  }
+  
+  /* Cədvəl məzmunu */
+  .superuser-dashboard__table td {
+    padding: 10px;
+    border-bottom: 1px solid #e0e0e0;
+    text-align: left;
+    font-size: 16px;
+  }
+  
+  /* Cədvəl sətirinin hover effekti */
+  .superuser-dashboard__table tr:hover {
+    background-color: #f9f9f925;
+    cursor: pointer;
+  }
+  
+  /* Əməliyyat düymələri */
+  .superuser-dashboard__button {
+    padding: 8px 16px;
+    border: none;
+    background-color: #1e2e69;
+    color: white;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  /* Əməliyyat düyməsinin hover effekti */
+  .superuser-dashboard__button:hover {
+    background-color: #18244d;
+  }
+  
+  /* Yüklənir göstəricisi */
+  .superuser-dashboard__loading {
+    text-align: center;
+    font-size: 18px;
+    color: #35abab;
+  }
+  

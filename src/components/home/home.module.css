@@ -1,0 +1,179 @@
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #f9f9f9; /* Ağ fon */
+  color: #1e1e1e; /* Tünd yazılar */
+  font-family: "Inter", sans-serif;
+  padding: 0 6%;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1150px;
+  width: 100%;
+  gap: 80px;
+}
+
+/* ✨ Text Section */
+.textBox {
+  flex: 1 1 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.textBox h1 {
+  font-size: 3.1rem;
+  font-weight: 700;
+  color: #111; /* Tünd başlıq */
+  letter-spacing: -0.5px;
+  line-height: 1.2;
+}
+
+.textBox h1 span {
+  background: linear-gradient(90deg, #6d28d9, #3b82f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.textBox h2 {
+  font-size: 1.5rem;
+  color: #6d28d9; /* Tünd gradient kimi görünən accent rəng */
+  font-weight: 500;
+  height: 1.6rem;
+  border-right: 2px solid #6d28d9;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 3s steps(30, end), blink 0.6s infinite step-end alternate;
+}
+
+.textBox p {
+  color: #333; /* Daha tünd əsas mətn */
+  font-size: 1.05rem;
+  line-height: 1.7;
+  max-width: 480px;
+}
+
+.gradientText {
+  background: linear-gradient(90deg, #8b5cf6, #3b82f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* 🔘 Button */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(90deg, #6d28d9, #3b82f6);
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-weight: 500;
+  text-decoration: none;
+  letter-spacing: 0.4px;
+  transition: all 0.35s ease;
+  box-shadow: 0 0 15px rgba(109, 40, 217, 0.3);
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 25px rgba(109, 40, 217, 0.5);
+}
+
+/* 🖼️ Image Section */
+.imageBox {
+  flex: 1 1 350px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.imageBox img {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid rgba(109, 40, 217, 0.4);
+  box-shadow: 0 0 40px rgba(109, 40, 217, 0.25);
+  animation: float 4s ease-in-out infinite;
+  transition: transform 0.3s ease;
+  z-index: 2;
+}
+
+.imageBox img:hover {
+  transform: scale(1.05);
+}
+
+.glow {
+  position: absolute;
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(109, 40, 217, 0.4) 0%, transparent 70%);
+  filter: blur(40px);
+  z-index: 1;
+}
+
+/* ✨ Animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 220px; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Utility animation classes */
+.fadeIn {
+  animation: fadeIn 1.2s ease forwards;
+}
+.fadeInDelay {
+  animation: fadeIn 2s ease forwards;
+}
+.typewriter {
+  animation: typing 3s steps(30, end), blink 0.6s infinite step-end alternate;
+}
+
+/* 🔹 Responsive */
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 50px;
+  }
+
+  .textBox {
+    align-items: center;
+  }
+
+  .textBox h1 {
+    font-size: 2.3rem;
+  }
+
+  .textBox h2 {
+    font-size: 1.2rem;
+  }
+
+  .imageBox img {
+    width: 220px;
+    height: 220px;
+  }
+}

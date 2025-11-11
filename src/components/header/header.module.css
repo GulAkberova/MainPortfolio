@@ -1,0 +1,237 @@
+.header {
+    background: rgba(11, 11, 11, 0.95);
+    backdrop-filter: blur(10px);
+    color: #e5e7eb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 6%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(109, 40, 217, 0.2);
+    font-family: "Inter", sans-serif;
+    box-shadow: 0 2px 20px rgba(59, 130, 246, 0.05);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* 🔹 Logo */
+  .logoBox img {
+    width: 110px;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .logoBox img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* 🔹 Nav links */
+  .nav ul {
+    display: flex;
+    gap: 35px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav ul li a {
+    color: #e5e7eb;
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+  
+  .nav ul li a::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: linear-gradient(90deg, #6d28d9, #3b82f6);
+    transition: width 0.3s ease;
+    border-radius: 2px;
+  }
+  
+  .nav ul li a:hover,
+  .nav ul li a.active {
+    color: #a78bfa;
+  }
+  
+  .nav ul li a:hover::after,
+  .nav ul li a.active::after {
+    width: 100%;
+  }
+  
+  /* 🔹 Right side */
+  .right {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+  }
+  
+  /* 🌐 Language selector (glass effect) */
+  .langSelector {
+    background: rgba(255, 255, 255, 0.06);
+    color: #e2e8f0;
+    border: 1px solid rgba(109, 40, 217, 0.2);
+    border-radius: 10px;
+    padding: 6px 12px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .langSelector:hover {
+    border-color: rgba(109, 40, 217, 0.5);
+    box-shadow: 0 0 10px rgba(109, 40, 217, 0.2);
+  }
+  
+  /* 🧍 User dropdown */
+  .userDropdown {
+    position: relative;
+  }
+  
+  .avatar {
+    background: linear-gradient(135deg, #6d28d9, #3b82f6);
+    color: #fff;
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 15px rgba(109, 40, 217, 0.4);
+  }
+  
+  .avatar:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(109, 40, 217, 0.6);
+  }
+  
+  .dropdownMenu {
+    position: absolute;
+    right: 0;
+    top: 48px;
+    background: rgba(17, 17, 17, 0.96);
+    border: 1px solid rgba(109, 40, 217, 0.3);
+    border-radius: 12px;
+    padding: 12px 16px;
+    width: 200px;
+    box-shadow: 0 0 15px rgba(109, 40, 217, 0.2);
+    animation: dropdownFade 0.3s ease forwards;
+  }
+  
+  .dropdownMenu p {
+    font-size: 0.9rem;
+    color: #cbd5e1;
+    margin: 6px 0;
+  }
+  
+  .dropdownMenu button {
+    width: 100%;
+    background: linear-gradient(90deg, #6d28d9, #3b82f6);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 6px 10px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 6px;
+    transition: all 0.3s ease;
+  }
+  
+  .dropdownMenu button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 15px rgba(109, 40, 217, 0.4);
+  }
+  
+  /* 🔹 Auth links */
+  .authLinks a {
+    color: #a78bfa;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .authLinks a:hover {
+    color: #c084fc;
+  }
+  
+  /* 📱 Mobile toggle */
+  .mobileToggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    width: 25px;
+    height: 18px;
+    justify-content: space-between;
+  }
+  
+  .mobileToggle span {
+    height: 3px;
+    width: 100%;
+    background: #a78bfa;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+  }
+  
+  .mobileToggle.active span:nth-child(1) {
+    transform: rotate(45deg) translateY(8px);
+  }
+  
+  .mobileToggle.active span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .mobileToggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translateY(-8px);
+  }
+  
+  /* 📱 Mobile menu */
+  @media (max-width: 950px) {
+    .nav {
+      position: absolute;
+      top: 70px;
+      left: 0;
+      right: 0;
+      background: rgba(15, 15, 15, 0.97);
+      backdrop-filter: blur(12px);
+      padding: 25px 0;
+      text-align: center;
+      transform: translateY(-150%);
+      transition: transform 0.4s ease;
+    }
+  
+    .nav.active {
+      transform: translateY(0%);
+    }
+  
+    .nav ul {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .mobileToggle {
+      display: flex;
+    }
+  }
+  
+  /* ✨ Animations */
+  @keyframes dropdownFade {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

@@ -1,0 +1,202 @@
+.about {
+  min-height: 100vh;
+  background: #f9f9f9;
+  color: #1e1e1e;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 5%;
+  overflow: hidden;
+  position: relative;
+}
+
+/* 🔹 Parıltılı arxa fonda blur elementlər */
+.about::before {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  top: -100px;
+  left: -150px;
+  background: radial-gradient(circle, rgba(109, 40, 217, 0.3), transparent 70%);
+  filter: blur(120px);
+  z-index: 0;
+}
+
+.about::after {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  bottom: -100px;
+  right: -100px;
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.25), transparent 70%);
+  filter: blur(100px);
+  z-index: 0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+  max-width: 1200px;
+  width: 100%;
+  flex-wrap: wrap;
+  z-index: 2;
+  position: relative;
+}
+
+/* 🔹 Sol tərəf (şəkil) */
+.imageBox {
+  flex: 1 1 380px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.imageBox::before {
+  content: "";
+  position: absolute;
+  width: 340px;
+  height: 340px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #6d28d9, #3b82f6);
+  filter: blur(80px);
+  z-index: 0;
+  opacity: 0.15;
+}
+
+.imageBox img {
+  width: 320px;
+  height: 320px;
+  border-radius: 20px;
+  object-fit: cover;
+  z-index: 1;
+  border: 2px solid rgba(109, 40, 217, 0.3);
+  box-shadow: 0 0 25px rgba(59, 130, 246, 0.2);
+  transition: all 0.4s ease;
+}
+
+.imageBox img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 45px rgba(109, 40, 217, 0.4);
+  border-color: rgba(59, 130, 246, 0.4);
+}
+
+/* 🔹 Sağ tərəf (məlumat hissəsi) */
+.textBox {
+  flex: 1 1 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  position: relative;
+}
+
+.title {
+  font-size: 2.6rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #6d28d9, #3b82f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+.title::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #6d28d9, #3b82f6);
+  border-radius: 3px;
+  box-shadow: 0 0 8px rgba(109, 40, 217, 0.5);
+}
+
+.description {
+  font-size: 1.05rem;
+  color: #222;
+  line-height: 1.8;
+  transition: color 0.3s;
+}
+
+.description span {
+  color: #000;
+  font-weight: 600;
+}
+
+.description strong {
+  color: #6d28d9;
+  font-weight: 500;
+}
+
+/* 🔹 Info qutuları */
+.infoGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px 40px;
+  margin-top: 25px;
+}
+
+.infoGrid div {
+  background: #fff;
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid rgba(0,0,0,0.08);
+  box-shadow: 0 0 10px rgba(109, 40, 217, 0.05);
+  transition: all 0.35s ease;
+}
+
+.infoGrid div:hover {
+  background: rgba(109, 40, 217, 0.08);
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.25);
+  transform: translateY(-5px);
+}
+
+.infoGrid h4 {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+}
+
+.infoGrid p {
+  font-size: 1rem;
+  color: #1e1e1e;
+  font-weight: 500;
+}
+
+/* 🔹 Responsiv dizayn */
+@media (max-width: 900px) {
+  .container {
+      flex-direction: column;
+      text-align: center;
+      gap: 50px;
+  }
+
+  .imageBox img {
+      width: 260px;
+      height: 260px;
+  }
+
+  .textBox {
+      align-items: center;
+  }
+
+  .title {
+      font-size: 2.1rem;
+  }
+
+  .description {
+      font-size: 0.95rem;
+  }
+
+  .infoGrid {
+      grid-template-columns: 1fr;
+      gap: 15px;
+  }
+}

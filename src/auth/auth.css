@@ -1,0 +1,167 @@
+.auth_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  font-family: "Inter", sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+/* 🔹 Blur fon effekti */
+.auth_container::before {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  top: -60px;
+  left: -60px;
+  background: radial-gradient(circle, rgba(109, 40, 217, 0.3), transparent 70%);
+  filter: blur(120px);
+  z-index: 0;
+}
+
+.auth_container::after {
+  content: "";
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  bottom: -50px;
+  right: -50px;
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.3), transparent 70%);
+  filter: blur(100px);
+  z-index: 0;
+}
+
+.auth_title {
+  font-size: 2rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #6d28d9, #3b82f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+/* Xəta mesajı */
+.auth_error {
+  color: #f87171;
+  margin-bottom: 10px;
+  z-index: 2;
+  position: relative;
+}
+
+/* Form dizaynı */
+.auth_form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 300px;
+  position: relative;
+  z-index: 2;
+}
+
+/* Input sahəsi */
+.auth_input {
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 16px;
+  border-radius: 12px;
+  border: none;
+  background: rgba(255, 255, 255, 0.05);
+  color: #eaeaea;
+  outline: none;
+  backdrop-filter: blur(8px);
+  transition: all 0.3s ease;
+}
+
+.auth_input:focus {
+  border: 1px solid #6d28d9;
+  box-shadow: 0 0 10px rgba(109, 40, 217, 0.6);
+}
+
+/* Düymə dizaynı */
+.auth_button {
+  width: 100%;
+  padding: 12px 0;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(90deg, #6d28d9, #3b82f6);
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.auth_button:hover {
+  background: linear-gradient(90deg, #3b82f6, #6d28d9);
+  box-shadow: 0 0 15px rgba(109, 40, 217, 0.6);
+  transform: translateY(-2px);
+}
+
+.auth_button:disabled {
+  background-color: #555;
+  cursor: not-allowed;
+}
+
+/* Google button */
+.auth_button_google {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.auth_button_google:hover {
+  background: rgba(109, 40, 217, 0.2);
+  box-shadow: 0 0 10px rgba(109, 40, 217, 0.5);
+}
+
+.google-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: cover;
+}
+
+/* Or separator */
+.or {
+  text-align: center;
+  color: #888;
+  font-size: 0.9rem;
+  margin: 15px 0;
+}
+
+/* Keçid linkləri */
+.auth_switch {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #ccc;
+  text-align: center;
+}
+
+.auth_link {
+  color: #6d28d9;
+  cursor: pointer;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.auth_link:hover {
+  color: #3b82f6;
+}
+
+/* 📱 Responsiv */
+@media (max-width: 500px) {
+  .auth_form {
+    width: 90%;
+  }
+}
