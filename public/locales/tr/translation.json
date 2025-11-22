@@ -6,26 +6,47 @@
     "certificates": "Sertifikalar",
     "skills": "Beceriler",
     "works": "İş Deneyimi",
-    "projects": "Yapılan Projeler",
+    "projects": "Projeler",
     "contact": "İletişim"
   },
 
   "home": {
-    "greeting": "Merhaba, ben {{name}} 👋",
-    "role": "Proje Yöneticisi ve İş Analisti",
-    "description": "Teknoloji alanında Frontend Developer olarak başladım, ancak şimdi proje yönetimi ve iş analizi konusunda deneyim kazanıyorum. Yeni fırsatlar ve projeler arıyorum.",
-    "btn": "Deneyimime göz at"
+    "greeting": "Merhaba, ben Gülxanım Əkbərova 👋",
+    "role": "BT Proje Yöneticisi ve BT İş Analisti",
+    "description": "Frontend Developer olarak başladım, şimdi proje yönetimi ve iş analizindeki stratejik becerilerimi uygulayarak yeni projelerde fark yaratmaya hazırım.",
+    "btn": "Deneyimime Bak"
   },
 
   "about": {
     "title": "Hakkımda",
-    "description1": "Ben {{name}} — Teknoloji alanında Frontend Developer olarak başladım, ancak şu anda proje yönetimi ve iş analizi alanında çalışıyorum. Strateji ve teknolojiyi birleştirerek projelerin yüksek kalite ve verimlilikle yürütülmesini sağlıyorum.",
-    "description2": "Teknik beceriler: React, TypeScript, SCSS ve Firebase. Sürekli öğrenme ve projelerin başarılı bir şekilde tamamlanmasına katkıda bulunmak benim önceliğimdir.",
+    "description1": "Ben Gulxanım Əkbərova — kullanıcı ihtiyaçlarını anlamak, iş süreçlerini analiz etmek ve ürün stratejisi oluşturmak benim güçlü yönlerimdir.",
+    "description2": "Amacım, müşteri ihtiyaçlarını belirlemek, ürün stratejisi oluşturmak ve iş ekipleri ile teknik ekipler arasında iletişimi etkin şekilde yönetmektir. Teknik deneyimim sayesinde iş gereksinimlerini gerçek teknolojik çözümlere dönüştürmekte yetenekliyim.",
+    "techSkills": "Teknik beceriler: Jira, Power BI, React.js, Firebase.",
     "info": [
-      { "label": "Yaş", "value": "24" },
-      { "label": "Şehir", "value": "Bakü, Azerbaycan" },
-      { "label": "Meslek", "value": "Proje Yöneticisi & İş Analisti" },
-      { "label": "Email", "value": "gulakberova@example.com" }
+      { "label": "Meslek", "value": "BT İş Analisti & Proje Yöneticisi" }
+    ],
+    "contacts": [
+      {
+        "type": "email",
+        "label": "Email",
+        "value": "gulkhanimakberova@gmail.com",
+        "icon": "/icons/about/maill.svg",
+        "link": "mailto:gulkhanimakberova@gmail.com"
+      },
+      {
+        "type": "linkedin",
+        "label": "LinkedIn",
+        "value": "Gulkhanim Akberova",
+        "icon": "/icons/about/linkedin.svg",
+        "link": "https://www.linkedin.com/in/gulkhanim-akberova"
+      },
+      {
+        "type": "github",
+        "label": "GitHub",
+        "value": "Gul Akberova",
+        "icon": "/icons/about/github.svg",
+        "link": "https://github.com/gulakberova"
+      }
     ]
   },
 
@@ -36,21 +57,45 @@
         "school": "Azerbaycan Teknik Üniversitesi",
         "degree": "İş Analisti",
         "year": "2025 - 2027",
-        "description": "Bu dönemde iş analitiği alanında profesyonel bilgiler edineceğim.",
+        "description": "Bu dönemde iş analitiği alanında profesyonel bilgi edineceğim.",
+        "longDescription": "Bu programda iş süreçlerinin modellenmesine, veri analizi ve görselleştirmeye odaklanacağım. Program sonunda SQL, Excel ve İş Zekası (BI) araçlarında yetkinlik kazanacağım.",
+        "topics": [
+          "İş Süreçlerinin Modellenmesi",
+          "Veri Analizi",
+          "SQL",
+          "Excel",
+          "BI Araçları"
+        ],
         "icon": "/icons/education/aztu.jpg"
       },
       {
         "school": "Code Academy - Technest",
-        "degree": "Advance Frontend Development",
+        "degree": "İleri Seviye Frontend Geliştirme",
         "year": "2022 - 2023",
-        "description": "Modern web teknolojileri, bileşen tabanlı yaklaşım ve arayüz tasarımı konusunda deneyim kazandım.",
+        "description": "Modern web teknolojileri, bileşen tabanlı yaklaşımlar ve arayüz tasarımı konusunda deneyim kazandım.",
+        "longDescription": "Bu kursta modern frontend teknolojileri, React ve diğer JS kütüphaneleri, bileşen tabanlı tasarım ve kullanıcı arayüzü oluşturma konusunda derin bilgiler edindim. Pratik projeler aracılığıyla gerçek dünya uygulamaları geliştirdim.",
+        "topics": [
+          "HTML5 / CSS3 / SCSS",
+          "JavaScript / ES6+",
+          "React",
+          "Bileşen tabanlı Tasarım",
+          "UI/UX"
+        ],
         "icon": "/icons/education/code.jpg"
       },
       {
         "school": "Bakü Devlet Üniversitesi",
         "degree": "Matematik",
         "year": "2016 - 2020",
-        "description": "Bu dönemde temel matematik bilgilerini edindim.",
+        "description": "Bu dönemde temel matematik bilgimi geliştirdim.",
+        "longDescription": "Bu eğitim süresince temel matematik prensiplerini, analitik ve mantıksal düşünme becerilerini geliştirdim. Matematiksel modelleme ve problem çözme konusunda deneyim kazandım.",
+        "topics": [
+          "Cebir",
+          "Geometri",
+          "Analiz",
+          "Mantıksal Düşünme",
+          "Matematiksel Modelleme"
+        ],
         "icon": "/icons/education/bdu.jpg"
       }
     ]
@@ -104,8 +149,9 @@
     "projects": [
       {
         "title": "Sağlık Bakanlığı Dijital Sağlık Merkezi",
-        "position": "IT Proje Yöneticisi",
-        "description": "Projelerin yönetimi, taşeronlar ve devlet kurumlarıyla koordinasyon, teknik dokümantasyon hazırlanması ve aylık raporların hazırlanması.",
+        "position": "BT Proje Yöneticisi",
+        "description": "Projelerin yönetimi, yükleniciler ve devlet kurumları ile koordinasyon, teknik dokümanların hazırlanması ve aylık raporların düzenlenmesi.",
+        "detailedDescription": "Bu projede, ekip sorumluluklarını organize ediyor, proje aşamalarını planlıyor ve takip ediyorum. Yükleniciler ve devlet kurumları ile etkili iletişim kurarak, projenin zamanında ve bütçe dahilinde tamamlanmasını sağlıyorum. Ayrıca teknik dokümanların hazırlanması, risk yönetimi ve aylık raporların sunulması benim sorumluluğumdadır.",
         "tech": ["Jira", "Confluence", "Project Management"],
         "link": "#",
         "image": "/icons/works/rsm.jpg",
@@ -113,8 +159,9 @@
       },
       {
         "title": "Datricon Technologies",
-        "position": "Salesforce Developer & Consultant",
-        "description": "CRM sistemlerinin kurulumu ve otomasyonu, iş süreçlerinin optimize edilmesi, SQL ve Power BI ile veri analizi.",
+        "position": "Salesforce Developer & Danışman",
+        "description": "CRM sistemlerinin kurulması ve otomasyonu, iş süreçlerinin optimize edilmesi, SQL ve Power BI ile veri analizi.",
+        "detailedDescription": "Bu projede, CRM sistemlerini baştan kurdum, iş süreçlerini otomatikleştirdim ve optimize ettim. SQL ve Power BI kullanarak veri analizi yaptım ve karar alma süreçleri için görsel raporlar oluşturdum. Müşteri taleplerine uygun özelleştirilmiş çözümler sundum ve projenin zamanında ve yüksek kalitede tamamlanmasını sağladım.",
         "tech": ["Salesforce CRM", "SQL", "Power BI"],
         "link": "#",
         "image": "/icons/works/datricon.jpg",
@@ -123,16 +170,18 @@
       {
         "title": "Alas Academy - Dijital Ufuklar Burs Programı",
         "position": "Python Temel Eğitmeni",
-        "description": "Python temel eğitimi, öğrencilerin pratik görevlerde desteklenmesi ve interaktif derslerin verilmesi.",
+        "description": "Python temel bilgilerinin öğretilmesi, öğrencilere pratik görevlerde destek ve interaktif derslerin yürütülmesi.",
+        "detailedDescription": "Bu projede, öğrencilere Python programlamanın temellerini öğrettim, pratik görevlerle becerilerini geliştirdim ve interaktif dersler düzenledim. Öğrencilerin sorunlarını çözmelerine yardımcı oldum ve programın hedeflerine ulaşmasını sağladım.",
         "tech": ["Python", "Pandas", "Matplotlib"],
         "link": "#",
         "image": "/icons/works/alas.jpg",
         "year": "11.2024 - 01.2025"
       },
       {
-        "title": "Polygraf.ai (Freelance)",
+        "title": "Polygraf.ai",
         "position": "Frontend Developer",
-        "description": "React ve Next.js ile web uygulamaları geliştirme, UI/UX tasarımına uygun arayüz optimizasyonu ve API entegrasyonu.",
+        "description": "React ve Next.js ile web uygulamaların geliştirilmesi, UI/UX odaklı arayüz optimizasyonu ve API entegrasyonu.",
+        "detailedDescription": "Bu projede, React ve Next.js kullanarak yüksek performanslı web uygulamaları geliştirdim. Kullanıcı deneyimine uygun arayüz optimizasyonu gerçekleştirdim, API entegrasyonunu sağladım ve projenin zamanında ve yüksek kalitede tamamlanmasını denetledim.",
         "tech": ["React", "Next.js", "Firebase"],
         "link": "#",
         "image": "/icons/works/polygraf.jpg",
@@ -141,7 +190,8 @@
       {
         "title": "Yelload Reklam Ajansı",
         "position": "Frontend Developer",
-        "description": "Müşteri taleplerine uygun web çözümleri geliştirme, admin paneller ve dashboard oluşturma, arayüz optimizasyonu ve testler.",
+        "description": "Müşteri taleplerine uygun web çözümlerinin geliştirilmesi, admin panel ve dashboardların oluşturulması, arayüz optimizasyonu ve testlerin yapılması.",
+        "detailedDescription": "Bu projede, müşteri taleplerine uygun yüksek kaliteli web çözümleri geliştirdim, admin panel ve dashboardlar oluşturdum. UI/UX tasarımına uygun arayüz optimizasyonu gerçekleştirdim ve uygulama işlevselliğini test ettim, projenin zamanında ve yüksek kalitede tamamlanmasını sağladım.",
         "tech": ["React", "Next.js", "UI/UX"],
         "link": "#",
         "image": "/icons/works/yello.jpg",
@@ -150,7 +200,8 @@
       {
         "title": "4you - Online Psikoloji Servisi",
         "position": "CTO / Kurucu Ortak, Frontend Developer",
-        "description": "Ürün geliştirme stratejisi, teknik ekip ile koordinasyon, yeni özelliklerin yayına alınması, kullanıcı geri bildirimlerinin analizi.",
+        "description": "Ürün geliştirme stratejisinin belirlenmesi, teknik ekip ile koordinasyon, yeni özelliklerin yayına alınması ve kullanıcı geri bildirimlerinin analizi.",
+        "detailedDescription": "Bu projede, ürün geliştirme stratejisini belirledim, teknik ekibi yönettim ve yeni özelliklerin zamanında yayına alınmasını sağladım. Kullanıcı geri bildirimlerini analiz ederek ürün iyileştirmelerini gerçekleştirdim ve projenin başarılı bir şekilde yürütülmesini denetledim.",
         "tech": ["React", "Next.js", "Project Management"],
         "link": "#",
         "image": "/icons/works/4you.jpg",
@@ -191,35 +242,7 @@
     }
   },
 
-  "certificates": {
-    "title": "Sertifikalarım",
-    "list": [
-      {
-        "title": "Frontend Development Bootcamp",
-        "platform": "Udemy",
-        "year": "2023",
-        "image": "/certificates/frontend-bootcamp.jpg"
-      },
-      {
-        "title": "React & TypeScript Mastery",
-        "platform": "Coursera",
-        "year": "2023",
-        "image": "/certificates/react-ts.jpg"
-      },
-      {
-        "title": "Firebase Fundamentals",
-        "platform": "Udemy",
-        "year": "2022",
-        "image": "/certificates/firebase.jpg"
-      },
-      {
-        "title": "Code Academy Advance Frontend Development",
-        "platform": "Code Academy / Coders Azerbaijan",
-        "year": "2022",
-        "image": "/certificates/code-academy-frontend.jpg"
-      }
-    ]
-  },
+
 
   "works": {
     "title": "Görülən İşlər",
@@ -251,104 +274,305 @@
       }
     ]
   },
+  "certificates": {
+    "title": "Sertifikalarım",
+    "list": [
+      {
+        "title": "Power BI OLMP06",
+        "platform": "Dost Eğitim Merkezi",
+        "year": "2024",
+        "image": "icons/certificate/powerbi.png"
 
-  "welcome": "Sorğu panelİmİze hoş geldİnİz!",
-  "change_language": "Dili değiştir",
-
-  "home1": "Ana sayfa",
-  "questionform": "Sorğu",
-  "answer": "Sorğu Sonuçları",
-  "superdashboard": "Süperadmin",
-
-  "addToAllQuestions": "Tüm Soruları Ekle",
-  "areYouSureAllQuestionsFilled": "Tüm bölümlerdeki tüm soruları doldurduğunuzdan emin misiniz?",
-
-  "questionsAdded": "Sorular başarıyla eklendi!",
-  "questionsAddError": "Sorular eklenirken bir hata oluştu.",
-  "close": "Kapat",
-
-  "sections": {
-    "company": "Şirket Hakkında",
-    "website": "Web Sitesi ve Online Platformlar",
-    "email": "E-posta ve Elektronik İletişim",
-    "social_media": "Sosyal Medya ve Dijital Kanallar",
-    "sales": "Satış",
-    "customer_service": "Müşteri Hizmetleri",
-    "reporting": "Raporlama ve Analitik",
-    "automation": "Otomasyon ve Bildirimler",
-    "security": "Güvenlik ve Gizlilik",
-    "budget": "Bütçe ve Proje Çerçevesi",
-    "training": "Eğitim ve Kullanıcı Kabulü"
+      }
+    ]
   },
-  "questions": {
-    "company": {
-      "q1": "Şirketin yasal adı nedir?",
-      "q2": "Çalışan sayısı kaç kişidir ve kaç kişi satışla ilgileniyor?",
-      "q3": "Şirketin ana ürün ve hizmetleri nelerdir?",
-      "q4": "Şirket hangi pazarlarda faaliyet göstermektedir? (yerel, uluslararası, bölgesel vb.)",
-      "q5": "Şirketin ana rakipleri kimlerdir?",
-      "q6": "Şirketin ana stratejik ortakları kimlerdir?",
-      "q7": "Ana müşteri segmentleriniz nelerdir?"
+
+  "seenWorks": {
+    "title": "Yapılan İşler",
+    "filtersTitle": "Filtreler",
+    "filterCategories": {
+      "type": "Tür",
+      "company": "Şirket",
+      "tool": "Araçlar",
+      "year": "Yıl",
+      "status": "Durum"
     },
-    "website": {
-      "q1": "Şirketin web sitesi var mı?",
-      "q2": "Web sitesi hangi teknolojiyle yapılmıştır?",
-      "q3": "Siteyin ana amacı nedir? (bilgilendirme, satış, müşteri desteği vb.)",
-      "q4": "Sitede CRM ve diğer sistemlerle entegrasyon var mı?",
-      "q5": "SEO ve analiz için hangi araçları kullanıyorsunuz?"
+    "labels": {
+      "company": "Şirket",
+      "year": "Yıl",
+      "status": "Durum",
+      "tools": "Araçlar"
     },
-    "email": {
-      "q1": "Şirket hangi e-posta sistemlerini kullanıyor?",
-      "q2": "E-posta pazarlama kampanyaları yürütüyor musunuz?",
-      "q3": "Otomatik e-posta bildirimleriniz var mı?",
-      "q4": "Müşteri desteği için e-posta sorgularını nasıl yönetiyorsunuz?"
-    },
-    "social_media": {
-      "q1": "Şirket hangi sosyal medya platformlarını kullanıyor?",
-      "q2": "Sosyal medya üzerinden satış veya müşteri hizmeti yürütüyor musunuz?",
-      "q3": "Sosyal medya sorgularını nasıl takip ediyorsunuz?",
-      "q4": "Sosyal medya hesaplarınızın CRM sistemleriyle entegrasyonuna ihtiyacınız var mı?"
-    },
-    "sales": {
-      "q1": "Müşteri tabanınız var mı?",
-      "q2": "Satış ekibi kaç kişiden oluşuyor?",
-      "q3": "Şu anda satış süreci nasıl işliyor?",
-      "q4": "Satış döngüsü kaç aşamadan oluşuyor?",
-      "q5": "Ana KPI'larınız nelerdir?"
-    },
-    "customer_service": {
-      "q1": "Müşteri sorgularını ve şikayetlerini nasıl yönetiyorsunuz?",
-      "q2": "Müşteri desteği hangi kanallar üzerinden yapılmaktadır?",
-      "q3": "Müşteri hizmetleri performansını nasıl ölçüyorsunuz?",
-      "q4": "Şikayetlerin otomatik çözümü gerekli midir?"
-    },
-    "reporting": {
-      "q1": "Satış ve müşteri verilerini nasıl analiz ediyorsunuz?",
-      "q2": "Ana KPI'larınız nelerdir?",
-      "q3": "Mevcut raporlarınızı nasıl elde ediyorsunuz?",
-      "q4": "Gerçek zamanlı veri analizi sizin için önemli midir?"
-    },
-    "automation": {
-      "q1": "Müşteri başvurularının otomatikleştirilmesine ihtiyacınız var mı?",
-      "q2": "Otomatik bildirimler (e-posta, SMS vb.) göndermek ister misiniz?",
-      "q3": "Satış süreçlerinde otomatik iş akışlarına ihtiyacınız var mı?"
-    },
-    "security": {
-      "q1": "Veri güvenliği ve gizliliği ile ilgili özel gereksinimleriniz var mı?",
-      "q2": "Verilere kimler ve hangi seviyede erişim izni almalıdır?",
-      "q3": "Verilerin yedeklenmesi ve geri yüklenmesi politikası nasıl düzenlenmelidir?"
-    },
-    "budget": {
-      "q1": "Salesforce uygulaması için ne kadar bütçe ayırdınız?",
-      "q2": "Hangi özellikler sizin için zorunludur ve hangileri sonradan eklenebilir?",
-      "q3": "Projeyi ne kadar sürede tamamlamayı planlıyorsunuz?",
-      "q4": "Projeyi gerçekleştirmek için iç kaynaklarınız var mı, yoksa tamamen dış destek gerekecek mi?"
-    },
-    "training": {
-      "q1": "Salesforce kullanıcıları için hangi düzeyde eğitimlere ihtiyaç var?",
-      "q2": "Ekip üyeleri yeni sisteme geçişe ne kadar açıktır?",
-      "q3": "Kullanıcılar için arayüzün basitliği ve kolaylığı önemli midir?"
-    }
+    "button": "Daha Fazla →",
+    "noResult": "Uygun sonuç bulunamadı.",
+    "works": [
+      {
+        "title": "Kahve Satış Dashboard",
+        "type": "Dashboard",
+        "description": "Kahve satışlarını analiz etmek ve görselleştirmek için Excel projesi.",
+        "image": "/icons/projects/coffee.png",
+        "company": "Alas Academy",
+        "tools": ["Excel"],
+        "year": "2024",
+        "status": "Tamamlandı",
+        "link": "https://github.com/GulAkberova/Coffee_Sales_Dashboard?tab=readme-ov-file"
+      },
+      {
+        "title": "Prime Video Analitiği",
+        "type": "Dashboard",
+        "description": "Amazon Prime filmlerinin Power BI ile analizi.",
+        "image": "/icons/projects/prime.png",
+        "company": "Alas Academy",
+        "tools": ["Power BI"],
+        "year": "2024",
+        "status": "Tamamlandı",
+        "link": "https://github.com/GulAkberova/Amazon_Prime_Movies?tab=readme-ov-file"
+      },
+      {
+        "title": "Yelload",
+        "type": "Web Uygulaması",
+        "description": "Next.js ile geliştirilmiş modern ve dinamik bir web platformu.",
+        "image": "/icons/projects/yelload.png",
+        "company": "Yelload",
+        "tools": ["Next.js"],
+        "year": "2023",
+        "status": "Tamamlandı",
+        "link": "https://yelload.com/"
+      },
+      {
+        "title": "Polygraf.ai",
+        "type": "Web Uygulaması",
+        "description": "API entegrasyonlu interaktif dashboard sistemi.",
+        "image": "/icons/projects/polygraf.png",
+        "company": "Polygraf.ai",
+        "tools": ["Next.js", "TypeScript"],
+        "year": "2024",
+        "status": "Tamamlandı",
+        "link": "https://polygraf.ai/"
+      },
+
+      {
+        "title": "4You",
+        "type": "Web Uygulaması",
+        "description": "Çevrimiçi psikolojik hizmet platformu – frontend ve backend entegrasyonu ile.",
+        "image": "/icons/projects/4you.png",
+        "company": "4You",
+        "tools": ["React"],
+        "year": "2024",
+        "status": "Tamamlandı",
+        "link": "https://4youcare.com/"
+      },
+      {
+        "title": "Legalize",
+        "type": "Web Uygulaması",
+        "description": "Next.js ve TypeScript ile hazırlanmış e-ticaret platformu.",
+        "image": "/icons/projects/legalize.png",
+        "company": "Yelload",
+        "tools": ["Next.js", "TypeScript"],
+        "year": "2024",
+        "status": "Tamamlandı",
+        "link": "https://legalize.az/"
+      },
+      {
+        "title": "Creative Animations",
+        "type": "Landing Sayfa",
+        "description": "Animasyonlarla zengin yaratıcı tasarıma sahip web projesi. Demo: username: gul123, password: gul.",
+        "image": "/icons/projects/creativeanimation.png",
+        "company": "Yelload",
+        "tools": ["React"],
+        "year": "2023",
+        "status": "Tamamlandı",
+        "link": "https://github.com/GulAkberova/Yello_Creative_Animations"
+      },
+      {
+        "title": "Absheron Map",
+        "type": "Landing Sayfa",
+        "description": "Absheron bölgesinin interaktif haritasını sunan web projesi.",
+        "image": "/icons/projects/absheronmap.png",
+        "company": "Yelload",
+        "tools": ["React"],
+        "year": "2024",
+        "status": "Tamamlandı",
+        "link": "https://absheron-map.vercel.app/"
+      },
+      {
+        "title": "Dondurma Sitesi",
+        "type": "Landing Sayfa",
+        "description": "HTML ve CSS ile hazırlanmış basit, responsive web sayfası.",
+        "image": "/icons/projects/qost.png",
+        "company": "Yelload",
+        "tools": ["HTML/CSS"],
+        "year": "2023",
+        "status": "Tamamlandı",
+        "link": "https://github.com/GulAkberova/Yello-Sossialist"
+      },
+      {
+        "title": "Yello Sosyalist",
+        "type": "Web Uygulama",
+        "description": "Kullanıcı odaklı sosyal etkileşim platformu.",
+        "image": "/icons/projects/sosiallist.png",
+        "company": "Yelload",
+        "tools": ["React"],
+        "year": "2023",
+        "status": "Tamamlandı",
+        "link": "https://github.com/GulAkberova/Yello-Sossialist"
+      },
+      {
+        "title": "Covid Dataset",
+        "type": "Veri Seti",
+        "description": "COVID-19 verilerini analiz ve görselleştirmek için Python projesi.",
+        "image": "/icons/projects/covid.png",
+        "company": "Alas Academy",
+        "tools": ["Python"],
+        "year": "2024",
+        "status": "Tamamlandı",
+        "link": "https://github.com/GulAkberova/Covid_Dataset"
+      },
+      {
+        "title": "London Housing Dataset",
+        "type": "Veri Seti",
+        "description": "Londra emlak piyasası verilerinin analizi.",
+        "image": "/icons/projects/londonhousting.png",
+        "company": "Alas Academy",
+        "tools": ["Python"],
+        "year": "2024",
+        "status": "Tamamlandı",
+        "link": "https://github.com/GulAkberova/London_Housing_Dataset"
+      },
+      {
+        "title": "Census Dataset",
+        "type": "Veri Seti",
+        "description": "Demografik verilerin analizi ve görselleştirilmesi.",
+        "image": "/icons/projects/census.png",
+        "company": "Alas Academy",
+        "tools": ["Python"],
+        "year": "2024",
+        "status": "Tamamlandı",
+        "link": "https://github.com/GulAkberova/Census_Dataset"
+      },
+      {
+        "title": "Police Dataset",
+        "type": "Veri Seti",
+        "description": "Polis verilerinin analiz ve görselleştirilmesi projesi.",
+        "image": "/icons/projects/census.png",
+        "company": "Alas Academy",
+        "tools": ["Python"],
+        "year": "2024",
+        "status": "Tamamlandı",
+        "link": "https://github.com/GulAkberova/Police_Dataset"
+      },
+      {
+        "title": "Cars Dataset",
+        "type": "Veri Seti",
+        "description": "Python kullanılarak araba satış verilerinin analizi.",
+        "image": "/icons/projects/census.png",
+        "company": "Alas Academy",
+        "tools": ["Python"],
+        "year": "2024",
+        "status": "Tamamlandı",
+        "link": "https://github.com/GulAkberova/Cars_Dataset"
+      },
+      {
+        "title": "Weather Dataset",
+        "type": "Veri Seti",
+        "description": "Hava durumu verilerinin analizi ve sunumu.",
+        "image": "/icons/projects/census.png",
+        "company": "Alas Academy",
+        "tools": ["Python"],
+        "year": "2024",
+        "status": "Tamamlandı",
+        "link": "https://github.com/GulAkberova/Weather_Dataset"
+      },
+      {
+        "title": "Seaborn Görselleştirme",
+        "type": "Dashboard",
+        "description": "Python Seaborn kütüphanesi ile verilerin grafiksel sunumu.",
+        "image": "/icons/projects/py1.png",
+        "company": "Alas Academy",
+        "tools": ["Python"],
+        "year": "2024",
+        "status": "Tamamlandı",
+        "link": "https://github.com/GulAkberova/Python_Seaborn?tab=readme-ov-file"
+      },
+      {
+        "title": "Absheron TM",
+        "type": "Web Uygulaması",
+        "description": "Absheron TM için responsive Next.js tabanlı site.",
+        "image": "/icons/projects/absheron.png",
+        "company": "Yelload",
+        "tools": ["Next.js", "TypeScript"],
+        "year": "2024",
+        "status": "Tamamlandı",
+        "link": "https://absherontm.az/"
+      },
+
+      {
+        "title": "QR Code Generator",
+        "type": "Mini Oyun",
+        "description": "Kullanıcının girdiği bilgilerle otomatik QR kod oluşturan React uygulaması.",
+        "image": "/icons/projects/qr.png",
+        "company": "Technest",
+        "tools": ["React"],
+        "year": "2023",
+        "status": "Tamamlandı",
+        "link": "https://github.com/GulAkberova/QR_Code_React"
+      },
+      {
+        "title": "Markdown Editor",
+        "type": "Mini Oyun",
+        "description": "Canlı düzenleme özellikli React tabanlı Markdown editörü.",
+        "image": "/icons/projects/editor.png",
+        "company": "Technest",
+        "tools": ["React"],
+        "year": "2023",
+        "status": "Tamamlandı",
+        "link": "https://github.com/GulAkberova/Markdown_Editor_React"
+      },
+      {
+        "title": "Football Game",
+        "type": "Mini Oyun",
+        "description": "Topu hareket ettirerek gol atmaya dayalı futbol oyunu.",
+        "image": "/icons/projects/football.png",
+        "company": "Technest",
+        "tools": ["React"],
+        "year": "2023",
+        "status": "Tamamlandı",
+        "link": "https://github.com/GulAkberova/Football_React"
+      },
+      {
+        "title": "Bobby Bubble Game",
+        "type": "Mini Oyun",
+        "description": "Tıklayarak balonları patlat ve puan topla! Seviyeler ilerledikçe oyun zorlaşır.",
+        "image": "/icons/projects/bobby.png",
+        "company": "Technest",
+        "tools": ["JavaScript"],
+        "year": "2023",
+        "status": "Tamamlandı",
+        "link": "https://github.com/GulAkberova/Bobby_Bubble_Games"
+      },
+      {
+        "title": "Taş, Kağıt, Makas",
+        "type": "Mini Oyun",
+        "description": "Klasik Rock-Paper-Scissors oyununun JavaScript versiyonu.",
+        "image": "/icons/projects/rock.png",
+        "company": "Technest",
+        "tools": ["JavaScript"],
+        "year": "2023",
+        "status": "Tamamlandı",
+        "link": "https://github.com/GulAkberova/Rock_Paper_Scissors"
+      },
+      {
+        "title": "Hafıza Oyunu",
+        "type": "Mini Oyun",
+        "description": "Aynı renkteki kartları eşleştirerek hafıza yeteneğini test eden React oyunu.",
+        "image": "/icons/projects/memory.png",
+        "company": "Technest",
+        "tools": ["React"],
+        "year": "2023",
+        "status": "Tamamlandı",
+        "link": "https://github.com/GulAkberova/Memory_React"
+      }
+    ]
   },
   "login": {
     "title": "Giriş",

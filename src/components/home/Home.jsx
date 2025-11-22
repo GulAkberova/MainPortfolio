@@ -12,13 +12,20 @@ function Home() {
           <h1 className={styles.fadeIn}>
             {t("home.greeting", { name: "Gül Əkbərova" })}
           </h1>
-          <h2 className={styles.typewriter}>
-            {t("home.role")}
-          </h2>
-          <p className={styles.fadeInDelay}>
-            {t("home.description")}
-          </p>
-          <a href="/works" className={styles.btn}>
+          <h2 className={styles.typewriter}>{t("home.role")}</h2>
+          <p className={styles.fadeInDelay}>{t("home.description")}</p>
+          <a
+            href="#"
+            onClick={(e) => {
+              e.preventDefault();
+              const element = document.getElementById("works");
+              if (element) {
+                element.scrollIntoView({ behavior: "smooth" });
+                window.history.pushState(null, "", "/works");
+              }
+            }}
+            className={styles.btn}
+          >
             {t("home.btn")}
           </a>
         </div>

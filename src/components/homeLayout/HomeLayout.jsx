@@ -1,6 +1,10 @@
-import React, { useState } from "react";
-import styles from "./homeLayout.module.css";
+import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
+import { useLocation } from "react-router-dom";
+import styles from "./homeLayout.module.css";
+
+import Header from "../header/Header";
+
 import Home from "../home/Home";
 import About from "../about/About";
 import Education from "../education/Education";
@@ -9,6 +13,7 @@ import Skills from "../skills/Skills";
 import Works from "../works/Works";
 import Contact from "../contact/Contact";
 import SeenWorks from "../seenworks/SeenWorks";
+import LangSelector from "../lang/LangSelector";
 
 const sections = [
   { id: "home", component: <Home /> },
@@ -22,78 +27,64 @@ const sections = [
 ];
 
 function HomeLayout() {
-  const { t, i18n } = useTranslation();
+  const { i18n } = useTranslation();
+  const location = useLocation();
+
   const [activeSection, setActiveSection] = useState("home");
   const [selectedLang, setSelectedLang] = useState(i18n.language);
   const [sidebarOpen, setSidebarOpen] = useState(false);
+
+  // Scroll & URL sync
+  useEffect(() => {
+    const path = location.pathname.replace("/", "") || "home";
+    const element = document.getElementById(path);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+    setActiveSection(path);
+  }, [location.pathname]);
 
   const handleChangeLang = (lng) => {
     i18n.changeLanguage(lng);
     setSelectedLang(lng);
   };
 
-  const renderComponent = sections.find(
-    (s) => s.id === activeSection
-  )?.component;
+  const handleSectionClick = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+    setActiveSection(id);
+    window.history.pushState(null, "", `/${id}`);
+    setSidebarOpen(false);
+  };
 
   return (
     <div className={styles.layout}>
-      {/* Burger icon for mobile */}
-      <div
-        className={styles.burger}
-        onClick={() => setSidebarOpen(!sidebarOpen)}
-      >
-        <div
-          className={`${styles.bar} ${sidebarOpen ? styles.bar1 : ""}`}
-        ></div>
-        <div
-          className={`${styles.bar} ${sidebarOpen ? styles.bar2 : ""}`}
-        ></div>
-        <div
-          className={`${styles.bar} ${sidebarOpen ? styles.bar3 : ""}`}
-        ></div>
-      </div>
+      
+      {/* 🔹 Header Component */}
+      <Header
+        sections={sections}
+        activeSection={activeSection}
+        sidebarOpen={sidebarOpen}
+        setSidebarOpen={setSidebarOpen}
+        handleSectionClick={handleSectionClick}
+        selectedLang={selectedLang}
+        handleChangeLang={handleChangeLang}
+      />
 
-      {/* Sidebar */}
-      <aside className={`${styles.sidebar} ${sidebarOpen ? styles.open : ""}`}>
-        <div className={styles.profile}>
-          <img src="/gul-main.jpg" alt="Profile" />
-          <h2>Gül Əkbərova</h2>
-        </div>
-
-        <nav className={styles.nav}>
-          <ul>
-            {sections.map((section) => (
-              <li
-                key={section.id}
-                className={activeSection === section.id ? styles.active : ""}
-                onClick={() => {
-                  setActiveSection(section.id);
-                  setSidebarOpen(false); // click to close menu on mobile
-                }}
-              >
-                {t(`nav.${section.id}`)}
-              </li>
-            ))}
-          </ul>
-        </nav>
-        <div className={styles.langSelectorBox}>
-          {["az", "en", "ru", "tr"].map((lng) => (
-            <span
-              key={lng}
-              className={`${styles.langButton} ${
-                selectedLang === lng ? styles.activeLang : ""
-              }`}
-              onClick={() => handleChangeLang(lng)}
-            >
-              {lng.toUpperCase()}
-            </span>
-          ))}
-        </div>
-      </aside>
-
-      {/* Main content */}
-      <main className={styles.mainContent}>{renderComponent}</main>
+      {/* 🔹 Main content */}
+      <main className={styles.mainContent}>
+        {sections.map((section) => (
+          <section id={section.id} key={section.id}>
+            {section.component}
+          </section>
+        ))}
+      </main>
+      <LangSelector 
+        selectedLang={selectedLang}
+        onChangeLang={handleChangeLang}
+    />
     </div>
   );
 }

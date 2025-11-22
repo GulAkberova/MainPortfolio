@@ -72,7 +72,7 @@ function Works() {
               <h5>{selectedProject.position}</h5>
             </div>
             <div className={styles.modalBody}>
-              <p>{selectedProject.description}</p>
+              <p>{selectedProject.detailedDescription}</p>
               {selectedProject.tech && (
                 <div className={styles.modalTech}>
                   {selectedProject.tech.map((t, i) => (

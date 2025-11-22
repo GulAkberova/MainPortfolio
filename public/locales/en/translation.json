@@ -1,7 +1,7 @@
 {
   "nav": {
     "home": "Home",
-    "about": "About",
+    "about": "About Me",
     "education": "Education",
     "certificates": "Certificates",
     "skills": "Skills",
@@ -11,21 +11,45 @@
   },
 
   "home": {
-    "greeting": "Hi, I am {{name}} 👋",
-    "role": "Project Manager & Business Analyst",
-    "description": "I started as a Frontend Developer in the tech field, but now I am gaining experience in project management and business analysis. Looking for new opportunities and projects.",
+    "greeting": "Hello, I'm Gülxanım Əkbərova 👋",
+    "role": "IT Project Manager & IT Business Analyst",
+    "description": "I started as a Frontend Developer, and now I apply my strategic skills in project management and business analysis to make a difference in new projects.",
     "btn": "View My Experience"
   },
 
   "about": {
     "title": "About Me",
-    "description1": "I am {{name}} — I started as a Frontend Developer in the tech field, but now I work in project management and business analysis. I combine strategy and technology to ensure high-quality and efficient project execution.",
-    "description2": "Technical skills: React, TypeScript, SCSS, and Firebase. Continuous learning and contributing to successful project delivery are my top priorities.",
+    "description1": "I am Gulxanım Əkbərova — understanding user needs, analyzing business processes, and shaping product strategy are my core strengths.",
+    "description2": "My goal is to identify customer needs, build product strategy, and efficiently manage communication between business and technical teams. With my technical experience, I am capable of translating business requirements into real technological solutions.",
+    "techSkills": "Technical skills: Jira, Power BI, React.js, Firebase.",
     "info": [
-      { "label": "Age", "value": "24" },
-      { "label": "City", "value": "Baku, Azerbaijan" },
-      { "label": "Profession", "value": "Project Manager & Business Analyst" },
-      { "label": "Email", "value": "gulakberova@example.com" }
+      {
+        "label": "Profession",
+        "value": "IT Business Analyst & Project Manager"
+      }
+    ],
+    "contacts": [
+      {
+        "type": "email",
+        "label": "Email",
+        "value": "gulkhanimakberova@gmail.com",
+        "icon": "/icons/about/maill.svg",
+        "link": "mailto:gulkhanimakberova@gmail.com"
+      },
+      {
+        "type": "linkedin",
+        "label": "LinkedIn",
+        "value": "Gulkhanim Akberova",
+        "icon": "/icons/about/linkedin.svg",
+        "link": "https://www.linkedin.com/in/gulkhanim-akberova"
+      },
+      {
+        "type": "github",
+        "label": "GitHub",
+        "value": "Gul Akberova",
+        "icon": "/icons/about/github.svg",
+        "link": "https://github.com/gulakberova"
+      }
     ]
   },
 
@@ -36,23 +60,45 @@
         "school": "Azerbaijan Technical University",
         "degree": "Business Analyst",
         "year": "2025 - 2027",
-        "description": "I will develop professional knowledge in business analytics.",
-        "longDescription": "I will focus on business process modeling, data analysis, and visualization. By the end of the program, I will gain skills in SQL, Excel, and business intelligence tools.",
-        "icon": "/icons/education/aztu.jpg",
-        "topics": ["Business Process Modeling", "Data Analysis", "SQL", "Excel", "BI Tools"]
+        "description": "I will develop professional knowledge in the field of business analytics during this period.",
+        "longDescription": "In this program, I will focus on business process modeling, data analysis, and visualization. By the end of the program, I will acquire skills in SQL, Excel, and Business Intelligence (BI) tools.",
+        "topics": [
+          "Business Process Modeling",
+          "Data Analysis",
+          "SQL",
+          "Excel",
+          "BI Tools"
+        ],
+        "icon": "/icons/education/aztu.jpg"
       },
       {
         "school": "Code Academy - Technest",
-        "degree": "Advance Frontend Development",
+        "degree": "Advanced Frontend Development",
         "year": "2022 - 2023",
-        "description": "I gained experience in modern web technologies, component-based approach, and interface design.",
+        "description": "I gained experience in modern web technologies, component-based approaches, and interface design.",
+        "longDescription": "In this course, I acquired deep knowledge in modern frontend technologies, React and other JS libraries, component-based design, and user interface creation. I built real-world applications through practical projects.",
+        "topics": [
+          "HTML5 / CSS3 / SCSS",
+          "JavaScript / ES6+",
+          "React",
+          "Component-based Design",
+          "UI/UX"
+        ],
         "icon": "/icons/education/code.jpg"
       },
       {
         "school": "Baku State University",
         "degree": "Mathematics",
         "year": "2016 - 2020",
-        "description": "I developed fundamental mathematical knowledge during this period.",
+        "description": "I developed my core mathematics knowledge during this period.",
+        "longDescription": "During this period, I improved my understanding of fundamental mathematical principles, analytical and logical thinking skills. I gained experience in mathematical modeling and problem solving.",
+        "topics": [
+          "Algebra",
+          "Geometry",
+          "Analysis",
+          "Logical Thinking",
+          "Mathematical Modeling"
+        ],
         "icon": "/icons/education/bdu.jpg"
       }
     ]
@@ -107,7 +153,8 @@
       {
         "title": "Ministry of Health Digital Health Center",
         "position": "IT Project Manager",
-        "description": "Managing projects, coordinating with contractors and government agencies, preparing technical documentation and monthly reports.",
+        "description": "Managing projects, coordinating with contractors and government agencies, preparing technical documents, and compiling monthly reports.",
+        "detailedDescription": "In this project, I organize team responsibilities, plan and monitor project phases. By establishing effective communication with contractors and government agencies, I ensure the project is completed on time and within budget. Additionally, I am responsible for preparing technical documentation, managing risks, and presenting monthly reports.",
         "tech": ["Jira", "Confluence", "Project Management"],
         "link": "#",
         "image": "/icons/works/rsm.jpg",
@@ -116,7 +163,8 @@
       {
         "title": "Datricon Technologies",
         "position": "Salesforce Developer & Consultant",
-        "description": "Implementing and automating CRM systems, optimizing business processes, analyzing data with SQL and Power BI.",
+        "description": "Implementation and automation of CRM systems, business process optimization, data analysis with SQL and Power BI.",
+        "detailedDescription": "In this project, I built CRM systems from scratch, automated and optimized business processes. I performed data analysis using SQL and Power BI, creating visual reports for informed decision-making. Delivered customized solutions tailored to client requirements and ensured the project was completed on time and with high quality.",
         "tech": ["Salesforce CRM", "SQL", "Power BI"],
         "link": "#",
         "image": "/icons/works/datricon.jpg",
@@ -125,16 +173,18 @@
       {
         "title": "Alas Academy - Digital Horizons Scholarship Program",
         "position": "Python Fundamentals Instructor",
-        "description": "Teaching Python basics, supporting students with practical tasks, and conducting interactive lessons.",
+        "description": "Teaching the fundamentals of Python, supporting students with practical exercises, and conducting interactive lessons.",
+        "detailedDescription": "In this project, I taught students the fundamentals of Python programming, developed their skills through practical exercises, and conducted interactive lessons. I assisted students in solving problems and ensured the program achieved its learning objectives.",
         "tech": ["Python", "Pandas", "Matplotlib"],
         "link": "#",
         "image": "/icons/works/alas.jpg",
         "year": "11.2024 - 01.2025"
       },
       {
-        "title": "Polygraf.ai (Freelance)",
+        "title": "Polygraf.ai",
         "position": "Frontend Developer",
-        "description": "Developing web applications with React and Next.js, optimizing UI/UX interfaces, integrating APIs.",
+        "description": "Development of web applications with React and Next.js, UI/UX-driven interface optimization, and API integration.",
+        "detailedDescription": "In this project, I developed high-performance web applications using React and Next.js. I optimized interfaces based on user experience, ensured seamless API integration, and oversaw the project to be completed on time and with high quality.",
         "tech": ["React", "Next.js", "Firebase"],
         "link": "#",
         "image": "/icons/works/polygraf.jpg",
@@ -143,7 +193,8 @@
       {
         "title": "Yelload Advertising Agency",
         "position": "Frontend Developer",
-        "description": "Developing web solutions according to client requirements, creating admin panels and dashboards, optimizing interfaces and performing tests.",
+        "description": "Development of web solutions tailored to client requirements, creation of admin panels and dashboards, interface optimization, and testing.",
+        "detailedDescription": "In this project, I developed high-quality web solutions tailored to client needs, created admin panels and dashboards. I optimized interfaces according to UI/UX design and tested application functionality, ensuring the project was completed on time and with high quality.",
         "tech": ["React", "Next.js", "UI/UX"],
         "link": "#",
         "image": "/icons/works/yello.jpg",
@@ -152,7 +203,8 @@
       {
         "title": "4you - Online Psychology Service",
         "position": "CTO / Co-Founder, Frontend Developer",
-        "description": "Developing product strategy, coordinating with technical team, releasing new features, analyzing user feedback.",
+        "description": "Defining product development strategy, coordinating with the technical team, releasing new features, and analyzing user feedback.",
+        "detailedDescription": "In this project, I defined the product development strategy, led the technical team, and ensured timely release of new features. I analyzed user feedback to implement product improvements and oversaw the successful execution of the project.",
         "tech": ["React", "Next.js", "Project Management"],
         "link": "#",
         "image": "/icons/works/4you.jpg",
@@ -197,130 +249,302 @@
     "title": "My Certificates",
     "list": [
       {
-        "title": "Frontend Development Bootcamp",
-        "platform": "Udemy",
-        "year": "2023",
-        "image": "/certificates/frontend-bootcamp.jpg"
-      },
-      {
-        "title": "React & TypeScript Mastery",
-        "platform": "Coursera",
-        "year": "2023",
-        "image": "/certificates/react-ts.jpg"
-      },
-      {
-        "title": "Firebase Fundamentals",
-        "platform": "Udemy",
-        "year": "2022",
-        "image": "/certificates/firebase.jpg"
-      },
-      {
-        "title": "Code Academy Advance Frontend Development",
-        "platform": "Code Academy / Coders Azerbaijan",
-        "year": "2022",
-        "image": "/certificates/code-academy-frontend.jpg"
+        "title": "Power BI OLMP06",
+        "platform": "Dost Training Center",
+        "year": "2024",
+        "image": "icons/certificate/powerbi.png"
+
       }
     ]
   },
 
-  "welcome": "Welcome to our survey panel!",
-  "change_language": "Change Language",
+  "seenWorks": {
+    "title": "Seen Works",
+    "filtersTitle": "Filters",
+    "filterCategories": {
+      "type": "Type",
+      "company": "Company",
+      "tool": "Tools",
+      "year": "Year",
+      "status": "Status"
+    },
+    "labels": {
+      "company": "Company",
+      "year": "Year",
+      "status": "Status",
+      "tools": "Tools"
+    },
+    "button": "View More →",
+    "noResult": "No matching results found.",
+    "works": [
+      {
+        "title": "Coffee Sales Dashboard",
+        "type": "Dashboard",
+        "description": "Excel project for analyzing and visualizing coffee sales.",
+        "image": "/icons/projects/coffee.png",
+        "company": "Alas Academy",
+        "tools": ["Excel"],
+        "year": "2024",
+        "status": "Completed",
+        "link": "https://github.com/GulAkberova/Coffee_Sales_Dashboard?tab=readme-ov-file"
+      },
+      {
+        "title": "Prime Video Analytics",
+        "type": "Dashboard",
+        "description": "Analysis of Amazon Prime movies using Power BI.",
+        "image": "/icons/projects/prime.png",
+        "company": "Alas Academy",
+        "tools": ["Power BI"],
+        "year": "2024",
+        "status": "Completed",
+        "link": "https://github.com/GulAkberova/Amazon_Prime_Movies?tab=readme-ov-file"
+      },
+      {
+        "title": "Yelload",
+        "type": "Web Application",
+        "description": "A modern and dynamic web platform built with Next.js.",
+        "image": "/icons/projects/yelload.png",
+        "company": "Yelload",
+        "tools": ["Next.js"],
+        "year": "2023",
+        "status": "Completed",
+        "link": "https://yelload.com/"
+      },
+      {
+        "title": "Polygraf.ai",
+        "type": "Web Application",
+        "description": "Interactive dashboard system with API integration.",
+        "image": "/icons/projects/polygraf.png",
+        "company": "Polygraf.ai",
+        "tools": ["Next.js", "TypeScript"],
+        "year": "2024",
+        "status": "Completed",
+        "link": "https://polygraf.ai/"
+      },
+      {
+        "title": "4You",
+        "type": "Web Application",
+        "description": "Online psychological service platform – integrated frontend and backend.",
+        "image": "/icons/projects/4you.png",
+        "company": "4You",
+        "tools": ["React"],
+        "year": "2024",
+        "status": "Completed",
+        "link": "https://4youcare.com/"
+      },
+      {
+        "title": "Legalize",
+        "type": "Web Application",
+        "description": "E-commerce platform built with Next.js and TypeScript.",
+        "image": "/icons/projects/legalize.png",
+        "company": "Yelload",
+        "tools": ["Next.js", "TypeScript"],
+        "year": "2024",
+        "status": "Completed",
+        "link": "https://legalize.az/"
+      },
+      {
+        "title": "Creative Animations",
+        "type": "Landing Page",
+        "description": "Web project with rich creative design animations. Demo: username: gul123, password: gul.",
+        "image": "/icons/projects/creativeanimation.png",
+        "company": "Yelload",
+        "tools": ["React"],
+        "year": "2023",
+        "status": "Completed",
+        "link": "https://github.com/GulAkberova/Yello_Creative_Animations"
+      },
+      {
+        "title": "Absheron Map",
+        "type": "Landing Page",
+        "description": "Web project presenting an interactive map of the Absheron region.",
+        "image": "/icons/projects/absheronmap.png",
+        "company": "Yelload",
+        "tools": ["React"],
+        "year": "2024",
+        "status": "Completed",
+        "link": "https://absheron-map.vercel.app/"
+      },
+      {
+        "title": "Ice Cream Website",
+        "type": "Landing Page",
+        "description": "Simple, responsive web page built with HTML and CSS.",
+        "image": "/icons/projects/qost.png",
+        "company": "Yelload",
+        "tools": ["HTML/CSS"],
+        "year": "2023",
+        "status": "Completed",
+        "link": "https://github.com/GulAkberova/Yello-Sossialist"
+      },
+      {
+        "title": "Yello Socialist",
+        "type": "Web Application",
+        "description": "User-oriented social interaction platform.",
+        "image": "/icons/projects/sosiallist.png",
+        "company": "Yelload",
+        "tools": ["React"],
+        "year": "2023",
+        "status": "Completed",
+        "link": "https://github.com/GulAkberova/Yello-Sossialist"
+      },
+      {
+        "title": "Covid Dataset",
+        "type": "Dataset",
+        "description": "Python project for analyzing and visualizing COVID-19 data.",
+        "image": "/icons/projects/covid.png",
+        "company": "Alas Academy",
+        "tools": ["Python"],
+        "year": "2024",
+        "status": "Completed",
+        "link": "https://github.com/GulAkberova/Covid_Dataset"
+      },
+      {
+        "title": "London Housing Dataset",
+        "type": "Dataset",
+        "description": "Analysis of London real estate market data.",
+        "image": "/icons/projects/londonhousting.png",
+        "company": "Alas Academy",
+        "tools": ["Python"],
+        "year": "2024",
+        "status": "Completed",
+        "link": "https://github.com/GulAkberova/London_Housing_Dataset"
+      },
+      {
+        "title": "Census Dataset",
+        "type": "Dataset",
+        "description": "Analysis and visualization of demographic data.",
+        "image": "/icons/projects/census.png",
+        "company": "Alas Academy",
+        "tools": ["Python"],
+        "year": "2024",
+        "status": "Completed",
+        "link": "https://github.com/GulAkberova/Census_Dataset"
+      },
+      {
+        "title": "Police Dataset",
+        "type": "Dataset",
+        "description": "Project for analyzing and visualizing police data.",
+        "image": "/icons/projects/census.png",
+        "company": "Alas Academy",
+        "tools": ["Python"],
+        "year": "2024",
+        "status": "Completed",
+        "link": "https://github.com/GulAkberova/Police_Dataset"
+      },
+      {
+        "title": "Cars Dataset",
+        "type": "Dataset",
+        "description": "Analysis of car sales data using Python.",
+        "image": "/icons/projects/census.png",
+        "company": "Alas Academy",
+        "tools": ["Python"],
+        "year": "2024",
+        "status": "Completed",
+        "link": "https://github.com/GulAkberova/Cars_Dataset"
+      },
+      {
+        "title": "Weather Dataset",
+        "type": "Dataset",
+        "description": "Analysis and presentation of weather data.",
+        "image": "/icons/projects/census.png",
+        "company": "Alas Academy",
+        "tools": ["Python"],
+        "year": "2024",
+        "status": "Completed",
+        "link": "https://github.com/GulAkberova/Weather_Dataset"
+      },
+      {
+        "title": "Seaborn Visualization",
+        "type": "Dashboard",
+        "description": "Graphical presentation of data using Python Seaborn library.",
+        "image": "/icons/projects/py1.png",
+        "company": "Alas Academy",
+        "tools": ["Python"],
+        "year": "2024",
+        "status": "Completed",
+        "link": "https://github.com/GulAkberova/Python_Seaborn?tab=readme-ov-file"
+      },
+      {
+        "title": "Absheron TM",
+        "type": "Web Application",
+        "description": "Responsive Next.js website for Absheron TM.",
+        "image": "/icons/projects/absheron.png",
+        "company": "Yelload",
+        "tools": ["Next.js", "TypeScript"],
+        "year": "2024",
+        "status": "Completed",
+        "link": "https://absherontm.az/"
+      },
 
-  "home1": "Home",
-  "questionform": "Question Form",
-  "answer": "Query Results",
-  "superdashboard": "Superadmin",
-
-  "addToAllQuestions": "Add to All Questions",
-  "areYouSureAllQuestionsFilled": "Are you sure that you have answered all the questions in all sections?",
-
-  "questionsAdded": "Questions added successfully!",
-  "questionsAddError": "An error occurred while adding questions.",
-  "close": "Close",
-
-  "sections": {
-    "company": "About the Company",
-    "website": "Website and Online Platforms",
-    "email": "Email and Electronic Communication",
-    "social_media": "Social Media and Digital Channels",
-    "sales": "Sales",
-    "customer_service": "Customer Service",
-    "reporting": "Reporting and Analytics",
-    "automation": "Automation and Notifications",
-    "security": "Security and Privacy",
-    "budget": "Budget and Project Scope",
-    "training": "Training and User Adoption"
+      {
+        "title": "QR Code Generator",
+        "type": "Mini Game",
+        "description": "React app that automatically generates a QR code based on user input.",
+        "image": "/icons/projects/qr.png",
+        "company": "Technest",
+        "tools": ["React"],
+        "year": "2023",
+        "status": "Completed",
+        "link": "https://github.com/GulAkberova/QR_Code_React"
+      },
+      {
+        "title": "Markdown Editor",
+        "type": "Mini Game",
+        "description": "React-based Markdown editor with live editing functionality.",
+        "image": "/icons/projects/editor.png",
+        "company": "Technest",
+        "tools": ["React"],
+        "year": "2023",
+        "status": "Completed",
+        "link": "https://github.com/GulAkberova/Markdown_Editor_React"
+      },
+      {
+        "title": "Football Game",
+        "type": "Mini Game",
+        "description": "A football game where you move the ball to score goals.",
+        "image": "/icons/projects/football.png",
+        "company": "Technest",
+        "tools": ["React"],
+        "year": "2023",
+        "status": "Completed",
+        "link": "https://github.com/GulAkberova/Football_React"
+      },
+      {
+        "title": "Bobby Bubble Game",
+        "type": "Mini Game",
+        "description": "Pop bubbles by clicking and collect points! Levels increase difficulty.",
+        "image": "/icons/projects/bobby.png",
+        "company": "Technest",
+        "tools": ["JavaScript"],
+        "year": "2023",
+        "status": "Completed",
+        "link": "https://github.com/GulAkberova/Bobby_Bubble_Games"
+      },
+      {
+        "title": "Rock, Paper, Scissors",
+        "type": "Mini Game",
+        "description": "Classic Rock-Paper-Scissors game implemented in JavaScript.",
+        "image": "/icons/projects/rock.png",
+        "company": "Technest",
+        "tools": ["JavaScript"],
+        "year": "2023",
+        "status": "Completed",
+        "link": "https://github.com/GulAkberova/Rock_Paper_Scissors"
+      },
+      {
+        "title": "Memory Game",
+        "type": "Mini Game",
+        "description": "React game to test memory by matching cards of the same color.",
+        "image": "/icons/projects/memory.png",
+        "company": "Technest",
+        "tools": ["React"],
+        "year": "2023",
+        "status": "Completed",
+        "link": "https://github.com/GulAkberova/Memory_React"
+      }
+    ]
   },
-  "questions": {
-    "company": {
-      "q1": "What is the legal name of the company?",
-      "q2": "What are the company's main products and services?",
-      "q3": "In which markets does the company operate? (local, international, regional, etc.)",
-      "q4": "How many employees are there, and how many are involved in sales?",
-      "q5": "Who are the company's main competitors?",
-      "q6": "Who are the company's key strategic partners?",
-      "q7": "What are your main customer segments?"
-    },
-    "website": {
-      "q1": "Does the company have a website?",
-      "q2": "What technology is the website built on?",
-      "q3": "What is the primary purpose of the website? (information, sales, customer support, etc.)",
-      "q4": "Does the website integrate with CRM and other systems?",
-      "q5": "What tools are used for SEO and analytics?"
-    },
-    "email": {
-      "q1": "Which email systems does the company use?",
-      "q2": "Do you run email marketing campaigns?",
-      "q3": "Do you have automated email notifications?",
-      "q4": "How do you manage customer support emails?"
-    },
-    "social_media": {
-      "q1": "Which social media platforms does the company use?",
-      "q2": "Do you conduct sales or customer service via social media?",
-      "q3": "How do you track social media inquiries?",
-      "q4": "Do you need social media accounts to be integrated with CRM systems?"
-    },
-    "sales": {
-      "q1": "Do you have an existing customer database?",
-      "q2": "How many people are in the sales team?",
-      "q3": "What does your current sales process look like?",
-      "q4": "How many stages are in your sales cycle?",
-      "q5": "What are your key KPIs?"
-    },
-    "customer_service": {
-      "q1": "How do you manage customer inquiries and complaints?",
-      "q2": "Through which channels is customer support provided?",
-      "q3": "How do you measure customer service performance?",
-      "q4": "Do you need automated complaint resolution?"
-    },
-    "reporting": {
-      "q1": "How do you analyze sales and customer data?",
-      "q2": "What are your key KPIs?",
-      "q3": "How do you currently access reports?",
-      "q4": "Is real-time data analysis important for you?"
-    },
-    "automation": {
-      "q1": "Do you need automation for customer inquiries?",
-      "q2": "Would you like to send automated notifications (email, SMS, etc.)?",
-      "q3": "Do you require automated workflows in sales processes?"
-    },
-    "security": {
-      "q1": "Do you have specific requirements for data security and privacy?",
-      "q2": "Who should have access to data and at what level?",
-      "q3": "How should data backup and recovery policies be managed?"
-    },
-    "budget": {
-      "q1": "What budget have you allocated for Salesforce implementation?",
-      "q2": "Which features are essential for you, and which can be added later?",
-      "q3": "What is your timeline for completing the project?",
-      "q4": "Do you have internal resources for project implementation, or will you rely entirely on external support?"
-    },
-    "training": {
-      "q1": "What level of training do Salesforce users need?",
-      "q2": "How open are team members to transitioning to a new system?",
-      "q3": "Is interface simplicity and ease of use important for users?"
-    }
-  },
+
   "login": {
     "title": "Login",
     "email": "Email",
