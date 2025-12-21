@@ -1,6 +1,6 @@
 {
 "name":"Gülhanım",
-"surName":"Akberova",
+"surName":"Ekberova",
 
   "nav": {
     "home": "Ana Sayfa",
@@ -14,7 +14,7 @@
   },
 
   "home": {
-    "greeting": "Merhaba, ben Gülhanım Əkbərova 👋",
+    "greeting": "Merhaba, ben Gülhanım Ekberova 👋",
     "role": "BT Proje Yöneticisi ve BT İş Analisti",
     "description": "Koddan ekiplere :)) Frontend Developer olarak kazandığım teknik becerilerimi, BT proje yönetimi ve iş analizi alanında stratejik kararlar almak için kullanıyorum. Üniversite çalışmalarım ise sürekli öğrenmemi ve liderlik becerilerimi geliştirmemi sağlıyor.",
     "btn": "Deneyimime Bak"
