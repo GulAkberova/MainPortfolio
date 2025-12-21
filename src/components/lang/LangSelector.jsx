@@ -3,14 +3,15 @@ import styles from "./langSelector.module.css";
 
 const languages = ["az", "en", "ru", "tr"];
 
-function LangSelector({ selectedLang = "az", onChangeLang }) {
+function LangSelector({ selectedLang , onChangeLang }) {
+  const currentLang = selectedLang || "az";
   const [open, setOpen] = useState(false);
 
   return (
     <div className={styles.wrapper}>
       {/* Seçilmiş dil */}
       <img
-        src={`/icons/language/${selectedLang}.svg`}
+        src={`/icons/language/${currentLang}.svg`}
         className={styles.mainFlag}
         onClick={() => setOpen(!open)}
       />
@@ -19,7 +20,7 @@ function LangSelector({ selectedLang = "az", onChangeLang }) {
       {open && (
         <div className={styles.dropdown}>
           {languages
-            .filter((lng) => lng !== selectedLang)
+            .filter((lng) => lng !== currentLang)
             .map((lng) => (
               <img
                 key={lng}
