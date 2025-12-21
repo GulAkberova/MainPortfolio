@@ -92,7 +92,7 @@
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .sidebar {
     position: fixed;
     top: 0;

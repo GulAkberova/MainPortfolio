@@ -11,15 +11,15 @@ const SeenWorks = () => {
     company: [],
     tool: [],
     year: [],
-    // status: [],
   });
+
+  const [isFilterOpen, setIsFilterOpen] = useState(false);
 
   const uniqueValues = {
     type: [...new Set(worksData.map((w) => w.type))],
     company: [...new Set(worksData.map((w) => w.company))],
     tool: [...new Set(worksData.flatMap((w) => w.tools))],
     year: [...new Set(worksData.map((w) => w.year))],
-    // status: [...new Set(worksData.map((w) => w.status))],
   };
 
   const handleFilterChange = (category, value) => {
@@ -44,23 +44,64 @@ const SeenWorks = () => {
       filters.tool.some((t) => work.tools.includes(t));
     const matchYear =
       filters.year.length === 0 || filters.year.includes(work.year);
-    // const matchStatus =
-    //   filters.status.length === 0 || filters.status.includes(work.status);
 
-    return matchType && matchCompany && matchTool && matchYear 
-    // && matchStatus
-    ;
+    return matchType && matchCompany && matchTool && matchYear;
   });
+
+  const [scrolled, setScrolled] = useState(false);
+
+  React.useEffect(() => {
+    const onScroll = () => {
+      setScrolled(window.scrollY > 120);
+    };
+
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   return (
     <section className={styles.seenWorks}>
       <div className={styles.container}>
         <h2 className={styles.title}>{t("seenWorks.title")}</h2>
 
+        {/* Mobil üçün filter açma düyməsi */}
+        <div
+          className={`${styles.filterBar} ${
+            scrolled ? styles.filterBarScrolled : ""
+          }`}
+        >
+          <button
+            className={styles.filterButton}
+            onClick={() => setIsFilterOpen(true)}
+          >
+            🔍 {t("seenWorks.filtersTitle")}
+          </button>
+        </div>
+
         <div className={styles.layout}>
-          {/* Sağ tərəf - Filtrlər */}
-          <aside className={styles.sidebar}>
-            <h3>{t("seenWorks.filtersTitle")}</h3>
+          {/* Overlay */}
+          {isFilterOpen && (
+            <div
+              className={styles.overlay}
+              onClick={() => setIsFilterOpen(false)}
+            />
+          )}
+
+          {/* Sidebar */}
+          <aside
+            className={`${styles.sidebar} ${
+              isFilterOpen ? styles.sidebarOpen : ""
+            }`}
+          >
+            <div className={styles.sidebarHeader}>
+              <h3>{t("seenWorks.filtersTitle")}</h3>
+              <button
+                className={styles.closeBtn}
+                onClick={() => setIsFilterOpen(false)}
+              >
+                ✕
+              </button>
+            </div>
 
             {Object.entries(uniqueValues).map(([key, values]) => (
               <div key={key} className={styles.filterGroup}>
@@ -79,7 +120,7 @@ const SeenWorks = () => {
             ))}
           </aside>
 
-          {/* Sol tərəf - Kartlar */}
+          {/* Cards */}
           <div className={styles.grid}>
             {filteredWorks.length ? (
               filteredWorks.map((work, index) => (
@@ -87,6 +128,7 @@ const SeenWorks = () => {
                   <div className={styles.imageBox}>
                     <img src={work.image} alt={work.title} />
                   </div>
+
                   <div className={styles.content}>
                     <h3>{work.title}</h3>
                     <p className={styles.type}>{work.type}</p>
@@ -94,13 +136,14 @@ const SeenWorks = () => {
 
                     <div className={styles.extraInfo}>
                       <p>
-                        <strong>{t("seenWorks.labels.company")}:</strong>{" "}
-                        {work.company}
-                      </p>
-                      <p>
                         <strong>{t("seenWorks.labels.year")}:</strong>{" "}
                         {work.year}
                       </p>
+                      <p>
+                        <strong>{t("seenWorks.labels.company")}:</strong>{" "}
+                        {work.company}
+                      </p>
+
                       <p>
                         <strong>{t("seenWorks.labels.status")}:</strong>{" "}
                         {work.status}
@@ -133,4 +176,3 @@ const SeenWorks = () => {
 };
 
 export default SeenWorks;
-

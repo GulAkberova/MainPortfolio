@@ -1,4 +1,7 @@
 {
+"name":"Gulkhanim",
+"surName":"Akbarova",
+
   "nav": {
     "home": "Home",
     "about": "About Me",
@@ -13,7 +16,7 @@
   "home": {
     "greeting": "Hello, I'm Gülxanım Əkbərova 👋",
     "role": "IT Project Manager & IT Business Analyst",
-    "description": "I started as a Frontend Developer, and now I apply my strategic skills in project management and business analysis to make a difference in new projects.",
+    "description": "From code to leading teams :)) I leverage the technical skills I gained as a Frontend Developer to make strategic decisions in IT project management and business analysis. My university work allows me to continuously learn and further develop my leadership skills.",
     "btn": "View My Experience"
   },
 
@@ -41,7 +44,7 @@
         "label": "LinkedIn",
         "value": "Gulkhanim Akberova",
         "icon": "/icons/about/linkedin.svg",
-        "link": "https://www.linkedin.com/in/gulkhanim-akberova"
+        "link": "https://www.linkedin.com/in/g%C3%BClxan%C4%B1mekberova/"
       },
       {
         "type": "github",
@@ -151,10 +154,10 @@
     "title": "My Work Experience",
     "projects": [
       {
-        "title": "Ministry of Health Digital Health Center",
+        "title": "Digital Health Center",
         "position": "IT Project Manager",
         "description": "Managing projects, coordinating with contractors and government agencies, preparing technical documents, and compiling monthly reports.",
-        "detailedDescription": "In this project, I organize team responsibilities, plan and monitor project phases. By establishing effective communication with contractors and government agencies, I ensure the project is completed on time and within budget. Additionally, I am responsible for preparing technical documentation, managing risks, and presenting monthly reports.",
+        "detailedDescription": "In this project, while organizing team responsibilities, planning and monitoring project phases, and communicating effectively with contractors and government agencies, I am enhancing my strategic project management skills. Additionally, I gain experience in analytical thinking and problem-solving through preparing technical documents and managing risks.",
         "tech": ["Jira", "Confluence", "Project Management"],
         "link": "#",
         "image": "/icons/works/rsm.jpg",
@@ -213,37 +216,48 @@
     ]
   },
 
-  "contact": {
-    "title": "Contact",
-    "subtitle": "Fill out the form below to get in touch with me.",
-    "alert": "Your message has been sent!",
-    "form": {
-      "submitButton": {
-        "text": "Send"
+ "contact": {
+  "title": "Contact",
+  "subtitle": "Fill out the form below to get in touch with me.",
+  "form": {
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+
+    "fields": [
+      {
+        "name": "name",
+        "type": "text",
+        "placeholder": "Your name",
+        "required": true
       },
-      "fields": [
-        {
-          "name": "name",
-          "type": "text",
-          "placeholder": "Your Name",
-          "required": true
-        },
-        {
-          "name": "email",
-          "type": "email",
-          "placeholder": "Email",
-          "required": true
-        },
-        {
-          "name": "message",
-          "type": "textarea",
-          "placeholder": "Your Message",
-          "rows": 5,
-          "required": true
-        }
-      ]
-    }
-  },
+      {
+        "name": "email",
+        "type": "email",
+        "placeholder": "Your email",
+        "required": true
+      },
+      {
+        "name": "message",
+        "type": "textarea",
+        "placeholder": "Your message",
+        "rows": 5,
+        "required": true
+      }
+    ],
+
+    "submitButton": {
+      "text": "Send"
+    },
+
+    "loading": "Sending...",
+    "sending": "Close",
+
+    "alertSuccess": "Your message has been sent successfully!",
+    "alertError": "An error occurred while sending the message!"
+  }
+}
+,
 
   "certificates": {
     "title": "My Certificates",
@@ -259,7 +273,7 @@
   },
 
   "seenWorks": {
-    "title": "Seen Works",
+    "title": "Projects",
     "filtersTitle": "Filters",
     "filterCategories": {
       "type": "Type",

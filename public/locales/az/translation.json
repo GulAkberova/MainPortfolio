@@ -1,4 +1,7 @@
 {
+"name":"Gülxanım",
+"surName":"Əkbərova",
+
   "nav": {
     "home": "Ana Səhifə",
     "about": "Haqqımda",
@@ -12,8 +15,8 @@
 
   "home": {
     "greeting": "Salam, mən Gülxanım Əkbərova 👋",
-    "role": "İT Layihə Meneceri və İT Biznes Analitik",
-    "description": "Frontend Developer kimi başladım, indi isə layihə idarəçiliyi və biznes analizində strateji bacarıqlarımı tətbiq edərək, yeni layihələrdə fərq yaratmağa hazıram.",
+    "role": "İT Layihə Meneceri & İT Biznes Analitik",
+    "description": "Koddan komandaya:)) Frontend Developer olaraq qazandığım texniki biliklərimi İT layihə idarəçiliyi və biznes analizində strateji qərarlar vermək üçün istifadə edirəm. Universitet işim isə davamlı öyrənmə və liderlik bacarıqlarımı inkişaf etdirməyə imkan verir.",
     "btn": "Təcrübəmə bax"
   },
 
@@ -38,7 +41,7 @@
         "label": "LinkedIn",
         "value": "Gulkhanim Akberova",
         "icon": "/icons/about/linkedin.svg",
-        "link": "https://www.linkedin.com/in/gulkhanim-akberova"
+        "link": "https://www.linkedin.com/in/g%C3%BClxan%C4%B1mekberova/"
       },
       {
         "type": "github",
@@ -149,10 +152,10 @@
     "title": "İş Təcrübələrim",
     "projects": [
       {
-        "title": "Səhiyyə Nazirliyi Rəqəmsal Səhiyyə Mərkəzi",
+        "title": "Rəqəmsal Səhiyyə Mərkəzi",
         "position": "İT Project Manager",
-        "description": "Layihələrin idarə olunması, podratçılar və dövlət qurumları ilə koordinasiya, texniki sənədlərin hazırlanması və aylıq hesabatların tərtibi.",
-        "detailedDescription": "Bu layihədə, komandaların iş bölgüsünü təşkil edir, layihə mərhələlərini planlayır və izləyirəm. Podratçılar və dövlət qurumları ilə effektiv kommunikasiya quraraq, layihənin vaxtında və büdcə çərçivəsində tamamlanmasını təmin edirəm. Həmçinin texniki sənədlərin hazırlanması, risklərin idarə olunması və aylıq hesabatların təqdim edilməsi mənim məsuliyyətimdədir.",
+        "description": "Layihələrin idarə olunması, podratçılar və dövlət qurumları ilə koordinasiya, texniki sənədlərin hazırlanması.",
+        "detailedDescription": "Bu layihədə komandaların iş bölgüsünü təşkil edərkən, layihə mərhələlərini planlayıb izləyərkən və podratçılarla, dövlət qurumları ilə effektiv kommunikasiya qurarkən strateji layihə idarəçiliyi bacarıqlarımı inkişaf etdirirəm. Həmçinin texniki sənədlərin hazırlanması və risklərin idarə olunması prosesində analitik düşüncə və problemləri həll etmə təcrübəsi qazanıram.",
         "tech": ["Jira", "Confluence", "Project Management"],
         "link": "#",
         "image": "/icons/works/rsm.jpg",
@@ -212,36 +215,48 @@
     ]
   },
 
-  "contact": {
-    "title": "Əlaqə",
-    "subtitle": "Mənimlə əlaqə saxlamaq üçün formu doldurun və göndərin.",
-    "form": {
-      "fields": [
-        {
-          "name": "name",
-          "type": "text",
-          "placeholder": "Adınız",
-          "required": true
-        },
-        {
-          "name": "email",
-          "type": "email",
-          "placeholder": "Email",
-          "required": true
-        },
-        {
-          "name": "message",
-          "type": "textarea",
-          "placeholder": "Mesajınız",
-          "rows": 5,
-          "required": true
-        }
-      ],
-      "submitButton": {
-        "text": "Göndər"
+ "contact": {
+  "title": "Əlaqə",
+  "subtitle": "Mənimlə əlaqə saxlamaq üçün formu doldurun və göndərin.",
+  "form": {
+    "name": "Ad",
+    "email": "Email",
+    "message": "Mesaj",
+
+    "fields": [
+      {
+        "name": "name",
+        "type": "text",
+        "placeholder": "Adınız",
+        "required": true
+      },
+      {
+        "name": "email",
+        "type": "email",
+        "placeholder": "Email",
+        "required": true
+      },
+      {
+        "name": "message",
+        "type": "textarea",
+        "placeholder": "Mesajınız",
+        "rows": 5,
+        "required": true
       }
-    }
-  },
+    ],
+
+    "submitButton": {
+      "text": "Göndər"
+    },
+
+    "loading": "Göndərilir...",
+    "sending": "Bağla",
+
+    "alertSuccess": "Mesajınız uğurla göndərildi!",
+    "alertError": "Mesaj göndərilərkən xəta baş verdi!"
+  }
+}
+,
 
   "certificates": {
     "title": "Sertifikatlar",
@@ -257,8 +272,8 @@
   },
 
   "seenWorks": {
-    "title": "Görülən İşlər",
-    "filtersTitle": "Filtrlər",
+    "title": "Layihələr",
+    "filtersTitle": "Filter",
     "filterCategories": {
       "type": "Növ",
       "company": "Şirkət",

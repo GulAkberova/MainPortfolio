@@ -177,7 +177,9 @@
       text-align: center;
       gap: 50px;
   }
-
+  .imageBox {
+    flex: 1 1 0px;
+  }
   .imageBox img {
       width: 260px;
       height: 260px;
@@ -198,5 +200,12 @@
   .infoGrid {
       grid-template-columns: 1fr;
       gap: 15px;
+  }
+  .infoGrid h4{
+    text-align: left;
+  }
+  .title::after {
+    left: 50%; /* mərkəzləşdir */
+    transform: translateX(-50%); /* tam ortalayır */
   }
 }

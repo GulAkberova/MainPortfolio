@@ -19,8 +19,20 @@
   background: linear-gradient(90deg, #6d28d9, #3b82f6);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  position: relative;
 }
-
+.title::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 50%; /* mərkəzləşdir */
+  transform: translateX(-50%); /* tam ortalayır */
+  width: 100px;
+  height: 3px;
+  background: linear-gradient(90deg, #6d28d9, #3b82f6);
+  border-radius: 3px;
+  box-shadow: 0 0 8px rgba(109, 40, 217, 0.5);
+}
 /* Timeline container */
 .timeline {
   position: relative;
@@ -35,8 +47,8 @@
   left: 50%;
   top: 0;
   bottom: 0;
-  width: 4px;
-  background: #6d28d9; /* orta xətt */
+  width: 2px;
+  background: #6d28d9; 
   transform: translateX(-50%);
   z-index: 1;
   border-radius: 2px;
@@ -66,7 +78,7 @@
 
 /* Logo/icon position */
 .timelineItem.left .logoWrapper {
-  order: 2; /* sağa keçir */
+  order: 2; 
   margin-left: 15px;
 }
 
@@ -164,7 +176,7 @@
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .timelineItem,
   .timelineItem.right,
   .timelineItem.left {
@@ -172,10 +184,21 @@
     flex-direction: column;
     text-align: center;
     margin-left: 0;
-    align-items: center;
+    align-items: flex-start;
     gap: 15px;
   }
-
+  .timelineLine{
+    display: none;
+  }
+  .timelineItem > div,
+  .headerRow{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .timelineItem > div p{
+    text-align: left;
+  }
   .timelineLine {
     left: 20px;
   }
@@ -234,6 +257,9 @@
   align-items: center;
   gap: 10px;
 }
+.modalHeader h5{
+  color: #6d28d9;
+}
 
 .modalIcon {
   width: 80px;
@@ -252,7 +278,9 @@
 .modalBody {
   margin-top: 15px;
 }
-
+.modalBody p {
+  font-size: 14px;
+}
 .modalTech {
   display: flex;
   flex-wrap: wrap;

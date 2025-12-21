@@ -29,12 +29,13 @@
   }
   
   .childFlag {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     cursor: pointer;
-    border-radius: 50%;
+    border-radius: 100%;
     border: 2px solid transparent;
     transition: all 0.2s ease;
+    border: 1px solid #8453d3;
   }
   
   .childFlag:hover {

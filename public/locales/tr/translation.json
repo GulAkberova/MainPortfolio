@@ -1,4 +1,7 @@
 {
+"name":"Gülhanım",
+"surName":"Akberova",
+
   "nav": {
     "home": "Ana Sayfa",
     "about": "Hakkımda",
@@ -11,9 +14,9 @@
   },
 
   "home": {
-    "greeting": "Merhaba, ben Gülxanım Əkbərova 👋",
+    "greeting": "Merhaba, ben Gülhanım Əkbərova 👋",
     "role": "BT Proje Yöneticisi ve BT İş Analisti",
-    "description": "Frontend Developer olarak başladım, şimdi proje yönetimi ve iş analizindeki stratejik becerilerimi uygulayarak yeni projelerde fark yaratmaya hazırım.",
+    "description": "Koddan ekiplere :)) Frontend Developer olarak kazandığım teknik becerilerimi, BT proje yönetimi ve iş analizi alanında stratejik kararlar almak için kullanıyorum. Üniversite çalışmalarım ise sürekli öğrenmemi ve liderlik becerilerimi geliştirmemi sağlıyor.",
     "btn": "Deneyimime Bak"
   },
 
@@ -38,7 +41,7 @@
         "label": "LinkedIn",
         "value": "Gulkhanim Akberova",
         "icon": "/icons/about/linkedin.svg",
-        "link": "https://www.linkedin.com/in/gulkhanim-akberova"
+        "link": "https://www.linkedin.com/in/g%C3%BClxan%C4%B1mekberova/"
       },
       {
         "type": "github",
@@ -148,10 +151,10 @@
     "title": "İş Tecrübelerim",
     "projects": [
       {
-        "title": "Sağlık Bakanlığı Dijital Sağlık Merkezi",
+        "title": "Dijital Sağlık Merkezi",
         "position": "BT Proje Yöneticisi",
         "description": "Projelerin yönetimi, yükleniciler ve devlet kurumları ile koordinasyon, teknik dokümanların hazırlanması ve aylık raporların düzenlenmesi.",
-        "detailedDescription": "Bu projede, ekip sorumluluklarını organize ediyor, proje aşamalarını planlıyor ve takip ediyorum. Yükleniciler ve devlet kurumları ile etkili iletişim kurarak, projenin zamanında ve bütçe dahilinde tamamlanmasını sağlıyorum. Ayrıca teknik dokümanların hazırlanması, risk yönetimi ve aylık raporların sunulması benim sorumluluğumdadır.",
+        "detailedDescription": "Bu projede, ekip sorumluluklarını organize ederken, proje aşamalarını planlayıp takip ederken ve yükleniciler ile devlet kurumlarıyla etkin iletişim kurarken stratejik proje yönetimi becerilerimi geliştiriyorum. Ayrıca teknik doküman hazırlama ve risk yönetimi süreçlerinde analitik düşünme ve problem çözme deneyimi kazanıyorum.",
         "tech": ["Jira", "Confluence", "Project Management"],
         "link": "#",
         "image": "/icons/works/rsm.jpg",
@@ -210,42 +213,53 @@
     ]
   },
 
-  "contact": {
-    "title": "İletişim",
-    "subtitle": "Benimle iletişime geçmek için aşağıdaki formu doldurun ve gönderin.",
-    "alert": "Mesajınız gönderildi!",
-    "form": {
-      "submitButton": {
-        "text": "Gönder"
+ "contact": {
+  "title": "İletişim",
+  "subtitle": "Benimle iletişime geçmek için aşağıdaki formu doldurun.",
+  "form": {
+    "name": "Ad",
+    "email": "E-posta",
+    "message": "Mesaj",
+
+    "fields": [
+      {
+        "name": "name",
+        "type": "text",
+        "placeholder": "Adınız",
+        "required": true
       },
-      "fields": [
-        {
-          "name": "name",
-          "type": "text",
-          "placeholder": "Adınız",
-          "required": true
-        },
-        {
-          "name": "email",
-          "type": "email",
-          "placeholder": "Email",
-          "required": true
-        },
-        {
-          "name": "message",
-          "type": "textarea",
-          "placeholder": "Mesajınız",
-          "rows": 5,
-          "required": true
-        }
-      ]
-    }
-  },
+      {
+        "name": "email",
+        "type": "email",
+        "placeholder": "E-posta adresiniz",
+        "required": true
+      },
+      {
+        "name": "message",
+        "type": "textarea",
+        "placeholder": "Mesajınız",
+        "rows": 5,
+        "required": true
+      }
+    ],
+
+    "submitButton": {
+      "text": "Gönder"
+    },
+
+    "loading": "Gönderiliyor...",
+    "sending": "Kapat",
+
+    "alertSuccess": "Mesajınız başarıyla gönderildi!",
+    "alertError": "Mesaj gönderilirken bir hata oluştu!"
+  }
+}
+,
 
 
 
   "works": {
-    "title": "Görülən İşlər",
+    "title": "Projeler",
     "viewProject": "Layihəyə bax",
     "list": [
       {

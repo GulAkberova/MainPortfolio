@@ -33,7 +33,7 @@ const Header = ({
       <aside className={`${styles.sidebar} ${sidebarOpen ? styles.open : ""}`}>
         <div className={styles.profile}>
           <img src="/gul-main.jpg" alt="Profile" />
-          <h2>Gül Əkbərova</h2>
+          <h2> {t("name")}<br/>{t("surName")}</h2>
         </div>
 
         <nav className={styles.nav}>

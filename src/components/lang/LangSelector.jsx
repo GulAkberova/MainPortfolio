@@ -3,7 +3,7 @@ import styles from "./langSelector.module.css";
 
 const languages = ["az", "en", "ru", "tr"];
 
-function LangSelector({ selectedLang, onChangeLang }) {
+function LangSelector({ selectedLang = "az", onChangeLang }) {
   const [open, setOpen] = useState(false);
 
   return (

@@ -1,119 +1,218 @@
 .contact {
-  background: #f9f9f9; /* Ağ fon */
-  color: #1e1e1e; /* Tünd mətn */
+  min-height: 100vh;
   padding: 100px 20px;
   display: flex;
   justify-content: center;
-  font-family: "Inter", sans-serif;
+  align-items: center;
+  background: #fff;
   position: relative;
   overflow: hidden;
-  min-height: 100vh;
-
+  font-family: "Inter", sans-serif;
 }
 
-/* 🔹 Blur fon effekti */
-.contact::before {
+/* Background glow */
+.contact::before,
+.contact::after {
   content: "";
   position: absolute;
   width: 350px;
   height: 350px;
-  top: -80px;
-  left: -80px;
-  background: radial-gradient(circle, rgba(109, 40, 217, 0.2), transparent 70%);
   filter: blur(120px);
   z-index: 0;
 }
 
+.contact::before {
+  top: -80px;
+  left: -80px;
+  background: rgba(109, 40, 217, 0.25);
+}
+
 .contact::after {
-  content: "";
-  position: absolute;
-  width: 300px;
-  height: 300px;
-  bottom: -60px;
-  right: -60px;
-  background: radial-gradient(circle, rgba(59, 130, 246, 0.2), transparent 70%);
-  filter: blur(100px);
-  z-index: 0;
+  bottom: -80px;
+  right: -80px;
+  background: rgba(59, 130, 246, 0.25);
 }
 
 .container {
   max-width: 600px;
   width: 100%;
   text-align: center;
-  position: relative;
   z-index: 2;
 }
 
-/* 🔹 Başlıq və altbaşlıq */
 .title {
   font-size: 2.4rem;
   font-weight: 700;
   background: linear-gradient(90deg, #6d28d9, #3b82f6);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-bottom: 10px;
-  letter-spacing: 1px;
+  position: relative;
+}
+.title::after {
+  content: "";
+  width: 50px;
+  height: 3px;
+  background: linear-gradient(90deg, #6d28d9, #3b82f6);
+  display: block;
+  margin: 5px auto 0;
+  border-radius: 5px;
 }
 
 .subtitle {
-  font-size: 1rem;
-  color: #555; /* Tünd altbaşlıq */
-  margin-bottom: 40px;
-  line-height: 1.6;
+  margin: 15px 0 40px;
+  color: #555;
 }
 
-/* 🔹 Form stilizasiyası */
+/* FORM CARD */
 .form {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 40px 35px;
+  border-radius: 24px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+  backdrop-filter: blur(10px);
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 22px;
 }
 
-.form input,
-.form textarea {
+/* INPUT GROUP */
+.inputGroup {
+  position: relative;
+}
+
+.inputGroup input,
+.inputGroup textarea {
   width: 100%;
-  padding: 15px 20px;
+  padding: 26px 20px 16px 50px;
   border-radius: 14px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  background: #fff;
-  color: #1e1e1e;
+  border: 1px solid rgba(0,0,0,0.15);
   font-size: 1rem;
-  transition: all 0.3s ease;
+  transition: 0.3s ease;
 }
 
-.form input:focus,
-.form textarea:focus {
-  border: 1px solid #6d28d9;
-  box-shadow: 0 0 10px rgba(109, 40, 217, 0.4);
+.inputGroup input:focus,
+.inputGroup textarea:focus {
+  border-color: #6d28d9;
+  box-shadow: 0 0 10px rgba(109,40,217,0.3);
   outline: none;
-  background: #fff;
 }
 
-/* 🔹 Button */
+.inputGroup label {
+  position: absolute;
+  left: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.85rem;
+  color: #777;
+  pointer-events: none;
+  transition: 0.3s ease;
+}
+
+.inputGroup input:focus + label,
+.inputGroup input:not(:placeholder-shown) + label,
+.inputGroup textarea:focus + label,
+.inputGroup textarea:not(:placeholder-shown) + label {
+  top: 12px;
+  font-size: 0.7rem;
+  color: #6d28d9;
+}
+
+.icon {
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  opacity: 0.6;
+}
+
+/* BUTTON */
 .btn {
+  margin-top: 10px;
+  padding: 15px;
+  border-radius: 50px;
   background: linear-gradient(90deg, #6d28d9, #3b82f6);
   color: #fff;
-  padding: 15px 25px;
-  border-radius: 50px;
   font-weight: 600;
   border: none;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .btn:hover {
-  background: linear-gradient(90deg, #3b82f6, #6d28d9);
-  box-shadow: 0 0 15px rgba(109, 40, 217, 0.5);
   transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(109,40,217,0.4);
 }
 
-/* 📱 Responsiv */
-@media (max-width: 768px) {
-  .title {
-    font-size: 2rem;
-  }
-
-  .subtitle {
-    font-size: 0.95rem;
-  }
+.btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
 }
+
+/* LOADER */
+.loader {
+  width: 22px;
+  height: 22px;
+  border: 3px solid rgba(255,255,255,0.4);
+  border-top: 3px solid #fff;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  margin: auto;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* MODAL */
+.modalBackdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.35);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modalContent {
+  background: #fff;
+  padding: 30px;
+  border-radius: 16px;
+  text-align: center;
+  max-width: 350px;
+  width: 90%;
+  animation: scaleIn 0.3s ease;
+}
+
+@keyframes scaleIn {
+  from { transform: scale(0.85); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.success {
+  border-left: 5px solid #3b82f6;
+}
+
+.error {
+  border-left: 5px solid #ef4444;
+}
+
+.modalIcon {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.modalContent button {
+  margin-top: 15px;
+  padding: 8px 22px;
+  border-radius: 10px;
+  border: none;
+  background: #6d28d9;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+
+

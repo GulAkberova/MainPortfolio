@@ -1,10 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { useTranslation } from "react-i18next";
 import { useLocation } from "react-router-dom";
 import styles from "./homeLayout.module.css";
 
 import Header from "../header/Header";
-
 import Home from "../home/Home";
 import About from "../about/About";
 import Education from "../education/Education";
@@ -14,6 +13,7 @@ import Works from "../works/Works";
 import Contact from "../contact/Contact";
 import SeenWorks from "../seenworks/SeenWorks";
 import LangSelector from "../lang/LangSelector";
+import Info from "../info/Info";
 
 const sections = [
   { id: "home", component: <Home /> },
@@ -34,15 +34,7 @@ function HomeLayout() {
   const [selectedLang, setSelectedLang] = useState(i18n.language);
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
-  // Scroll & URL sync
-  useEffect(() => {
-    const path = location.pathname.replace("/", "") || "home";
-    const element = document.getElementById(path);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-    setActiveSection(path);
-  }, [location.pathname]);
+  const sectionRefs = useRef({});
 
   const handleChangeLang = (lng) => {
     i18n.changeLanguage(lng);
@@ -50,7 +42,7 @@ function HomeLayout() {
   };
 
   const handleSectionClick = (id) => {
-    const element = document.getElementById(id);
+    const element = sectionRefs.current[id];
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
     }
@@ -59,32 +51,61 @@ function HomeLayout() {
     setSidebarOpen(false);
   };
 
+  // 🔹 Intersection Observer
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id);
+          }
+        });
+      },
+      {
+        root: null,
+        rootMargin: "-50% 0px -50% 0px", // section mərkəzə gələndə aktiv olsun
+        threshold: 0,
+      }
+    );
+
+    sections.forEach((section) => {
+      const el = sectionRefs.current[section.id];
+      if (el) observer.observe(el);
+    });
+
+    return () => {
+      sections.forEach((section) => {
+        const el = sectionRefs.current[section.id];
+        if (el) observer.unobserve(el);
+      });
+    };
+  }, []);
+
   return (
     <div className={styles.layout}>
-      
-      {/* 🔹 Header Component */}
       <Header
         sections={sections}
         activeSection={activeSection}
         sidebarOpen={sidebarOpen}
         setSidebarOpen={setSidebarOpen}
         handleSectionClick={handleSectionClick}
-        selectedLang={selectedLang}
-        handleChangeLang={handleChangeLang}
       />
 
-      {/* 🔹 Main content */}
       <main className={styles.mainContent}>
         {sections.map((section) => (
-          <section id={section.id} key={section.id}>
+          <section
+            id={section.id}
+            key={section.id}
+            ref={(el) => (sectionRefs.current[section.id] = el)}
+          >
             {section.component}
           </section>
         ))}
       </main>
-      <LangSelector 
-        selectedLang={selectedLang}
-        onChangeLang={handleChangeLang}
-    />
+
+      <LangSelector selectedLang={selectedLang} onChangeLang={handleChangeLang} />
+      <Info />
+
     </div>
   );
 }

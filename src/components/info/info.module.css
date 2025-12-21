@@ -1,0 +1,57 @@
+ .header {
+   
+    padding: 15px 25px;
+    /* backdrop-filter: blur(10px); */
+    z-index: 1000;
+    position: fixed;
+    top: 15px;
+    right: 0px;
+    z-index: 999;
+    gap: 10px;
+    display: flex;
+  }
+  
+ 
+  .iconWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-end; 
+   
+
+  }
+  
+  .iconLink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: rgba(109, 40, 217, 0.1); /* sayt rənglərinə uyğun yumşaq fon */
+    transition: all 0.2s ease;
+    border: 1px solid #6d28d9;
+
+  }
+  
+  .iconLink img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .iconLink:hover {
+    background: rgba(109, 40, 217, 0.2);
+    transform: translateY(-2px);
+  }
+  
+  /* CV linki fərqləndirmək üçün */
+  .cvLink {
+    background: rgba(59, 130, 246, 0.1);
+  }
+  
+  .cvLink:hover {
+    background: rgba(59, 130, 246, 0.2);
+  }
+  
+ 

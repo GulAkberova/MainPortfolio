@@ -165,7 +165,7 @@
   }
 
   .textBox h1 {
-    font-size: 2.3rem;
+    font-size: 2.1rem;
   }
 
   .textBox h2 {
@@ -175,5 +175,8 @@
   .imageBox img {
     width: 220px;
     height: 220px;
+  }
+  .imageBox {
+    flex: 1 1 0px;
   }
 }

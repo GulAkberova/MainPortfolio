@@ -22,7 +22,6 @@ function Works() {
               className={`${styles.timelineItem} ${
                 index % 2 === 0 ? styles.left : styles.right
               }`}
-              onClick={() => openModal(project)}
             >
               <div className={styles.contentWrapper}>
                 <div className={styles.logoWrapper}>
@@ -42,7 +41,8 @@ function Works() {
                 <a
                   href={project.link || "#"}
                   className={styles.btn}
-                  onClick={(e) => e.stopPropagation()}
+                  // onClick={(e) => e.stopPropagation()}
+                  onClick={() => openModal(project)}
                 >
                   Daha çox bax →
                 </a>
@@ -80,7 +80,7 @@ function Works() {
                   ))}
                 </div>
               )}
-              {selectedProject.link && (
+              {/* {selectedProject.link && (
                 <a
                   href={selectedProject.link}
                   target="_blank"
@@ -89,7 +89,7 @@ function Works() {
                 >
                   Daha çox bax →
                 </a>
-              )}
+              )} */}
             </div>
           </div>
         </div>
