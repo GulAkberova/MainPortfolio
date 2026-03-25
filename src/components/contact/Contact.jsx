@@ -5,6 +5,8 @@ import styles from "./contact.module.css";
 
 function Contact() {
   const { t } = useTranslation();
+  const contactItems = t("contact.info.items", { returnObjects: true });
+  const socialItems = t("contact.social.items", { returnObjects: true });
 
   const [formData, setFormData] = useState({
     name: "",
@@ -54,8 +56,44 @@ function Contact() {
       <div className={styles.container}>
         <h2 className={styles.title}>{t("contact.title")}</h2>
         <p className={styles.subtitle}>{t("contact.subtitle")}</p>
+        <div className={styles.contactWrapper}>
+      
+         {/* RIGHT: CONTACT INFO */}
+         <div className={styles.contactInfo}>
+            <h3>{t("contact.info.title")}</h3>
 
-        <form className={styles.form} onSubmit={handleSubmit} autoComplete="off">
+            {contactItems.map((item, index) => (
+              <a
+                key={index}
+                href={item.link}
+                target="_blank"
+                rel="noreferrer"
+                className={styles.infoItem}
+              >
+                <span>{item.icon}</span>
+                <div>
+                  <small>{item.label}</small>
+                  <p>{item.value}</p>
+                </div>
+              </a>
+            ))}
+
+            <h3>{t("contact.social.title")}</h3>
+
+            <div className={styles.socialIcons}>
+              {socialItems.map((item, index) => (
+                <a
+                  key={index}
+                  href={item.link}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                 <img src={item.icon} alt="social icon" />
+                </a>
+              ))}
+            </div>
+          </div>
+          <form className={styles.form} onSubmit={handleSubmit} autoComplete="off">
           {/* Name */}
           <div className={styles.inputGroup}>
             <span className={styles.icon}>👤</span>
@@ -99,6 +137,9 @@ function Contact() {
             {sending ? t("contact.form.loading") : t("contact.form.submitButton.text")}
           </button>
         </form>
+       
+      </div>
+      
       </div>
 
       {/* MODAL */}

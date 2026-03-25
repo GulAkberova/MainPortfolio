@@ -213,47 +213,77 @@
     ]
   },
 
- "contact": {
-  "title": "İletişim",
-  "subtitle": "Benimle iletişime geçmek için aşağıdaki formu doldurun.",
-  "form": {
-    "name": "Ad",
-    "email": "E-posta",
-    "message": "Mesaj",
-
-    "fields": [
-      {
-        "name": "name",
-        "type": "text",
-        "placeholder": "Adınız",
-        "required": true
+  "contact": {
+    "title": "İletişim",
+    "subtitle": "Benimle iletişime geçmek için aşağıdaki formu doldurun.",
+    "info": {
+        "title": "İletişim Bilgileri",
+        "items": [
+          {
+            "icon": "✉️",
+            "label": "Email",
+            "value": "gulkhanimakberova@gmail.com",
+            "link": "mailto:gulkhanimakberova@gmail.com"
+          },
+          {
+            "icon": "📍",
+            "label": "Adres",
+            "value": "Bakü şehri",
+            "link": "https://maps.google.com/?q=Baku"
+          }
+        ]
       },
-      {
-        "name": "email",
-        "type": "email",
-        "placeholder": "E-posta adresiniz",
-        "required": true
+      "social": {
+        "title": "Sosyal Ağlar",
+        "items": [
+          {
+            "icon": "/icons/about/linkedin.svg",
+            "link": "https://www.linkedin.com/in/g%C3%BClxan%C4%B1mekberova/"
+          },
+          {
+            "icon": "/icons/about/instagram.png",
+            "link": "https://www.instagram.com/pmlexicon/"
+          }
+        ]
       },
-      {
-        "name": "message",
-        "type": "textarea",
-        "placeholder": "Mesajınız",
-        "rows": 5,
-        "required": true
-      }
-    ],
-
-    "submitButton": {
-      "text": "Gönder"
-    },
-
-    "loading": "Gönderiliyor...",
-    "sending": "Kapat",
-
-    "alertSuccess": "Mesajınız başarıyla gönderildi!",
-    "alertError": "Mesaj gönderilirken bir hata oluştu!"
+    "form": {
+      "name": "Ad",
+      "email": "E-posta",
+      "message": "Mesaj",
+  
+      "fields": [
+        {
+          "name": "name",
+          "type": "text",
+          "placeholder": "Adınız",
+          "required": true
+        },
+        {
+          "name": "email",
+          "type": "email",
+          "placeholder": "E-posta adresiniz",
+          "required": true
+        },
+        {
+          "name": "message",
+          "type": "textarea",
+          "placeholder": "Mesajınız",
+          "rows": 5,
+          "required": true
+        }
+      ],
+  
+      "submitButton": {
+        "text": "Gönder"
+      },
+  
+      "loading": "Gönderiliyor...",
+      "sending": "Kapat",
+  
+      "alertSuccess": "Mesajınız başarıyla gönderildi!",
+      "alertError": "Mesaj gönderilirken bir hata oluştu!"
+    }
   }
-}
 ,
 
 
@@ -297,6 +327,12 @@
         "year": "2024",
         "image": "icons/certificate/powerbi.png"
 
+      },
+      {
+        "title": "Advanced Front-End Development",
+        "platform": "Code Academy",
+        "year": "2023",
+        "image": "icons/certificate/code.png"
       }
     ]
   },

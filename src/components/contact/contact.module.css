@@ -34,7 +34,7 @@
 }
 
 .container {
-  max-width: 600px;
+  max-width: 1100px;
   width: 100%;
   text-align: center;
   z-index: 2;
@@ -65,14 +65,17 @@
 
 /* FORM CARD */
 .form {
+  max-width: 500px;
+  width: 100%;
   background: rgba(255, 255, 255, 0.9);
   padding: 40px 35px;
   border-radius: 24px;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
   backdrop-filter: blur(10px);
   display: flex;
   flex-direction: column;
   gap: 22px;
+  border: 1px solid #6c3bff;
 }
 
 /* INPUT GROUP */
@@ -85,7 +88,7 @@
   width: 100%;
   padding: 26px 20px 16px 50px;
   border-radius: 14px;
-  border: 1px solid rgba(0,0,0,0.15);
+  border: 1px solid rgba(0, 0, 0, 0.15);
   font-size: 1rem;
   transition: 0.3s ease;
 }
@@ -93,7 +96,7 @@
 .inputGroup input:focus,
 .inputGroup textarea:focus {
   border-color: #6d28d9;
-  box-shadow: 0 0 10px rgba(109,40,217,0.3);
+  box-shadow: 0 0 10px rgba(109, 40, 217, 0.3);
   outline: none;
 }
 
@@ -141,7 +144,7 @@
 
 .btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(109,40,217,0.4);
+  box-shadow: 0 10px 25px rgba(109, 40, 217, 0.4);
 }
 
 .btn:disabled {
@@ -153,7 +156,7 @@
 .loader {
   width: 22px;
   height: 22px;
-  border: 3px solid rgba(255,255,255,0.4);
+  border: 3px solid rgba(255, 255, 255, 0.4);
   border-top: 3px solid #fff;
   border-radius: 50%;
   animation: spin 0.8s linear infinite;
@@ -161,14 +164,16 @@
 }
 
 @keyframes spin {
-  to { transform: rotate(360deg); }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 /* MODAL */
 .modalBackdrop {
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,0.35);
+  background: rgba(0, 0, 0, 0.35);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -186,8 +191,14 @@
 }
 
 @keyframes scaleIn {
-  from { transform: scale(0.85); opacity: 0; }
-  to { transform: scale(1); opacity: 1; }
+  from {
+    transform: scale(0.85);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 .success {
@@ -213,6 +224,239 @@
   cursor: pointer;
 }
 
+.contactWrapper {
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+}
 
+.contactInfo {
+  color: #1e1e2f;
+  max-width: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* 🔥 sağa hizalama */
+  text-align: right; /* 🔥 text sağda */
+  gap: 20px;
+}
 
+/* Titles */
+.contactInfo h3 {
+  font-weight: 700;
+  font-size: 18px;
+  color: #6c3bff; /* bənövşəyi */
+  margin-bottom: 10px;
+}
 
+/* Info Item */
+.infoItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 8px 0px;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.infoItem:hover {
+  transform: translateX(5px);
+}
+.infoItem div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 5px;
+}
+/* Icon */
+.infoItem span {
+  background: #ffffff;
+  color: #6c3bff;
+  border: 1px solid #6c3bff;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Text */
+.infoItem small {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 600;
+
+  color: #1e1e2f;
+}
+
+.infoItem p {
+  margin: 0;
+  font-weight: 500;
+  color: #777;
+  font-size: 0.7rem;
+}
+
+/* Social */
+.socialIcons {
+  display: flex;
+  justify-content: flex-start; /* 🔥 sağa */
+  gap: 12px;
+  margin-top: 10px;
+}
+
+/* Social Icon */
+.socialIcons a {
+  background: #ffffff;
+  border: 1px solid #6c3bff;
+  padding: 10px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.socialIcons img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+
+.socialIcons a:hover {
+  background: #6c3bff;
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+/* Responsive: Tablets & Mobiles */
+@media (max-width: 1024px) {
+  .contact {
+    padding: 80px 20px;
+  }
+
+  .contactWrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 0px;
+  }
+
+  .contactInfo {
+    max-width: 100%;
+    gap: 5px;
+  }
+
+  .socialIcons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 0.95rem;
+    margin-bottom: 25px;
+  }
+
+  .form {
+    padding: 30px 20px;
+  }
+
+  .inputGroup input,
+  .inputGroup textarea {
+    padding: 20px 15px 12px 45px;
+    font-size: 0.95rem;
+  }
+
+  .inputGroup label {
+    left: 45px;
+    font-size: 0.75rem;
+  }
+
+  .icon {
+    left: 12px;
+    font-size: 16px;
+  }
+
+  .btn {
+    padding: 12px;
+    font-size: 0.95rem;
+  }
+
+  .infoItem span {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .infoItem small {
+    font-size: 0.7rem;
+  }
+
+  .infoItem p {
+    font-size: 0.65rem;
+  }
+
+  .socialIcons img {
+    width: 16px;
+    height: 16px;
+  }
+
+  .socialIcons a {
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact {
+    padding: 60px 15px;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .subtitle {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+  }
+
+  .form {
+    padding: 25px 15px;
+  }
+
+  .inputGroup input,
+  .inputGroup textarea {
+    padding: 18px 12px 10px 40px;
+    font-size: 0.9rem;
+  }
+
+  .inputGroup label {
+    left: 40px;
+    font-size: 0.7rem;
+  }
+
+  .icon {
+    left: 10px;
+    font-size: 14px;
+  }
+
+  .btn {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  .contactWrapper {
+    gap: 20px;
+  }
+
+  .socialIcons {
+    gap: 10px;
+  }
+}

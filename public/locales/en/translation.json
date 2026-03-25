@@ -216,61 +216,97 @@
     ]
   },
 
- "contact": {
-  "title": "Contact",
-  "subtitle": "Fill out the form below to get in touch with me.",
-  "form": {
-    "name": "Name",
-    "email": "Email",
-    "message": "Message",
-
-    "fields": [
-      {
-        "name": "name",
-        "type": "text",
-        "placeholder": "Your name",
-        "required": true
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Fill out the form below to get in touch with me.",
+    "info": {
+        "title": "Contact Info",
+        "items": [
+          {
+            "icon": "✉️",
+            "label": "Email",
+            "value": "gulkhanimakberova@gmail.com",
+            "link": "mailto:gulkhanimakberova@gmail.com"
+          },
+          {
+            "icon": "📍",
+            "label": "Location",
+            "value": "Baku city",
+            "link": "https://maps.google.com/?q=Baku"
+          }
+        ]
       },
-      {
-        "name": "email",
-        "type": "email",
-        "placeholder": "Your email",
-        "required": true
+      "social": {
+        "title": "Social Networks",
+        "items": [
+          {
+            "icon": "/icons/about/linkedin.svg",
+            "link": "https://www.linkedin.com/in/g%C3%BClxan%C4%B1mekberova/"
+          },
+          {
+            "icon": "/icons/about/instagram.png",
+            "link": "https://www.instagram.com/pmlexicon/"
+          }
+        ]
       },
-      {
-        "name": "message",
-        "type": "textarea",
-        "placeholder": "Your message",
-        "rows": 5,
-        "required": true
-      }
-    ],
-
-    "submitButton": {
-      "text": "Send"
-    },
-
-    "loading": "Sending...",
-    "sending": "Close",
-
-    "alertSuccess": "Your message has been sent successfully!",
-    "alertError": "An error occurred while sending the message!"
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+  
+      "fields": [
+        {
+          "name": "name",
+          "type": "text",
+          "placeholder": "Your name",
+          "required": true
+        },
+        {
+          "name": "email",
+          "type": "email",
+          "placeholder": "Your email",
+          "required": true
+        },
+        {
+          "name": "message",
+          "type": "textarea",
+          "placeholder": "Your message",
+          "rows": 5,
+          "required": true
+        }
+      ],
+  
+      "submitButton": {
+        "text": "Send"
+      },
+  
+      "loading": "Sending...",
+      "sending": "Close",
+  
+      "alertSuccess": "Your message has been sent successfully!",
+      "alertError": "An error occurred while sending the message!"
+    }
   }
-}
 ,
 
-  "certificates": {
-    "title": "My Certificates",
-    "list": [
-      {
-        "title": "Power BI OLMP06",
-        "platform": "Dost Training Center",
-        "year": "2024",
-        "image": "icons/certificate/powerbi.png"
+"certificates": {
+  "title": "My Certificates",
+  "list": [
+    {
+      "title": "Power BI OLMP06",
+      "platform": "Dost Training Center",
+      "year": "2024",
+      "image": "icons/certificate/powerbi.png"
 
-      }
-    ]
-  },
+    },
+    {
+      "title": "Advanced Front-End Development",
+      "platform": "Code Academy",
+      "year": "2023",
+      "image": "icons/certificate/code.png"
+    }
+  ]
+},
 
   "seenWorks": {
     "title": "Projects",

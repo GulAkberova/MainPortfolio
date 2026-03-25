@@ -216,61 +216,97 @@
     ]
   },
 
- "contact": {
-  "title": "Контакты",
-  "subtitle": "Заполните форму ниже, чтобы связаться со мной.",
-  "form": {
-    "name": "Имя",
-    "email": "Email",
-    "message": "Сообщение",
-
-    "fields": [
-      {
-        "name": "name",
-        "type": "text",
-        "placeholder": "Ваше имя",
-        "required": true
+  "contact": {
+    "title": "Контакты",
+    "subtitle": "Заполните форму ниже, чтобы связаться со мной.",
+    "info": {
+        "title": "Контактная информация",
+        "items": [
+          {
+            "icon": "✉️",
+            "label": "Эл. почта",
+            "value": "gulkhanimakberova@gmail.com",
+            "link": "mailto:gulkhanimakberova@gmail.com"
+          },
+          {
+            "icon": "📍",
+            "label": "Адрес",
+            "value": "город Баку",
+            "link": "https://maps.google.com/?q=Baku"
+          }
+        ]
       },
-      {
-        "name": "email",
-        "type": "email",
-        "placeholder": "Ваш email",
-        "required": true
+      "social": {
+        "title": "Социальные сети",
+        "items": [
+          {
+            "icon": "/icons/about/linkedin.svg",
+            "link": "https://www.linkedin.com/in/g%C3%BClxan%C4%B1mekberova/"
+          },
+          {
+            "icon": "/icons/about/instagram.png",
+            "link": "https://www.instagram.com/pmlexicon/"
+          }
+        ]
       },
-      {
-        "name": "message",
-        "type": "textarea",
-        "placeholder": "Ваше сообщение",
-        "rows": 5,
-        "required": true
-      }
-    ],
-
-    "submitButton": {
-      "text": "Отправить"
-    },
-
-    "loading": "Отправка...",
-    "sending": "Закрыть",
-
-    "alertSuccess": "Ваше сообщение успешно отправлено!",
-    "alertError": "Произошла ошибка при отправке сообщения!"
+    "form": {
+      "name": "Имя",
+      "email": "Email",
+      "message": "Сообщение",
+  
+      "fields": [
+        {
+          "name": "name",
+          "type": "text",
+          "placeholder": "Ваше имя",
+          "required": true
+        },
+        {
+          "name": "email",
+          "type": "email",
+          "placeholder": "Ваш email",
+          "required": true
+        },
+        {
+          "name": "message",
+          "type": "textarea",
+          "placeholder": "Ваше сообщение",
+          "rows": 5,
+          "required": true
+        }
+      ],
+  
+      "submitButton": {
+        "text": "Отправить"
+      },
+  
+      "loading": "Отправка...",
+      "sending": "Закрыть",
+  
+      "alertSuccess": "Ваше сообщение успешно отправлено!",
+      "alertError": "Произошла ошибка при отправке сообщения!"
+    }
   }
-}
 ,
 
-  "certificates": {
-    "title": "Мои Сертификаты",
-    "list": [
-      {
-        "title": "Power BI OLMP06",
-        "platform": "Учебный центр Dost",
-        "year": "2024",
-        "image": "icons/certificate/powerbi.png"
+"certificates": {
+  "title": "Мои Сертификаты",
+  "list": [
+    {
+      "title": "Power BI OLMP06",
+      "platform": "Учебный центр Dost",
+      "year": "2024",
+      "image": "icons/certificate/powerbi.png"
 
-      }
-    ]
-  },
+    },
+    {
+      "title": "Advanced Front-End Development",
+      "platform": "Code Academy",
+      "year": "2023",
+      "image": "icons/certificate/code.png"
+    }
+  ]
+},
 
   "seenWorks": {
     "title": "Проекты",

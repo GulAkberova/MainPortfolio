@@ -215,9 +215,42 @@
     ]
   },
 
- "contact": {
+"contact": {
   "title": "Əlaqə",
   "subtitle": "Mənimlə əlaqə saxlamaq üçün formu doldurun və göndərin.",
+  "info": {
+    "title": "Əlaqə Məlumatları",
+    "items": [
+      {
+        "icon": "✉️",
+        "label": "Email",
+        "value": "gulkhanimakberova@gmail.com",
+        "link": "mailto:kbrovagul0@gmail.com"
+      },
+    
+      {
+        "icon": "📍",
+        "label": "Ünvan",
+        "value": "Bakı şəhəri",
+        "link": "https://maps.google.com/?q=Baku"
+      }
+    ]
+  },
+
+  "social": {
+    "title": "Sosial Şəbəkələr",
+    "items": [
+      {
+         "icon": "/icons/about/linkedin.svg",
+        "link": "https://www.linkedin.com/in/g%C3%BClxan%C4%B1mekberova/"
+      },
+      {
+        "icon": "/icons/about/instagram.png",
+       "link": "https://www.instagram.com/pmlexicon/"
+     }
+    ]
+  },
+
   "form": {
     "name": "Ad",
     "email": "Email",
@@ -258,18 +291,25 @@
 }
 ,
 
-  "certificates": {
-    "title": "Sertifikatlar",
-    "list": [
-      {
-        "title": "Power BI OLMP06",
-        "platform": "Dost tədris mərkəzi",
-        "year": "2024",
-        "image": "icons/certificate/powerbi.png"
-      }
-    
-    ]
-  },
+
+"certificates": {
+  "title": "Sertifikatlar",
+  "list": [
+    {
+      "title": "Power BI OLMP06",
+      "platform": "Dost tədris mərkəzi",
+      "year": "2024",
+      "image": "icons/certificate/powerbi.png"
+    },
+    {
+      "title": "Advanced Front-End Development",
+      "platform": "Code Academy",
+      "year": "2023",
+      "image": "icons/certificate/code.png"
+    }
+  
+  ]
+},
 
   "seenWorks": {
     "title": "Layihələr",
