@@ -32,6 +32,17 @@
     background: rgba(109, 40, 217, 0.1); /* sayt rənglərinə uyğun yumşaq fon */
     transition: all 0.2s ease;
     border: 1px solid #6d28d9;
+    border: 3px solid red;
+        /* gradient border effekti */
+        border: 2px solid transparent;
+        background-image: linear-gradient(#fff, #fff),
+          linear-gradient(90deg, #6d28d9, #3b82f6);
+        background-origin: border-box;
+        background-clip: padding-box, border-box;
+      
+        /* glow effekti */
+        box-shadow: 0 0 15px rgba(109, 40, 217, 0.3);
+
 
   }
   
@@ -46,12 +57,12 @@
   }
   
   /* CV linki fərqləndirmək üçün */
-  .cvLink {
+  /* .cvLink {
     background: rgba(59, 130, 246, 0.1);
   }
   
   .cvLink:hover {
     background: rgba(59, 130, 246, 0.2);
   }
-  
+   */
  

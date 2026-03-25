@@ -10,11 +10,14 @@ function LangSelector({ selectedLang , onChangeLang }) {
   return (
     <div className={styles.wrapper}>
       {/* Seçilmiş dil */}
+      <div  className={styles.mainFlag}>
       <img
         src={`/icons/language/${currentLang}.svg`}
-        className={styles.mainFlag}
+        className={styles.mainFlagImg}
         onClick={() => setOpen(!open)}
       />
+      </div>
+     
 
       {/* Açılan digər dillər */}
       {open && (

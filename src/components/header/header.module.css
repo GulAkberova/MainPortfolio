@@ -23,11 +23,26 @@
   left: 20px;
   cursor: pointer;
   z-index: 150;
+    /* ✅ NEW DESIGN */
+    background: #fff;
+    padding: 10px;
+    border-radius: 100%;
+  
+    /* gradient border effekti */
+    border: 2px solid transparent;
+    background-image: linear-gradient(#fff, #fff),
+      linear-gradient(90deg, #6d28d9, #3b82f6);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+  
+    /* glow effekti */
+    box-shadow: 0 0 15px rgba(109, 40, 217, 0.3);
+    
 }
 
 .bar {
-  width: 25px;
-  height: 3px;
+  width: 22px;
+  height: 1px;
   background-color: #1e1e1e;
   margin: 5px 0;
   transition: 0.4s;

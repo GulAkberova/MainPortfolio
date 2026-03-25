@@ -330,7 +330,7 @@
         "description": "Interactive dashboard system with API integration.",
         "image": "/icons/projects/polygraf.png",
         "company": "Polygraf.ai",
-        "tools": ["Next.js", "TypeScript"],
+        "tools": ["Next.js"],
         "year": "2024",
         "status": "Completed",
         "link": "https://polygraf.ai/"
@@ -352,7 +352,7 @@
         "description": "E-commerce platform built with Next.js and TypeScript.",
         "image": "/icons/projects/legalize.png",
         "company": "Yelload",
-        "tools": ["Next.js", "TypeScript"],
+        "tools": ["Next.js"],
         "year": "2024",
         "status": "Completed",
         "link": "https://legalize.az/"
@@ -484,7 +484,7 @@
         "description": "Responsive Next.js website for Absheron TM.",
         "image": "/icons/projects/absheron.png",
         "company": "Yelload",
-        "tools": ["Next.js", "TypeScript"],
+        "tools": ["Next.js"],
         "year": "2024",
         "status": "Completed",
         "link": "https://absherontm.az/"

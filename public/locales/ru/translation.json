@@ -330,7 +330,7 @@
         "description": "Интерактивная панель управления с интеграцией API.",
         "image": "/icons/projects/polygraf.png",
         "company": "Polygraf.ai",
-        "tools": ["Next.js", "TypeScript"],
+        "tools": ["Next.js"],
         "year": "2024",
         "status": "Завершено",
         "link": "https://polygraf.ai/"
@@ -352,7 +352,7 @@
         "description": "Платформа электронной коммерции, разработанная с использованием Next.js и TypeScript.",
         "image": "/icons/projects/legalize.png",
         "company": "Yelload",
-        "tools": ["Next.js", "TypeScript"],
+        "tools": ["Next.js"],
         "year": "2024",
         "status": "Завершено",
         "link": "https://legalize.az/"
@@ -485,7 +485,7 @@
         "description": "Адаптивный сайт на Next.js для Absheron TM.",
         "image": "/icons/projects/absheron.png",
         "company": "Yelload",
-        "tools": ["Next.js", "TypeScript"],
+        "tools": ["Next.js"],
         "year": "2024",
         "status": "Завершено",
         "link": "https://absherontm.az/"

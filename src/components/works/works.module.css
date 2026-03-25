@@ -106,17 +106,17 @@
 .timelineDate {
   color: #6d28d9;
   font-weight: 600;
-  font-size: 0.85rem;
+  font-size: 0.75rem;
 }
 
 .contentWrapper h5 {
   margin: 4px 0;
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: #555;
 }
 
 .contentWrapper p {
-  font-size: 0.95rem;
+  font-size: 0.8rem;
   color: #555;
   line-height: 1.6;
 }

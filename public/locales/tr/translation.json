@@ -359,7 +359,7 @@
         "description": "API entegrasyonlu interaktif dashboard sistemi.",
         "image": "/icons/projects/polygraf.png",
         "company": "Polygraf.ai",
-        "tools": ["Next.js", "TypeScript"],
+        "tools": ["Next.js"],
         "year": "2024",
         "status": "Tamamlandı",
         "link": "https://polygraf.ai/"
@@ -382,7 +382,7 @@
         "description": "Next.js ve TypeScript ile hazırlanmış e-ticaret platformu.",
         "image": "/icons/projects/legalize.png",
         "company": "Yelload",
-        "tools": ["Next.js", "TypeScript"],
+        "tools": ["Next.js"],
         "year": "2024",
         "status": "Tamamlandı",
         "link": "https://legalize.az/"
@@ -514,7 +514,7 @@
         "description": "Absheron TM için responsive Next.js tabanlı site.",
         "image": "/icons/projects/absheron.png",
         "company": "Yelload",
-        "tools": ["Next.js", "TypeScript"],
+        "tools": ["Next.js"],
         "year": "2024",
         "status": "Tamamlandı",
         "link": "https://absherontm.az/"
