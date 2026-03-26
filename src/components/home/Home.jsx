@@ -15,7 +15,7 @@ function Home() {
           <h2 className={styles.typewriter}>{t("home.role")}</h2>
           <p className={styles.fadeInDelay}>{t("home.description")}</p>
           <a
-            href="#"
+            href="/"
             onClick={(e) => {
               e.preventDefault();
               const element = document.getElementById("works");

@@ -23,8 +23,8 @@ function App() {
         setAll(data);
         setLoading(false);
       });
-  }, [value]);
-  const { user } = useAuth();
+  }, [value,setAll,setLoading]);
+  // const { user } = useAuth();
   // console.log(user, "user");
   return (
     <>
