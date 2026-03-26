@@ -125,7 +125,13 @@
 }
 
 /* 📱 Responsiv */
-@media (max-width: 768px) {
+@media (max-width: 968px) {
+  .certificates{
+    padding: 60px 20px;
+  }
+  .title {
+    font-size: 1.7rem;
+  }
   .grid {
     gap: 25px;
   }

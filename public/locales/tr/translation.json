@@ -1,6 +1,8 @@
 {
 "name":"Gülhanım",
 "surName":"Ekberova",
+"role": "İT Proje Yöneticisi",
+
 
   "nav": {
     "home": "Ana Sayfa",
@@ -15,7 +17,7 @@
 
   "home": {
     "greeting": "Merhaba, ben Gülhanım Ekberova 👋",
-    "role": "BT Proje Yöneticisi ve BT İş Analisti",
+    "role": "İT Proje Yöneticisi",
     "description": "Koddan ekiplere :)) Frontend Developer olarak kazandığım teknik becerilerimi, BT proje yönetimi ve iş analizi alanında stratejik kararlar almak için kullanıyorum. Üniversite çalışmalarım ise sürekli öğrenmemi ve liderlik becerilerimi geliştirmemi sağlıyor.",
     "btn": "Deneyimime Bak"
   },
@@ -26,7 +28,7 @@
     "description2": "Amacım, müşteri ihtiyaçlarını belirlemek, ürün stratejisi oluşturmak ve iş ekipleri ile teknik ekipler arasında iletişimi etkin şekilde yönetmektir. Teknik deneyimim sayesinde iş gereksinimlerini gerçek teknolojik çözümlere dönüştürmekte yetenekliyim.",
     "techSkills": "Teknik beceriler: Jira, Power BI, React.js, Firebase.",
     "info": [
-      { "label": "Meslek", "value": "BT İş Analisti & Proje Yöneticisi" }
+      { "label": "Meslek", "value": "İT Proje Yöneticisi" }
     ],
     "contacts": [
       {
@@ -35,6 +37,13 @@
         "value": "gulkhanimakberova@gmail.com",
         "icon": "/icons/about/maill.svg",
         "link": "mailto:gulkhanimakberova@gmail.com"
+      },
+      {
+        "type": "instagram",
+        "label": "İnstagram",
+        "value": "pmlexicon",
+        "icon": "/icons/about/instagram.png",
+        "link": "https://www.instagram.com/pmlexicon/"
       },
       {
         "type": "linkedin",
@@ -243,6 +252,11 @@
           {
             "icon": "/icons/about/instagram.png",
             "link": "https://www.instagram.com/pmlexicon/"
+          },
+          {
+           
+            "icon": "/icons/about/github.svg",
+            "link": "https://github.com/gulakberova"
           }
         ]
       },

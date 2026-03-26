@@ -112,6 +112,9 @@
   font-size: 1rem;
   color: #333;
   margin: 4px 0 10px;
+  background: linear-gradient(90deg, #6d28d9, #3b82f6);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
 }
 
 .desc {
@@ -178,6 +181,10 @@
 .degree {
   font-weight: 600;
   color: #6d28d9;
+background: linear-gradient(90deg, #6d28d9, #3b82f6);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
 }
 
 .desc {
@@ -299,8 +306,8 @@
   }
 
   .iconWrapper {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     margin-bottom: 10px;
   }
 
@@ -311,11 +318,21 @@
   }
 
   .info h3 {
-    font-size: 1.15rem;
+    font-size: 1rem;
   }
-
+  .info .year {
+    font-size: 0.7rem;
+  }
   .title {
-    font-size: 2rem;
+    font-size: 1.7rem;
+    margin-bottom: 40px;
   }
+  .desc {
+    font-size: 0.75rem;
+  }
+.degree {
+  font-size: 0.8rem;
+
+}
 }
 

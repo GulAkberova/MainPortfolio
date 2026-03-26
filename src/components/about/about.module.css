@@ -126,11 +126,15 @@
 .description span {
   color: #000;
   font-weight: 600;
+  
 }
 
 .description strong {
   color: #6d28d9;
   font-weight: 500;
+  background: linear-gradient(90deg, #6d28d9, #3b82f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* 🔹 Info qutuları */
@@ -190,19 +194,24 @@
   }
 
   .title {
-      font-size: 2.1rem;
+      font-size: 1.7rem;
   }
 
   .description {
-      font-size: 0.95rem;
+      font-size: 0.9rem;
   }
 
   .infoGrid {
-      grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
       gap: 15px;
   }
   .infoGrid h4{
     text-align: left;
+  font-size: 0.7rem;
+
+  }
+  .infoGrid p {
+    font-size: 0.7rem;
   }
   .title::after {
     left: 50%; /* mərkəzləşdir */

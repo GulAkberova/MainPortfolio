@@ -1,6 +1,7 @@
 {
    "name": "Гюльханым",
    "surName": "Акберова",
+   "role": "ИТ-менеджер проектов",
   
   "nav": {
     "home": "Главная",
@@ -15,7 +16,7 @@
 
   "home": {
     "greeting": "Привет, я Гюльханым Акберова 👋",
-    "role": "ИТ-менеджер проектов и ИТ-бизнес-аналитик",
+    "role": "ИТ-менеджер проектов",
     "description": "От кода к управлению командами :)) Я использую технические навыки, приобретённые как Frontend Developer, для принятия стратегических решений в управлении ИТ-проектами и бизнес-анализе. Моя университетская деятельность позволяет мне постоянно учиться и развивать лидерские качества.",
     "btn": "Посмотреть мой опыт"
   },
@@ -28,7 +29,7 @@
     "info": [
       {
         "label": "Профессия",
-        "value": "ИТ-бизнес-аналитик и менеджер проектов"
+        "value": "ИТ менеджер проектов"
       }
     ],
     "contacts": [
@@ -38,6 +39,13 @@
         "value": "gulkhanimakberova@gmail.com",
         "icon": "/icons/about/maill.svg",
         "link": "mailto:gulkhanimakberova@gmail.com"
+      },
+      {
+        "type": "instagram",
+        "label": "İnstagram",
+        "value": "pmlexicon",
+        "icon": "/icons/about/instagram.png",
+        "link": "https://www.instagram.com/pmlexicon/"
       },
       {
         "type": "linkedin",
@@ -246,6 +254,11 @@
           {
             "icon": "/icons/about/instagram.png",
             "link": "https://www.instagram.com/pmlexicon/"
+          },
+          {
+           
+            "icon": "/icons/about/github.svg",
+            "link": "https://github.com/gulakberova"
           }
         ]
       },

@@ -60,7 +60,7 @@
 }
 
 .categoryTitle {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   margin-bottom: 20px;
   color: #1e1e1e;
   text-align: center;
@@ -132,9 +132,12 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 968px) {
+  .skills{
+    padding: 50px 20px;
+  }
   .title {
-    font-size: 2rem;
+    font-size: 1.7rem;
     margin-bottom: 40px;
   }
 
@@ -151,10 +154,9 @@
   }
 
   .skillCard img {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
   }
-
   .categoryCard {
     padding: 20px;
   }
@@ -165,15 +167,13 @@
     padding: 60px 15px;
   }
 
-  .title {
-    font-size: 1.7rem;
-  }
+ 
 
   .skillCard p {
-    font-size: 0.75rem;
+    font-size: 0.7rem;
   }
 
   .categoryTitle {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
   }
 }

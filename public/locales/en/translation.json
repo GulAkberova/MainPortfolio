@@ -1,6 +1,7 @@
 {
 "name":"Gulkhanim",
 "surName":"Akbarova",
+"role": "IT Project Manager",
 
   "nav": {
     "home": "Home",
@@ -15,7 +16,7 @@
 
   "home": {
     "greeting": "Hello, I'm Gülxanım Əkbərova 👋",
-    "role": "IT Project Manager & IT Business Analyst",
+    "role": "IT Project Manager",
     "description": "From code to leading teams :)) I leverage the technical skills I gained as a Frontend Developer to make strategic decisions in IT project management and business analysis. My university work allows me to continuously learn and further develop my leadership skills.",
     "btn": "View My Experience"
   },
@@ -28,7 +29,7 @@
     "info": [
       {
         "label": "Profession",
-        "value": "IT Business Analyst & Project Manager"
+        "value": "IT Project Manager"
       }
     ],
     "contacts": [
@@ -38,6 +39,13 @@
         "value": "gulkhanimakberova@gmail.com",
         "icon": "/icons/about/maill.svg",
         "link": "mailto:gulkhanimakberova@gmail.com"
+      },
+      {
+        "type": "instagram",
+        "label": "İnstagram",
+        "value": "pmlexicon",
+        "icon": "/icons/about/instagram.png",
+        "link": "https://www.instagram.com/pmlexicon/"
       },
       {
         "type": "linkedin",
@@ -246,6 +254,11 @@
           {
             "icon": "/icons/about/instagram.png",
             "link": "https://www.instagram.com/pmlexicon/"
+          },
+          {
+           
+            "icon": "/icons/about/github.svg",
+            "link": "https://github.com/gulakberova"
           }
         ]
       },

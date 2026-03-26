@@ -1,6 +1,7 @@
 {
 "name":"Gülxanım",
 "surName":"Əkbərova",
+"role": "İT Layihə Meneceri",
 
   "nav": {
     "home": "Ana Səhifə",
@@ -15,7 +16,7 @@
 
   "home": {
     "greeting": "Salam, mən Gülxanım Əkbərova 👋",
-    "role": "İT Layihə Meneceri & İT Biznes Analitik",
+    "role": "İT Layihə Meneceri",
     "description": "Koddan komandaya:)) Frontend Developer olaraq qazandığım texniki biliklərimi İT layihə idarəçiliyi və biznes analizində strateji qərarlar vermək üçün istifadə edirəm. Universitet işim isə davamlı öyrənmə və liderlik bacarıqlarımı inkişaf etdirməyə imkan verir.",
     "btn": "Təcrübəmə bax"
   },
@@ -26,7 +27,7 @@
     "description2": "Məqsədim müştəri ehtiyaclarını müəyyənləşdirmək, məhsul strategiyasını qurmaq və biznes komandaları ilə texniki komandalar arasında əlaqəni effektiv şəkildə idarə etməkdir. Texniki təcrübəm sayəsində biznes tələblərini real texnoloji həllərə çevirməkdə bacarıqlıyam.",
     "techSkills": "Texniki biliklər: Jira, Power BI, React.js, Firebase.",
     "info": [
-      { "label": "Peşə", "value": "IT Business Analyst & Project Manager" }
+      { "label": "Peşə", "value": "IT Project Manager" }
     ],
     "contacts": [
       {
@@ -35,6 +36,13 @@
         "value": "gulkhanimakberova@gmail.com",
         "icon": "/icons/about/maill.svg",
         "link": "mailto:gulkhanimakberova@gmail.com"
+      },
+      {
+        "type": "instagram",
+        "label": "İnstagram",
+        "value": "pmlexicon",
+        "icon": "/icons/about/instagram.png",
+        "link": "https://www.instagram.com/pmlexicon/"
       },
       {
         "type": "linkedin",
@@ -247,6 +255,11 @@
       {
         "icon": "/icons/about/instagram.png",
        "link": "https://www.instagram.com/pmlexicon/"
+     },
+     {
+      
+       "icon": "/icons/about/github.svg",
+       "link": "https://github.com/gulakberova"
      }
     ]
   },

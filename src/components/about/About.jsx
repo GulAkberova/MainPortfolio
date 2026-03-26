@@ -33,12 +33,12 @@ const About = () => {
 
           {/* 🔹 Info grid */}
           <div className={styles.infoGrid}>
-            {infoItems.map((item, idx) => (
+            {/* {infoItems.map((item, idx) => (
               <div key={idx}>
                 <h4>{item.label}</h4>
                 <p>{item.value}</p>
               </div>
-            ))}
+            ))} */}
 
             {/* 🔹 Contacts (ikonlu və linkli) */}
             {contacts.map((contact, idx) => (
