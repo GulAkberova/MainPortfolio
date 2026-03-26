@@ -26,6 +26,7 @@ i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
+    lng: "az",
     fallbackLng: "az",
     debug: true,
     interpolation: { escapeValue: false },

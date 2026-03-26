@@ -13,6 +13,7 @@ function LangSelector({ selectedLang , onChangeLang }) {
       <div  className={styles.mainFlag}>
       <img
         src={`/icons/language/${currentLang}.svg`}
+        alt={currentLang}
         className={styles.mainFlagImg}
         onClick={() => setOpen(!open)}
       />
@@ -28,6 +29,7 @@ function LangSelector({ selectedLang , onChangeLang }) {
               <img
                 key={lng}
                 src={`/icons/language/${lng}.svg`}
+                alt={lng}
                 className={styles.childFlag}
                 onClick={() => {
                   onChangeLang(lng);

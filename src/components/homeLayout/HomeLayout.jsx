@@ -31,7 +31,7 @@ function HomeLayout() {
   const location = useLocation();
 
   const [activeSection, setActiveSection] = useState("home");
-  const [selectedLang, setSelectedLang] = useState(i18n.language);
+  const [selectedLang, setSelectedLang] = useState(i18n.language || "az");
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   const sectionRefs = useRef({});
@@ -80,6 +80,12 @@ function HomeLayout() {
       });
     };
   }, []);
+
+  useEffect(() => {
+    if (i18n.language) {
+      setSelectedLang(i18n.language);
+    }
+  }, [i18n.language]);
 
   return (
     <div className={styles.layout}>
