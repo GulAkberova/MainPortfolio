@@ -35,7 +35,7 @@
 .filterBar {
   display: none;
   position: sticky;
-  top: 120px;
+  top: 170px;
   left: 100%;
   z-index: 1;
   width: 50px;

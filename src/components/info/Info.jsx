@@ -23,7 +23,15 @@ function Info() {
       >
         <img src="/icons/about/linkedin.svg" alt="LinkedIn" />
       </a>
-
+ <a
+        href="https://www.instagram.com/pmlexicon/"
+        className={styles.iconLink}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="instagram"
+      >
+        <img src="/icons/about/instagram.png" alt="Instagram" />
+      </a>
        
       {/* <a
         href="https://github.com/gulakberova"
