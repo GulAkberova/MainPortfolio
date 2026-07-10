@@ -14,6 +14,7 @@ import Contact from "../contact/Contact";
 import SeenWorks from "../seenworks/SeenWorks";
 import LangSelector from "../lang/LangSelector";
 import Info from "../info/Info";
+import KnowledgeHub from "../knowledgehub/KnowledgeHub";
 
 const sections = [
   { id: "home", component: <Home /> },
@@ -23,7 +24,9 @@ const sections = [
   { id: "projects", component: <SeenWorks /> },
   { id: "skills", component: <Skills /> },
   { id: "certificates", component: <Certificates /> },
+  { id: "knowledge", component: <KnowledgeHub /> },
   { id: "contact", component: <Contact /> },
+ 
 ];
 
 function HomeLayout() {

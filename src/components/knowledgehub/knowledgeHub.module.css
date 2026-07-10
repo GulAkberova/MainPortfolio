@@ -1,0 +1,453 @@
+.knowledgeHub {
+  padding: 100px 20px;
+  background: #ffffff;
+  color: #1a1a1a;
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: 700;
+  background: linear-gradient(90deg, #7c3aed, #3b82f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+}
+
+.title::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #6d28d9, #3b82f6);
+  border-radius: 3px;
+}
+
+/* Yenilənmiş Yuxarı Filter Paneli */
+.filterBar {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 15px;
+  margin-bottom: 40px;
+  padding: 12px;
+  background: #f9f9fb;
+  border: 1px solid rgba(109, 40, 217, 0.12);
+  border-radius: 14px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+}
+/* Sıralama seçimlərinin dizaynı */
+.sortOption {
+  padding: 10px 12px;
+  font-size: 0.9rem;
+  color: #374151;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.sortOption:hover {
+  background: #f3f4f6;
+  color: #7c3aed;
+}
+
+/* Aktiv seçilmiş sıralama forması */
+.activeSortOpt {
+  background: rgba(109, 40, 217, 0.08);
+  color: #6d28d9;
+  font-weight: 600;
+}
+
+.currentSort {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #1a1a1a;
+}
+
+/* Dropdown Konteyneri */
+.dropdownContainer {
+  position: relative;
+  width: 100%;
+}
+
+/* Dropdown İnput Görünüşü */
+.dropdownInput {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 46px;
+  padding: 6px 14px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.2s ease;
+}
+
+.dropdownInput:hover {
+  border-color: #7c3aed;
+}
+
+.placeholder {
+  color: #9ca3af;
+  font-size: 0.9rem;
+}
+
+.arrow {
+  font-size: 0.75rem;
+  color: #6b7280;
+  margin-left: 8px;
+}
+
+/* Seçilmiş Teqlərin İnput Daxili Dizaynı */
+.selectedTagsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  max-width: 85%;
+}
+
+.selectedTag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(109, 40, 217, 0.08);
+  color: #6d28d9;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 0.82rem;
+  font-weight: 500;
+}
+
+.selectedTag button {
+  background: none;
+  border: none;
+  color: #6d28d9;
+  cursor: pointer;
+  font-size: 0.75rem;
+  padding: 0 2px;
+  display: flex;
+  align-items: center;
+}
+
+.selectedTag button:hover {
+  color: #ef4444;
+}
+
+/* 🔥 Açılan Dropdown Menyusu (İçərisi Scroll-lu) */
+.dropdownMenu {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  width: 100%;
+  max-height: 200px; /* Müəyyən qədər açılması üçün limit */
+  overflow-y: auto; /* Daxili scroll */
+  background: #ffffff;
+  border: 1px solid rgba(109, 40, 217, 0.15);
+  border-radius: 8px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  z-index: 20;
+  padding: 10px;
+}
+
+/* Dropdown Scrollbar Gözəlləşdirilməsi */
+.dropdownMenu::-webkit-scrollbar {
+  width: 5px;
+}
+.dropdownMenu::-webkit-scrollbar-thumb {
+  background: rgba(109, 40, 217, 0.2);
+  border-radius: 4px;
+}
+
+/* Checkbox Sətirləri */
+.checkboxLabel {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 6px;
+  font-size: 0.9rem;
+  color: #374151;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background 0.2s ease;
+}
+
+.checkboxLabel:hover {
+  background: #f3f4f6;
+}
+
+.checkboxLabel input {
+  display: none;
+}
+
+/* Kvadrat Custom Checkbox */
+.customCheckbox {
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(109, 40, 217, 0.3);
+  border-radius: 4px;
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+.checkboxLabel input:checked + .customCheckbox {
+  border-color: #7c3aed;
+  background: #7c3aed;
+}
+
+.checkboxLabel input:checked + .customCheckbox::after {
+  content: "✓";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+
+/* Axtarış İnputu */
+.searchInput {
+  width: 100%;
+  height: 46px;
+  padding: 12px 16px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  font-size: 0.9rem;
+  outline: none;
+  font-family: inherit;
+  transition: all 0.2s ease;
+}
+
+.searchInput:focus {
+  border-color: #7c3aed;
+  box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.1);
+}
+
+/* Grid Yapısı */
+.fullGridContainer {
+  width: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+/* Kartlar və digər stillər olduğu kimi qalır */
+.card {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  border-radius: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.01);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(109, 40, 217, 0.08);
+}
+
+.featuredCard {
+  border: 1px solid rgba(124, 58, 237, 0.35);
+}
+
+.featuredBadge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: linear-gradient(90deg, #7c3aed, #3b82f6);
+  color: #fff;
+  padding: 4px 10px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 20px;
+  z-index: 2;
+}
+
+.imageBox {
+  width: 100%;
+  height: 190px;
+  background: #f3f4f6;
+}
+
+.imageBox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  flex-grow: 1;
+}
+
+.metaRow {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.level {
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 6px;
+  background: rgba(109, 40, 217, 0.06);
+  color: #6d28d9;
+}
+
+.readTime {
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+.content h3 {
+  font-size: 1.25rem;
+  margin: 0 0 10px 0;
+  font-weight: 700;
+}
+
+.excerpt {
+  font-size: 0.92rem;
+  color: #4b5563;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 15px;
+  margin-top: auto;
+}
+
+.tag {
+  font-size: 0.78rem;
+  color: #3b82f6;
+  background: rgba(59, 130, 246, 0.06);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.extraInfo {
+  border-top: 1px solid rgba(0, 0, 0, 0.04);
+  padding-top: 10px;
+  margin-bottom: 15px;
+  font-size: 0.82rem;
+  color: #6b7280;
+}
+
+.btn {
+  margin-top: auto;
+  display: block;
+  text-align: center;
+  padding: 10px;
+  background: linear-gradient(90deg, #6d28d9, #3b82f6);
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.noResult {
+  text-align: center;
+  grid-column: 1 / -1;
+  padding: 40px;
+  color: #6b7280;
+}
+
+
+
+
+
+
+
+/* Pagination Ana Konteyner */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 50px;
+  user-select: none;
+}
+
+/* Ümumi Düymə Stilləri (Rəqəmlər və Oxlar üçün) */
+.pagination button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 12px; /* Şəkildəki kimi yumşaq künclər */
+  font-family: "Inter", sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Passiv Səhifə Rəqəmləri */
+.pageNumber {
+  background: #f4f0fa; /* Şəkildəki zərif bənövşəyi/açıq fon */
+  color: #6d28d9; /* Bənövşəyi rəqəmlər */
+}
+
+.pageNumber:hover:not(.activePage) {
+  background: #e8e0f5;
+  transform: translateY(-2px);
+}
+
+/* 🔥 Aktiv Səhifə (Şəkildəki Göy-Bənövşəyi Gradient) */
+.activePage {
+  background: linear-gradient(135deg, #5145cd, #3b82f6) !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 15px rgba(81, 69, 205, 0.35);
+}
+
+/* Ox Düymələri (Sol və Sağ) */
+.pageArrow {
+  background: #f4f0fa;
+  color: #6d28d9;
+  font-size: 0.8rem; /* Oxların ölçüsü */
+}
+
+.pageArrow:hover:not(:disabled) {
+  background: #e8e0f5;
+}
+
+/* Düymə Kliklənə bilməyəndə (Disabled) */
+.pagination button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  transform: none !important;
+}
+
+/* Üç nöqtə (...) stili */
+.dots {
+  color: #9ca3af;
+  font-weight: 500;
+  padding: 0 4px;
+  letter-spacing: 2px;
+}
