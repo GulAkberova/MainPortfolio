@@ -1,7 +1,7 @@
 {
 "name":"Gülhanım",
 "surName":"Ekberova",
-"role": "İT Proje Yöneticisi",
+"role": "IT PM / IT BA",
 
 
   "nav": {
@@ -684,7 +684,7 @@
         "id": "terms",
         "title": "Terimler",
         "slug": "terms",
-        "icon": "/icons/knowledge/terms.svg",
+        "icon": "/icons/knowledge/termin/terms.svg",
         "image": "/images/categories/terms.webp",
         "alt": "Project Management ve Business Analysis terimleri",
         "description": "PM ve BA alanında kullanılan terimler."
@@ -693,7 +693,7 @@
         "id": "situations",
         "title": "Durumlar / Senaryolar",
         "slug": "situations",
-        "icon": "/icons/knowledge/situations.svg",
+        "icon": "/icons/knowledge/termin/situations.svg",
         "image": "/images/categories/situations.webp",
         "alt": "Gerçek proje durumları",
         "description": "Projelerde karşılaşılan gerçek sorunlar ve çözüm yolları."
@@ -702,7 +702,7 @@
         "id": "documents",
         "title": "Dokümantasyon",
         "slug": "documents",
-        "icon": "/icons/knowledge/documents.svg",
+        "icon": "/icons/knowledge/termin/documents.svg",
         "image": "/images/categories/documents.webp",
         "alt": "PM ve BA belgeleri",
         "description": "Projelerde kullanılan belgeler ve şablonlar."
@@ -711,7 +711,7 @@
         "id": "tools",
         "title": "Araçlar",
         "slug": "tools",
-        "icon": "/icons/knowledge/tools.svg",
+        "icon": "/icons/knowledge/termin/tools.svg",
         "image": "/images/categories/tools.webp",
         "alt": "PM ve BA araçları",
         "description": "Project Management ve Business Analysis araçları."
@@ -720,7 +720,7 @@
         "id": "interview",
         "title": "Mülakat Soruları",
         "slug": "interview",
-        "icon": "/icons/knowledge/interview.svg",
+        "icon": "/icons/knowledge/termin/interview.svg",
         "image": "/images/categories/interview.webp",
         "alt": "PM ve BA mülakat soruları",
         "description": "PM ve BA mülakatlarında sorulan sorular."
@@ -801,10 +801,10 @@
         "roles": ["PM", "BA"],
         "level": "Beginner",
         "status": "published",
-        "subCategory": "planning",  
-        "cover": "/icons/knowledge/scope.png",
-        "alt": "Scope termini",
-        "excerpt": "Layihənin sərhədlərini müəyyən edən əsas anlayış.",  
+        "subCategory": "planning",
+        "cover": "/icons/knowledge/termin/scope.png",
+        "alt": "Scope terimi",
+        "excerpt": "Projenin sınırlarını belirleyen temel kavram.",
         "date": "2025-05-29",
         "featured": true,
         "link": "https://medium.com/@gulkhanimakberova/scope-f19e28f02436"
@@ -819,10 +819,10 @@
         "level": "Beginner",
         "status": "published",
         "subCategory": "stakeholder",
-        "cover": "/icons/knowledge/stakeholder.png",
-        "alt": "Stakeholder termini",
-        "excerpt": "Layihəyə təsir edən və ya layihədən təsirlənən şəxs və ya qrup.",
-        "date": "2025-05-30",
+        "cover": "/icons/knowledge/termin/stakeholder.png",
+        "alt": "Stakeholder terimi",
+        "excerpt": "Projeyi etkileyen veya projeden etkilenen kişi ya da grup.",
+        "date": "2026-06-15",
         "featured": true,
         "link": "https://medium.com/@gulkhanimakberova/stakeholder-9a65253be2aa"
       },
@@ -836,9 +836,9 @@
         "level": "Beginner",
         "status": "published",
         "subCategory": "planning",
-        "cover": "/icons/knowledge/milestone.png",
-        "alt": "Milestone termini",
-        "excerpt": "Layihənin vacib mərhələsini göstərən əsas yoxlama nöqtəsi.",
+        "cover": "/icons/knowledge/termin/milestone.png",
+        "alt": "Milestone terimi",
+        "excerpt": "Projenin önemli bir aşamasını gösteren temel kontrol noktası.",
         "date": "2025-05-31",
         "featured": false,
         "link": "https://medium.com/@gulkhanimakberova/milestone-6049123b1368"
@@ -853,9 +853,9 @@
         "level": "Beginner",
         "status": "published",
         "subCategory": "planning",
-        "cover": "/icons/knowledge/deliverable.png",
-        "alt": "Deliverable termini",
-        "excerpt": "Layihə nəticəsində müştəriyə təqdim olunan məhsul və ya nəticə.",
+        "cover": "/icons/knowledge/termin/deliverable.png",
+        "alt": "Deliverable terimi",
+        "excerpt": "Proje sonunda müşteriye teslim edilen ürün, hizmet veya çıktı.",
         "date": "2025-05-31",
         "featured": false,
         "link": "https://medium.com/@gulkhanimakberova/deliverable-03400bf18efe"
@@ -865,15 +865,15 @@
         "title": "Roadmap",
         "slug": "roadmap",
         "category": "terms",
-        "tags": ["planning", "product-management"],
+        "tags": ["planning"],
         "roles": ["PM", "Product Owner"],
         "level": "Intermediate",
         "status": "published",
         "subCategory": "planning",
-        "cover": "/icons/knowledge/roadmap.png",
-        "alt": "Roadmap termini",
-        "excerpt": "Layihənin və ya məhsulun uzunmüddətli inkişaf planı.",
-        "date": "2025-05-31",
+        "cover": "/icons/knowledge/termin/roadmap.png",
+        "alt": "Roadmap terimi",
+        "excerpt": "Projenin veya ürünün uzun vadeli gelişim planı.",
+        "date": "2026-07-10",
         "featured": true,
         "link": "https://medium.com/@gulkhanimakberova/roadmap-2887152de844"
       },
@@ -887,12 +887,51 @@
         "level": "Beginner",
         "status": "published",
         "subCategory": "risk",
-        "cover": "/icons/knowledge/blocker.png",
-        "alt": "Blocker termini",
-        "excerpt": "Komandanın işini tamamilə dayandıran maneə.",
-        "date": "2025-05-31",
+        "cover": "/icons/knowledge/termin/blocker.png",
+        "alt": "Blocker terimi",
+        "excerpt": "Ekibin ilerlemesini tamamen durduran engel.",
+        "date": "2026-05-31",
         "featured": false,
         "link": "https://medium.com/@gulkhanimakberova/blocker-2cf414b5320a"
+      },
+      {
+        "id": "frontend-ready-backend-missing",
+        "title": "Frontend Hazır, Backend Yok",
+        "slug": "frontend-ready-backend-missing",
+        "category": "situations",
+        "tags": [
+          "planning",
+          "dependency"
+        ],
+        "roles": ["PM", "BA"],
+        "level": "Intermediate",
+        "status": "published",
+        "subCategory": "planning",
+        "cover": "/icons/knowledge/situasiya/frontend-hazir.png",
+        "alt": "Frontend'in hazır olduğu ancak backend'in henüz tamamlanmadığı proje senaryosu",
+        "excerpt": "Projeyi durdurmalı mısın, yoksa devam mı etmelisin?",
+        "date": "2026-07-09",
+        "featured": true,
+        "link": "https://medium.com/@gulkhanimakberova/frontend-haz%C4%B1r-backend-yox-3871b5fa5f2f"
+      },
+      {
+        "id": "introduce-yourself",
+        "title": "Kendinizden Bahseder misiniz?",
+        "slug": "introduce-yourself",
+        "category": "interview",
+        "tags": [
+          "hr"
+        ],
+        "roles": ["PM", "BA"],
+        "level": "Beginner",
+        "status": "published",
+        "subCategory": "hr",
+        "cover": "/icons/knowledge/interview/ozunuz-haqqinda-danisin.png",
+        "alt": "Mülakat sorusu: Kendinizden bahseder misiniz?",
+        "excerpt": "İlk 60 saniye her şeyi değiştirebilir.",
+        "date": "2026-06-11",
+        "featured": true,
+        "link": "https://medium.com/@gulkhanimakberova/%C3%B6z%C3%BCn%C3%BCz-haqq%C4%B1nda-dan%C4%B1%C5%9F%C4%B1n-1969e81c544a"
       },
       {
         "id": "bottleneck",
@@ -904,12 +943,12 @@
         "level": "Intermediate",
         "status": "published",
         "subCategory": "process",
-        "cover": "/icons/knowledge/bottleneck.png",
-        "alt": "Bottleneck termini",
-        "excerpt": "Prosesin sürətini azaldan zəif nöqtə.",
+        "cover": "/icons/knowledge/termin/bottleneck.png",
+        "alt": "Bottleneck terimi",
+        "excerpt": "Sürecin genel hızını yavaşlatan en zayıf nokta.",
         "date": "2025-05-31",
         "featured": false,
-        "link": "https://medium.com/@gulkhanimakberova/scope-f19e28f02436"
+        "link": "#"
       },
       {
         "id": "dependency",
@@ -921,12 +960,12 @@
         "level": "Intermediate",
         "status": "published",
         "subCategory": "planning",
-        "cover": "/icons/knowledge/dependency.png",
-        "alt": "Dependency termini",
-        "excerpt": "Bir tapşırığın digərindən asılı olması vəziyyəti.",
+        "cover": "/icons/knowledge/termin/dependency.png",
+        "alt": "Dependency terimi",
+        "excerpt": "Bir görevin başka bir görevin tamamlanmasına bağlı olması durumu.",
         "date": "2025-06-02",
         "featured": false,
-        "link": "https://medium.com/@gulkhanimakberova/scope-f19e28f02436"
+        "link": "#"
       },
       {
         "id": "backlog",
@@ -938,12 +977,12 @@
         "level": "Beginner",
         "status": "published",
         "subCategory": "scrum",
-        "cover": "/icons/knowledge/backlog.png",
-        "alt": "Backlog termini",
-        "excerpt": "Yerinə yetirilməsi planlaşdırılan bütün işlərin siyahısı.",
+        "cover": "/icons/knowledge/termin/backlog.png",
+        "alt": "Backlog terimi",
+        "excerpt": "Gelecekte tamamlanması planlanan işlerin önceliklendirilmiş listesi.",
         "date": "2025-06-02",
         "featured": true,
-        "link": "https://medium.com/@gulkhanimakberova/scope-f19e28f02436"
+        "link": "#"
       },
       {
         "id": "sprint",
@@ -955,12 +994,12 @@
         "level": "Beginner",
         "status": "published",
         "subCategory": "scrum",
-        "cover": "/icons/knowledge/sprint.png",
-        "alt": "Sprint termini",
-        "excerpt": "Scrum metodologiyasında müəyyən vaxt çərçivəsində görülən iş dövrü.",
+        "cover": "/icons/knowledge/termin/sprint.png",
+        "alt": "Sprint terimi",
+        "excerpt": "Scrum metodolojisinde belirli bir işin tamamlandığı sabit zaman aralığı.",
         "date": "2025-06-02",
         "featured": true,
-        "link": "https://medium.com/@gulkhanimakberova/scope-f19e28f02436"
+        "link": "#"
       },
       {
         "id": "retrospective",
@@ -972,12 +1011,12 @@
         "level": "Intermediate",
         "status": "published",
         "subCategory": "scrum",
-        "cover": "/icons/knowledge/retrospective.png",
-        "alt": "Retrospective termini",
-        "excerpt": "Sprint sonunda komandanın görülən işləri analiz etdiyi görüş.",
+        "cover": "/icons/knowledge/termin/retrospective.png",
+        "alt": "Retrospective terimi",
+        "excerpt": "Sprint sonunda ekibin çalışmaları değerlendirdiği ve iyileştirmeleri belirlediği toplantı.",
         "date": "2025-06-04",
         "featured": false,
-        "link": "https://medium.com/@gulkhanimakberova/scope-f19e28f02436"
+        "link": "#"
       },
       {
         "id": "burndown-chart",
@@ -989,12 +1028,12 @@
         "level": "Intermediate",
         "status": "published",
         "subCategory": "charts",
-        "cover": "/icons/knowledge/burndownchart.png",
-        "alt": "Burndown Chart termini",
-        "excerpt": "Sprint ərzində qalan iş həcmini göstərən qrafik.",
+        "cover": "/icons/knowledge/termin/burndownchart.png",
+        "alt": "Burndown Chart terimi",
+        "excerpt": "Sprint boyunca kalan iş miktarını gösteren grafik.",
         "date": "2025-06-04",
         "featured": true,
-        "link": "https://medium.com/@gulkhanimakberova/scope-f19e28f02436"
+        "link": "#"
       },
       {
         "id": "kanban",
@@ -1006,12 +1045,12 @@
         "level": "Intermediate",
         "status": "published",
         "subCategory": "agile",
-        "cover": "/icons/knowledge/kanban.png",
-        "alt": "Kanban termini",
-        "excerpt": "İş axınının vizual idarə olunmasını təmin edən Agile metodu.",
+        "cover": "/icons/knowledge/termin/kanban.png",
+        "alt": "Kanban terimi",
+        "excerpt": "İş akışının görsel olarak yönetilmesini sağlayan Agile yöntemi.",
         "date": "2025-06-04",
         "featured": true,
-        "link": "https://medium.com/@gulkhanimakberova/scope-f19e28f02436"
+        "link": "#"
       },
       {
         "id": "epic",
@@ -1023,12 +1062,12 @@
         "level": "Intermediate",
         "status": "published",
         "subCategory": "requirements",
-        "cover": "/icons/knowledge/epic.png",
-        "alt": "Epic termini",
-        "excerpt": "Bir neçə User Story-ni əhatə edən böyük iş vahidi.",
+        "cover": "/icons/knowledge/termin/epic.png",
+        "alt": "Epic terimi",
+        "excerpt": "Birden fazla User Story'den oluşan büyük iş parçası.",
         "date": "2025-06-05",
         "featured": false,
-        "link": "https://medium.com/@gulkhanimakberova/scope-f19e28f02436"
+        "link": "#"
       },
       {
         "id": "user-story",
@@ -1040,12 +1079,12 @@
         "level": "Beginner",
         "status": "published",
         "subCategory": "requirements",
-        "cover": "/icons/knowledge/userstory.png",
-        "alt": "User Story termini",
-        "excerpt": "İstifadəçi ehtiyacını sadə formada ifadə edən tələb.",
+        "cover": "/icons/knowledge/termin/userstory.png",
+        "alt": "User Story terimi",
+        "excerpt": "Kullanıcının ihtiyacını veya gereksinimini basit şekilde ifade eden açıklama.",
         "date": "2025-06-05",
         "featured": true,
-        "link": "https://medium.com/@gulkhanimakberova/scope-f19e28f02436"
+        "link": "#"
       },
       {
         "id": "velocity",
@@ -1057,12 +1096,12 @@
         "level": "Advanced",
         "status": "published",
         "subCategory": "metrics",
-        "cover": "/icons/knowledge/velocity.png",
-        "alt": "Velocity termini",
-        "excerpt": "Komandanın bir sprint ərzində tamamladığı iş həcmini göstərən göstərici.",
+        "cover": "/icons/knowledge/termin/velocity.png",
+        "alt": "Velocity terimi",
+        "excerpt": "Ekibin bir Sprint boyunca tamamladığı iş miktarını gösteren metrik.",
         "date": "2025-06-05",
         "featured": false,
-        "link": "https://medium.com/@gulkhanimakberova/scope-f19e28f02436"
+        "link": "#"
       },
       {
         "id": "mvp",
@@ -1074,12 +1113,12 @@
         "level": "Beginner",
         "status": "published",
         "subCategory": "product",
-        "cover": "/icons/knowledge/mvp.png",
-        "alt": "MVP termini",
-        "excerpt": "Məhsulun bazara çıxarılan minimum funksional versiyası.",
+        "cover": "/icons/knowledge/termin/mvp.png",
+        "alt": "MVP terimi",
+        "excerpt": "Kullanıcılara sunulan ürünün minimum işlevsel sürümü.",
         "date": "2025-06-05",
         "featured": true,
-        "link": "https://medium.com/@gulkhanimakberova/scope-f19e28f02436"
+        "link": "#"
       }
     ]
   }
